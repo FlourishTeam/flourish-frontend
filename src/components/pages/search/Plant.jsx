@@ -17,7 +17,7 @@ const Plant = ({
         height="100px"
       />
       <div>{common_name}</div>
-      <div>({scientific_name})</div>
+      <div className={styles.scientific}>{scientific_name}</div>
       <div>{planting.temperature_range}</div>
       <div>{light_range}</div>
       <div>{hydration_range}</div>

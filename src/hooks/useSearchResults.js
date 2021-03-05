@@ -6,7 +6,18 @@ const useSearchResults = () => {
   // pulling in static data for now, so we can test out rendering in the Search Page
   const [searchResults, setSearchResults] = useState(data);
 
-  return { loading, searchResults };
+  //searchQuery
+  const [searchQuery, setSearchQuery] = useState('');
+
+  //handleSearch
+
+  //onChange
+  const handleChange = ({ target }) => {
+    setSearchQuery(target.value);
+    console.log(searchQuery);
+  };
+
+  return { loading, searchResults, searchQuery, handleChange };
 };
 
 export default useSearchResults;

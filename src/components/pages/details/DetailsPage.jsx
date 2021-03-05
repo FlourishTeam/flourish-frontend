@@ -1,13 +1,13 @@
 import React from 'react';
+import { useLoading } from '../../../hooks/useLoading';
+import Loading from '../../reusable/loading/Loading';
 import Details from './Details';
-// import useLoading hook
-// import Loading component
 import styles from './styles/DetailsPage.css';
 
 const DetailsPage = () => {
-  // const { loading } = useLoading();
+  const { loading } = useLoading();
 
-  // if(loading) return <Loading />;
+  if(loading) return <Loading />;
 
   return (
     <div className={styles.DetailsPage}>

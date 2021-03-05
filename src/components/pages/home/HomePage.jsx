@@ -1,10 +1,11 @@
 import React from 'react';
-
 function HomePage() {
   return (
-    <div>
-            
-    </div>
+    <>
+      <div>
+          Hello I am the Home Page  
+      </div>
+    </>
   );
 }
 

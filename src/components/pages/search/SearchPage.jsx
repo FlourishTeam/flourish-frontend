@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 function SearchPage() {
-    return (
-        <div>
+  return (
+    <div>
             Hello I am Search Page.
-        </div>
-    )
+    </div>
+  );
 }
 
-export default SearchPage
+export default SearchPage;

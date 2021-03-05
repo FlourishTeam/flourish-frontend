@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 function MyPlantsPage() {
-    return (
-        <div>
+  return (
+    <div>
             Hello I am my plants page.
-        </div>
-    )
+    </div>
+  );
 }
 
-export default MyPlantsPage
+export default MyPlantsPage;

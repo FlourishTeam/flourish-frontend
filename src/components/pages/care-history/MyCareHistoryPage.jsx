@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 function MyCareHistoryPage() {
-    return (
-        <div>
+  return (
+    <div>
             Hello I am my care history.
-        </div>
-    )
+    </div>
+  );
 }
 
-export default MyCareHistoryPage
+export default MyCareHistoryPage;
 

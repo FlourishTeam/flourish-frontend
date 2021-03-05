@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 function DetailsPage() {
-    return (
-        <div>
+  return (
+    <div>
             Hello I am Details.
-        </div>
-    )
+    </div>
+  );
 }
 
-export default DetailsPage
+export default DetailsPage;

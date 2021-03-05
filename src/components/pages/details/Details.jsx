@@ -22,7 +22,6 @@ const Details = ({
       {/* import CARE DETAILS component */}
       {/* ABOUT SECTION */}
       <section>
-        {/* import care details component */}
         <div>Other Names: {synonyms}</div>
         <div>Warnings: {warnings}</div>
         <div>Common Pests and Diseases: {pests_diseases}</div>

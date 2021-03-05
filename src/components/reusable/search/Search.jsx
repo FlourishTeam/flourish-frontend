@@ -21,8 +21,3 @@ Search.propTypes = {
 };
 
 export default Search;
-
-
-
-
-rf

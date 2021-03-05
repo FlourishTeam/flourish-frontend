@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyPlant component renders MyPlant 1`] = `
+<DocumentFragment>
+  <div>
+    <figure>
+      <img />
+      <figcaption>
+        <p />
+      </figcaption>
+    </figure>
+  </div>
+</DocumentFragment>
+`;

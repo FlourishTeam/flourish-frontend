@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './styles/Details.css';
 
-
 const Details = ({
   image,
   common_name,

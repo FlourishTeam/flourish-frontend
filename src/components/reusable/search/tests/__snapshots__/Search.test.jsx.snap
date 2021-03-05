@@ -12,7 +12,11 @@ exports[`Search component renders Search 1`] = `
       id="searchInput"
       placeholder="search"
       type="text"
+      value=""
     />
+    <button>
+      Submit
+    </button>
   </div>
 </DocumentFragment>
 `;

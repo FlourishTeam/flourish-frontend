@@ -9,7 +9,7 @@ describe('Search component', () => {
   it('renders Search', () => {
     const { asFragment } = render(
       <Search
-        onSubmit={jest.fn()}
+  
       />
     );
     expect(asFragment()).toMatchSnapshot();

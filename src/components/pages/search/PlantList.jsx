@@ -1,6 +1,7 @@
 import React from 'react';
 import useSearchResults from '../../../hooks/useSearchResults';
 import Plant from './Plant';
+import styles from './styles/PlantList.css';
 import uuid from 'react-uuid';
 
 const PlantList = () => {
@@ -20,7 +21,11 @@ const PlantList = () => {
 
   // correct loading logic later:
   // opposite of loading for now because loading will never not be true
-  return <ul>{!loading ? <>Loading</> : plantElements}</ul>;
+  return (
+    <ul className={styles.PlantList}>
+      {!loading ? <>Loading</> : plantElements}
+    </ul>
+  );
 };
 
 export default PlantList;

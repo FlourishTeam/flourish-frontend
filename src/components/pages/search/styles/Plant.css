@@ -1,0 +1,14 @@
+.Plant {
+    display: flex;
+    flex-direction: row;
+    
+    div {
+        margin: 20px;
+        text-align: center;
+        font-size: .9em;
+    }
+
+    .scientific {
+        font-style: italic;
+    }
+}

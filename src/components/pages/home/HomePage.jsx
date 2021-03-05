@@ -4,7 +4,6 @@ import Header from '../../reusable/header';
 function HomePage() {
   return (
     <>
-      <Header />
       <div>
           Hello I am the Home Page  
       </div>

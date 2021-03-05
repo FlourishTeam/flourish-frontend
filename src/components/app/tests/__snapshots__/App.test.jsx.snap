@@ -22,5 +22,8 @@ exports[`App component renders App 1`] = `
       />
     </svg>
   </div>
+  <div>
+    Hello I am the Home Page
+  </div>
 </DocumentFragment>
 `;

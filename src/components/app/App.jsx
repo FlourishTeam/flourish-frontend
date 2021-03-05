@@ -1,10 +1,6 @@
 /* eslint-disable max-len */
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import HomePage from '../../components/pages/home/HomePage';
 import DetailsPage from '../../components/pages/details/DetailsPage';
@@ -17,14 +13,17 @@ export default function App() {
   return (
     <>
       <Router>
+        <Header />
         <Switch>
-          <Header>
-            <Route exact path="/" component={HomePage} />
-            <Route exact path="/details" component={DetailsPage} />
-            <Route exact path="/myPlants" component={MyPlantsPage} />
-            <Route exact path="/search" component={SearchPage} />
-            <Route exact path="/myCareHistoryPage" component={MyCareHistoryPage} />
-          </Header>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/details" component={DetailsPage} />
+          <Route exact path="/myPlants" component={MyPlantsPage} />
+          <Route exact path="/search" component={SearchPage} />
+          <Route
+            exact
+            path="/myCareHistoryPage"
+            component={MyCareHistoryPage}
+          />
         </Switch>
       </Router>
     </>

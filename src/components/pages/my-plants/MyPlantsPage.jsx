@@ -1,11 +1,14 @@
 import React from 'react';
+import MyPlantList from './MyPlantsList';
+// import MySearch from './my-search/MySearch';
 
-function MyPlantsPage() {
+const MyPlantsPage = () => {
+
   return (
-    <div>
-            Hello I am my plants page.
-    </div>
+    <MyPlantList 
+    
+    />
   );
-}
+};
 
 export default MyPlantsPage;

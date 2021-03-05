@@ -1,34 +1,32 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import MyPlant from './MyPlant';
 import { Link } from 'react-router-dom';
+import uuid from 'react-uuid';
+import { useMyPlants } from '../../../state/MyPlantsContext';
 
 
-const MyPlantList = ({ plants }) => {
-  const listElement = plants.map((plant) => (
+const MyPlantList = () => {
+  const { myPlants } = useMyPlants();
+  const listElement = myPlants.map((plant) => {
 
-    <Link key={plant.name} to={`/my-plant-detail/${plant.id}`}>
-      <li key={plant.name}>
+    return (
 
-        <MyPlant 
-          name={plant.name}
-          image={plant.image}
-        />
+      <li key={uuid()}>
+        <Link  to={`/myPlants/${plant.common_name}`}>
 
+          <MyPlant 
+            name={plant.common_name}
+          // image={plant.image}
+          />
+
+        </Link>
       </li>
-    </Link>
-  ));
+    
+    );
+  });
 
   return <ul data-testid="plants">{listElement}</ul>;
-};
-
-MyPlantList.propTypes = {
-  plants: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired
-    })
-  )
 };
 
 export default MyPlantList;

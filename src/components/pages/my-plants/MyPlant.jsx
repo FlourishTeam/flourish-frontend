@@ -1,27 +1,27 @@
 /* eslint-disable max-len */
 import React from 'react';
 import PropTypes from 'prop-types';
+// import RemoveFromCollection from '../../reusable/collection/RemoveFromCollection';
 
 
-const MyPlant = ({ name, image, handleDelete }) => (
+const MyPlant = ({ name, image }) => (
   <div>
-  <figure>
-    <img src={image} alt={name}/>
+    <figure>
+      <img src={image} alt={name}/>
 
-    <figcaption>
-      <p>{name}</p>
-    </figcaption>
+      <figcaption>
+        <p>{name}</p>
+      </figcaption>
     
-  </figure>
-  <button onClick={handleDelete}>`Remove ${name} from your collection.`</button>
+    </figure>
+    {/* <RemoveFromCollection /> */}
   </div>
 
 );
 
 MyPlant.propTypes = {
   name: PropTypes.string.isRequired,
-  image:PropTypes.string.isRequired,
-  onClick:PropTypes.func.isRequired
+  // image:PropTypes.string.isRequired,
 };
 
 export default MyPlant;

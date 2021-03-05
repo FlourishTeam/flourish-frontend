@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import MyPlant from './MyPlant';
+import MyPlant from '../MyPlant';
 
 describe('MyPlant component', () => {
   afterEach(() => cleanup());

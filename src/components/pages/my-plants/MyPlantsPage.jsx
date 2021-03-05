@@ -1,18 +1,18 @@
-// import React from 'react';
-// import PropTypes from 'prop-types';
-// import MyPlant from './MyPlant';
-// import MyPlantList from './MyPlantsList';
-// import MySearch from './my-search/MySearch';
+import React from 'react';
+import PropTypes from 'prop-types';
+import MyPlant from './MyPlant';
+import MyPlantList from './MyPlantsList';
+import MySearch from './my-search/MySearch';
 
-// const MyPlantsPage = () => {
+const MyPlantsPage = () => {
   
 
-//   return (
-//     <MyPlantList 
+  return (
+    <MyPlantList 
     
-//     />
-//   )
-// } 
+    />
+  )
+} 
 
-// export default MyPlantsPage;
+export default MyPlantsPage;
 

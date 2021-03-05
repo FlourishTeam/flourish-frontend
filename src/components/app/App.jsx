@@ -13,22 +13,22 @@ import { MyPlantProvider } from '../../state/MyPlantsContext';
 export default function App() {
   return (
     <>
-      <MyPlantProvider>
-        <Router>
+      <Router>
+        <MyPlantProvider>
           <Header />
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route exact path="/details" component={DetailsPage} />
-            <Route exact path="/myPlants" component={MyPlantsPage} />
+            <Route exact path="/my-plants" component={MyPlantsPage} />
             <Route exact path="/search" component={SearchPage} />
             <Route
               exact
-              path="/myCareHistoryPage"
+              path="/my-care-history-page"
               component={MyCareHistoryPage}
             />
           </Switch>
-        </Router>
-      </MyPlantProvider>
+        </MyPlantProvider>
+      </Router>
     </>
   );
 }

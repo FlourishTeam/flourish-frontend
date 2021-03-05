@@ -206,7 +206,7 @@ export const data = [
       bloom_size: '',
     },
     planting: {
-      temperature_range: '10 to 22C (50 to 72F',
+      temperature_range: '10 to 22C (50 to 72F)',
       placement: 'Partial shade, dappled shade',
       humidity_level: 'Moderate',
       substrate_recommendation:

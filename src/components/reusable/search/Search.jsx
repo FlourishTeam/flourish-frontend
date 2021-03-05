@@ -1,17 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import useSearchResults from '../../../hooks/useSearchResults';
 
-const Search = ({ onSubmit }) => {
+const Search = () => {
+  const { searchQuery, handleChange } = useSearchResults();
+
   return (
     <div>
       <label htmlFor="searchInput">Search</label>
       <input 
         id="searchInput"
+        value= {searchQuery}
         type="text" 
         placeholder="search" 
-        onSubmit={ onSubmit }
+        onChange={ handleChange }
       />
-      {/* <button>Submit</button> */}
+      <button>Submit</button>
     </div>
   );
 };

@@ -63,10 +63,15 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "react-router-dom": "^5.2.0",
     "uuid": "^8.3.2"
 =======
     "react-router-dom": "^5.2.0"
 >>>>>>> 85be14ec8c6973960e3bd2c9b19050543156b551
+=======
+    "react-router-dom": "^5.2.0",
+    "react-uuid": "^1.0.2"
+>>>>>>> 7b908c9e034c3f207d4d2e76f4ffa995ef743117
   }
 }

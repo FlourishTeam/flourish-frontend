@@ -1,11 +1,17 @@
 import React from 'react';
+import Search from '../../reusable/search/Search';
+import PlantList from './PlantList';
 
-function SearchPage() {
+const SearchPage = () => {
+  // renders Search
+  // renders PlantList
   return (
     <div>
-            Hello I am Search Page.
+      Search Page
+      <Search />
+      <PlantList />
     </div>
   );
-}
+};
 
 export default SearchPage;

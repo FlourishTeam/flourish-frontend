@@ -11,9 +11,8 @@ const MyPlantList = () => {
   const listElement = myPlants.map((plant) => {
 
     return (
-
       <li key={uuid()}>
-        <Link  to={`/myPlants/${plant.common_name}`}>
+        <Link  to={`/my-plants/${plant.common_name}`}>
 
           <MyPlant 
             name={plant.common_name}
@@ -22,7 +21,6 @@ const MyPlantList = () => {
 
         </Link>
       </li>
-    
     );
   });
 

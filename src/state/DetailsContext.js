@@ -7,7 +7,10 @@ export const DetailsContext = createContext(null);
 
 export const DetailsProvider = ({ children }) => {
   const [loading, setLoading]  = useState(true);
+  // 
   const [plant, setPlant] = useState(data[0]);
+
+  // uncomment when fetch by plantById is added
 
   // useEffect(() => {
   //   // replace data with API fetch plantById
@@ -20,7 +23,8 @@ export const DetailsProvider = ({ children }) => {
   
   return (
     <DetailsContext.Provider value={{ plant, loading }}>
-      {loading ? <Loading /> : children}
+      {/* remove ! when API fetch plantById is added */}
+      {!loading ? <Loading /> : children}
     </DetailsContext.Provider>
   );
 };

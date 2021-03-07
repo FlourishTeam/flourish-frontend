@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        border: 2px inset #ccc;
+        padding: 2px;
+    }
+
+    .searchInput, .photoMode, .submitButton {
+        height: 70px;
+        border: none;
+        outline-width: 0;
+        margin: 5px;
+    }
+
+    .searchInput {
+        font-size: 2rem;
+    }
+
+    .submitButton {
+        width: 35px;
+        opacity: 0.8;
+        background: none;
+    }
+
+    .uploaderContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fileContainer > img {
+        display: none;
+    }
+}

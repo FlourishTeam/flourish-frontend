@@ -1,13 +1,13 @@
 import React from 'react';
-function HomePage() {
+import Search from '../../reusable/search/Search';
+
+const HomePage = () => {
   return (
     <>
-      <div>
-          Hello I am the Home Page  
-      </div>
+      <div>Hello I am the Home Page</div>
+      <Search />
     </>
   );
-}
+};
 
 export default HomePage;
-

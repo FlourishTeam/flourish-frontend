@@ -10,11 +10,11 @@ const MyPlantList = () => {
   const listElement = myPlants.map((plant) => {
     return (
       <li key={uuid()} className={styles.plantListItem}>
-        <Link to={`/my-plants/${plant.common_name}`}>
-          <MyPlant
-            name={plant.common_name}
-            // image={plant.image}
-          />
+        <Link
+          to={`/my-plants/${plant.common_name}`}
+          style={{ textDecoration: 'none', color: 'black' }}
+        >
+          <MyPlant {...plant} />
         </Link>
       </li>
     );

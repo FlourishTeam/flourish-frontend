@@ -1,0 +1,9 @@
+.MyPlantsList {
+    display: flex;
+    flex-direction: column;
+
+    .plantListItem > a:link {
+        text-decoration: none;
+        color: black;
+    }
+}

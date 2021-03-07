@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useAuthError } from '../../state/AuthContext';
 
-const AuthForm = ({ title, authFn }) => {
+const AuthForm = ({ title, authFn, showLogin, showSignup }) => {
   const error = useAuthError;
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -30,13 +30,18 @@ const AuthForm = ({ title, authFn }) => {
           onChange={({ target }) => setPassword(target.value)} />
         <button>{title}</button>
       </form>
+      {
+        (showLogin) ? <div>Already have an account? <button onClick={showLogin}>Login Here.</button></div>
+          : <div>Want to create an account? <button onClick={showSignup}>Signup Here.</button></div>
+      }
     </>
   );
 };
 
 AuthForm.propTypes = {
   title: PropTypes.string.isRequired,
-  authFn: PropTypes.func.isRequired
+  authFn: PropTypes.func.isRequired,
+  triggerLogin: PropTypes.func.isRequired
 };
 
 export default AuthForm;

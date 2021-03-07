@@ -9,25 +9,30 @@ import SearchPage from '../pages/search/SearchPage';
 import MyCareHistoryPage from '../pages/care-history/MyCareHistoryPage';
 import Header from '../reusable/header/Header';
 import { MyPlantProvider } from '../../state/MyPlantsContext';
+import Signup from '../auth/Signup';
+import Login from '../auth/Login';
+import { AuthProvider } from '../../state/AuthContext';
 
 export default function App() {
   return (
     <>
       <Router>
-        <MyPlantProvider>
-          <Header />
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route exact path="/details" component={DetailsPage} />
-            <Route exact path="/my-plants" component={MyPlantsPage} />
-            <Route exact path="/search" component={SearchPage} />
-            <Route
-              exact
-              path="/my-care-history"
-              component={MyCareHistoryPage}
-            />
-          </Switch>
-        </MyPlantProvider>
+        <AuthProvider>
+          <MyPlantProvider>
+            <Header />
+            <Switch>
+              <Route exact path="/" component={HomePage} />
+              <Route exact path="/details" component={DetailsPage} />
+              <Route exact path="/my-plants" component={MyPlantsPage} />
+              <Route exact path="/search" component={SearchPage} />
+              <Route
+                exact
+                path="/my-care-history"
+                component={MyCareHistoryPage}
+              />
+            </Switch>
+          </MyPlantProvider>
+        </AuthProvider>
       </Router>
     </>
   );

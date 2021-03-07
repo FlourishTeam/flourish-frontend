@@ -9,15 +9,19 @@ const Details = ({
   synonyms,
   warnings,
   pests_diseases,
-  physical_characteristics,
+  height,
+  spread,
+  type,
+  flowering_period,
+  bloom_size,
   propagation,
 }) => {
   return (
     <div className={styles.Details}>
       <img src={image} alt={common_name} />
       {/* import ADD/REMOVE component */}
-      <p>{common_name}</p>
-      <p>{scientific_name}</p>
+      <div>{common_name}</div>
+      <div>{scientific_name}</div>
       {/* import MAINTENANCE LEVEL component */}
       {/* import CARE DETAILS component */}
       {/* ABOUT SECTION */}
@@ -27,11 +31,11 @@ const Details = ({
         <div>Common Pests and Diseases: {pests_diseases}</div>
         <ul>
         Physical Characteristics:
-          <li>Height: {physical_characteristics.height}</li>
-          <li>Spread: {physical_characteristics.spread}</li>
-          <li>Type: {physical_characteristics.type}</li>
-          <li>Flowering Period: {physical_characteristics.flowering_period}</li>
-          <li>Bloom Size: {physical_characteristics.bloom_size}</li>
+          <li>Height: {height}</li>
+          <li>Spread: {spread}</li>
+          <li>Type: {type}</li>
+          <li>Flowering Period: {flowering_period}</li>
+          <li>Bloom Size: {bloom_size}</li>
         </ul>
         <div>Propagation: {propagation}</div>
       </section>
@@ -46,13 +50,11 @@ Details.propTypes = {
   scientific_name: PropTypes.string.isRequired,
   pests_diseases: PropTypes.string.isRequired,
   warnings: PropTypes.string.isRequired,
-  physical_characteristics: PropTypes.shape({
-    height: PropTypes.string.isRequired,
-    spread: PropTypes.string.isRequired,
-    type: PropTypes.string.isRequired,
-    flowering_period: PropTypes.string.isRequired,
-    bloom_size: PropTypes.string.isRequired,
-  }).isRequired,
+  height: PropTypes.string.isRequired,
+  spread: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  flowering_period: PropTypes.string.isRequired,
+  bloom_size: PropTypes.string.isRequired,
   propagation: PropTypes.string.isRequired,
 };
 

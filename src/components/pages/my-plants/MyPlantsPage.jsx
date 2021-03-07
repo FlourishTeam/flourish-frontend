@@ -5,6 +5,7 @@ import MyPlantList from './MyPlantsList';
 const MyPlantsPage = () => {
 
   return (
+    
     <MyPlantList 
     
     />

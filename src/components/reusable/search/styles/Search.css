@@ -26,7 +26,6 @@
         outline-width: 0;
         margin: 5px;
         height: 99%;
-
     }
 
     .searchInput {
@@ -44,8 +43,6 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        z-index: 1;
-
     }
 
     .photoForm {

@@ -9,11 +9,13 @@ import SearchPage from '../pages/search/SearchPage';
 import MyCareHistoryPage from '../pages/care-history/MyCareHistoryPage';
 import Header from '../reusable/header/Header';
 import { MyPlantProvider } from '../../state/MyPlantsContext';
+import { DetailsProvider } from '../../state/DetailsContext';
 
 export default function App() {
   return (
     <>
       <Router>
+<<<<<<< HEAD
         <MyPlantProvider>
           <Header />
           <Switch>
@@ -28,6 +30,24 @@ export default function App() {
             />
           </Switch>
         </MyPlantProvider>
+=======
+        <DetailsProvider>
+          <MyPlantProvider>
+            <Header />
+            <Switch>
+              <Route exact path="/" component={HomePage} />
+              <Route exact path="/details" component={DetailsPage} />
+              <Route exact path="/my-plants" component={MyPlantsPage} />
+              <Route exact path="/search" component={SearchPage} />
+              <Route
+                exact
+                path="/my-care-history"
+                component={MyCareHistoryPage}
+              />
+            </Switch>
+          </MyPlantProvider>
+        </DetailsProvider>
+>>>>>>> 022288e5617da42c08831c8529e6a6ea3236ed47
       </Router>
     </>
   );

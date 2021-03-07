@@ -7,7 +7,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
   >
     <li>
       <a
-        href="/myPlants/Amaryllis"
+        href="/my-plants/Amaryllis"
       >
         <div>
           <figure>
@@ -25,7 +25,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Pothos"
+        href="/my-plants/Pothos"
       >
         <div>
           <figure>
@@ -43,7 +43,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Congo Spear"
+        href="/my-plants/Congo Spear"
       >
         <div>
           <figure>
@@ -61,7 +61,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Canadian Ivy"
+        href="/my-plants/Canadian Ivy"
       >
         <div>
           <figure>
@@ -79,7 +79,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Rubber Plant"
+        href="/my-plants/Rubber Plant"
       >
         <div>
           <figure>
@@ -97,7 +97,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Parlor Palm"
+        href="/my-plants/Parlor Palm"
       >
         <div>
           <figure>
@@ -115,7 +115,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Chinese Evergreen"
+        href="/my-plants/Chinese Evergreen"
       >
         <div>
           <figure>
@@ -133,7 +133,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Zebra Plant (Goeppertia sp.)"
+        href="/my-plants/Zebra Plant (Goeppertia sp.)"
       >
         <div>
           <figure>
@@ -151,7 +151,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Chinese Money Plant"
+        href="/my-plants/Chinese Money Plant"
       >
         <div>
           <figure>
@@ -169,7 +169,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Heart Leaf Vine"
+        href="/my-plants/Heart Leaf Vine"
       >
         <div>
           <figure>
@@ -187,7 +187,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Bonnie Spider Plant"
+        href="/my-plants/Bonnie Spider Plant"
       >
         <div>
           <figure>
@@ -205,7 +205,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Swiss Cheese Plant"
+        href="/my-plants/Swiss Cheese Plant"
       >
         <div>
           <figure>
@@ -223,7 +223,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/ZZ Plant"
+        href="/my-plants/ZZ Plant"
       >
         <div>
           <figure>
@@ -241,7 +241,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Janet Craig Dracaena"
+        href="/my-plants/Janet Craig Dracaena"
       >
         <div>
           <figure>
@@ -259,7 +259,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Corn Plant"
+        href="/my-plants/Corn Plant"
       >
         <div>
           <figure>
@@ -277,7 +277,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Aluminum Plant"
+        href="/my-plants/Aluminum Plant"
       >
         <div>
           <figure>
@@ -295,7 +295,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Areca Palm"
+        href="/my-plants/Areca Palm"
       >
         <div>
           <figure>
@@ -313,7 +313,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Arrowhead Plant"
+        href="/my-plants/Arrowhead Plant"
       >
         <div>
           <figure>
@@ -331,7 +331,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Asparagus Fern"
+        href="/my-plants/Asparagus Fern"
       >
         <div>
           <figure>
@@ -349,7 +349,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Baby Rubber Plant"
+        href="/my-plants/Baby Rubber Plant"
       >
         <div>
           <figure>
@@ -367,7 +367,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Baby's Tears"
+        href="/my-plants/Baby's Tears"
       >
         <div>
           <figure>
@@ -385,7 +385,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Bird's Nest Fern"
+        href="/my-plants/Bird's Nest Fern"
       >
         <div>
           <figure>
@@ -403,7 +403,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Boston Fern"
+        href="/my-plants/Boston Fern"
       >
         <div>
           <figure>
@@ -421,7 +421,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Angel Wings"
+        href="/my-plants/Angel Wings"
       >
         <div>
           <figure>
@@ -439,7 +439,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Orbifolia Prayer Plant"
+        href="/my-plants/Orbifolia Prayer Plant"
       >
         <div>
           <figure>
@@ -457,7 +457,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Rattlesnake Plant"
+        href="/my-plants/Rattlesnake Plant"
       >
         <div>
           <figure>
@@ -475,7 +475,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Cape Sundew"
+        href="/my-plants/Cape Sundew"
       >
         <div>
           <figure>
@@ -493,7 +493,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Cardboard Palm"
+        href="/my-plants/Cardboard Palm"
       >
         <div>
           <figure>
@@ -511,7 +511,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Watch Chain Plant"
+        href="/my-plants/Watch Chain Plant"
       >
         <div>
           <figure>
@@ -529,7 +529,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Creeping Fig"
+        href="/my-plants/Creeping Fig"
       >
         <div>
           <figure>
@@ -547,7 +547,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Elephant Ear"
+        href="/my-plants/Elephant Ear"
       >
         <div>
           <figure>
@@ -565,7 +565,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/English Ivy"
+        href="/my-plants/English Ivy"
       >
         <div>
           <figure>
@@ -583,7 +583,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Fiddle Leaf Fig"
+        href="/my-plants/Fiddle Leaf Fig"
       >
         <div>
           <figure>
@@ -601,7 +601,7 @@ exports[`MyPlantList component renders MyPlantList 1`] = `
     </li>
     <li>
       <a
-        href="/myPlants/Gold Dust Dracaena"
+        href="/my-plants/Gold Dust Dracaena"
       >
         <div>
           <figure>

@@ -4,6 +4,9 @@
   "description": "",
   "main": "dist/index.js",
   "jest": {
+    "setupFiles": [
+      "dotenv/config"
+    ],
     "setupFilesAfterEnv": [
       "@testing-library/jest-dom/extend-expect",
       "<rootDir>/src/setupTests.js"
@@ -14,7 +17,7 @@
     }
   },
   "scripts": {
-    "test": "jest --verbose",
+    "test": "jest --setupFiles dotenv/config --verbose",
     "test:watch": "npm run test -- --watch",
     "start": "webpack serve --hot --mode development --devtool eval-source-map",
     "build": "webpack --devtool source-map"

@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 import PropTypes from 'prop-types';
-import RemoveFromCollection from '../../reusable/collection/RemoveFromCollection';
+// import RemoveFromCollection from '../../reusable/collection/RemoveFromCollection';
 
 
 const MyPlant = ({ name, image }) => (
@@ -14,7 +14,7 @@ const MyPlant = ({ name, image }) => (
       </figcaption>
     
     </figure>
-    <RemoveFromCollection />
+    {/* <RemoveFromCollection /> */}
   </div>
 
 );

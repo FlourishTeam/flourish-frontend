@@ -27,7 +27,7 @@ export default function App() {
                 <Route exact path="/search" component={SearchPage} />
                 <Route
                   exact
-                  path="/my-care-history"
+                  path="/history"
                   component={MyCareHistoryPage}
                 />
               </Switch>

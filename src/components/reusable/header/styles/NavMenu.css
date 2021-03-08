@@ -1,0 +1,13 @@
+.icon {
+    height: 4rem;
+    float: left;
+    margin-top: .5rem;
+    margin-left: .5rem;
+    }
+    .menuIconOpen, .menuIconClose {
+        height: 3rem;
+        float: right;
+        margin: 1rem;
+    }
+    
+

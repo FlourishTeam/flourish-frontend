@@ -1,14 +1,33 @@
 import React from 'react';
+import BeginnerIcon from '../../../images/maintenance-level-beginner.png';
+import AverageIcon from '../../../images/maintenance-level-average.png';
+import IntermediateIcon from '../../../images/maintenance-level-intermediate.png';
+import styles from './styles/MaintenanceLevel.css';
 
 function MaintenanceLevel({ maintenanceLevel }) {
   if(maintenanceLevel === 'Suitable for Beginners') {
-    return <img src="./images/maintenance-level-beginner" alt="beginner" />;
+    return <div className={styles.container}>
+      <img 
+        src={BeginnerIcon} 
+        alt="beginner"
+        height="20em" />
+    </div>;
 
   } else if(maintenanceLevel === 'Average Care') {
-    return <img src="./images/maintenance-level-average" alt="average" />;
+    return <div className={styles.container}>
+      <img 
+        src={AverageIcon} 
+        alt="average"
+        height="20em" />
+    </div>;
 
   } else if(maintenanceLevel === 'Intermediate Care') {
-    return <img src="./images/maintenance-level-intermediate" alt="intermediate" />;
+    return <div className={styles.container}>
+      <img 
+        src={IntermediateIcon} 
+        alt="intermediate"
+        height="20em" />
+    </div>;
 
   } else return <div>N/A</div>;
 }

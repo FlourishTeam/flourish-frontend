@@ -1,17 +1,16 @@
 import React from 'react';
-import { useLoading } from '../../../hooks/useLoading';
-import Loading from '../../reusable/loading/Loading';
+
+import { usePlantById } from '../../../state/DetailsContext';
 import Details from './Details';
 import styles from './styles/DetailsPage.css';
 
 const DetailsPage = () => {
-  const { loading } = useLoading();
 
-  if(loading) return <Loading />;
+  const { plant } = usePlantById();
 
   return (
     <div className={styles.DetailsPage}>
-      <Details />
+      <Details {...plant}/>
     </div>
   );
 };

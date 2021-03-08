@@ -2,22 +2,33 @@
     background-color: rgb(205, 205, 205);
     height: 5rem;
     margin: -1%;
-    margin-bottom: 40px;
+ }
 
-    .icon {
-        height: 4rem;
-        float: left;
-        margin-top: .5rem;
-        margin-left: .5rem;
-        }
-
-        .menuIcon {
-            height: 3rem;
-            float: right;
-            margin: 1rem;
-        }
-        
+.icon {
+    height: 4rem;
+    float: left;
+    margin-top: .5rem;
+    margin-left: .5rem;
 }
+
+.headerRight {
+    float: right;
+}
+
+.menuIcon {
+    height: 3rem;
+    float: right;
+    margin: 1rem;
+    margin-bottom: 40px;
+}
+
+.loginButton {
+    height: 3rem;
+    float: left;
+    margin: 1rem;
+}
+        
+
 
 
 

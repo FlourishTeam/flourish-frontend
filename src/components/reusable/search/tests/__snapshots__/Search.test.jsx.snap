@@ -2,21 +2,31 @@
 
 exports[`Search component renders Search 1`] = `
 <DocumentFragment>
-  <div>
-    <label
-      for="searchInput"
-    >
-      Search
-    </label>
-    <input
-      id="searchInput"
-      placeholder="search"
-      type="text"
-      value=""
-    />
-    <button>
-      Submit
-    </button>
+  <div
+    class="Search"
+  >
+    <form>
+      <input
+        class="searchInput"
+        placeholder="search"
+        type="text"
+        value=""
+      />
+      <button
+        class="photoMode"
+      >
+        <img
+          src="images/photo-icon.svg"
+        />
+      </button>
+      <button
+        class="submitButton"
+      >
+        <img
+          src="images/search-icon.svg"
+        />
+      </button>
+    </form>
   </div>
 </DocumentFragment>
 `;

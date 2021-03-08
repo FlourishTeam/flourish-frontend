@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles/Header.css';
 import flourishIcon from '../../../images/flourish-icon-2.png';
-import NavMenu from './NavMenu';
+import NavMenu from './NavMenu.jsx';
 
 function Header() {
   return (

@@ -1,13 +1,64 @@
 .icon {
     height: 4rem;
-    float: left;
+    float: right;
     margin-top: .5rem;
     margin-left: .5rem;
     }
-    .menuIconOpen, .menuIconClose {
-        height: 3rem;
+   
+    .sideBar, .menuBars {
         float: right;
-        margin: 1rem;
+            svg {
+                width: 2rem;
+            }
     }
-    
+    .navMenuItems, .menuBars {
+        display: flex;
+        flex-direction: column;
+        background-color: grey;
+
+    }
+
+    .navMenuItems {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        svg {
+            height: 1rem;
+        }
+    }
+
+  
+.navMenu, .menuItems {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    height: 40rem;
+    width: 10rem;
+    float: right;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    float: right;
+}
+
+.menuIconOpen, .menuIconClose {
+    height: 3rem;
+    float: left;
+    margin: 1rem;
+}
+
+a {
+    float: inline-start;
+}
+
+.menuBars {
+    height: 6rem;
+    align-self: center;
+    float: inline-start;
+}
 

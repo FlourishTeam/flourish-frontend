@@ -1,46 +1,36 @@
 import React from 'react';
-// import { usePlantById } from '../../../state/DetailsContext';
-
-import Loading from '../../reusable/loading/Loading';
 // import uuid from 'react-uuid';
 import MaintenanceLevel from '../../reusable/maintenance/MaintenanceLevel';
 import CareDetails from '../../reusable/care/CareDetails';
-import CareLogList from '../care-history/CareLogList';
+import CareLogList from '../../reusable/care/CareLog';
 import CareForm from '../care-history/care-notes/care-form/CareForm';
 import MyPlantNotes from '../care-history/care-notes/MyPlantNotes';
 // import MyPlant from '../my-plants/MyPlant';
-// import RemoveFromCollection from '../../reusable/collection/RemoveFromCollection';
 
+// import { useMyPlants } from '../../../state/MyPlantsContext';
 
-// import { data } from '../hooks/fake-data';
+export default function MyCareHistoryPage() {
 
-function MyCareHistoryPage() {
-  // const { myPlantById } = usePlantById();
-  // const listElement = myPlantById.map((plant) => {
-  return (
-    <>
-      {/* <li key={uuid()}> */}
- 
-      <div>
-      Hello I am the History Page.
-        <Loading />
-        {/* <MyPlant
-              image={plant.image}
-              name={plant.common_name}
-            /> */}
-        <MaintenanceLevel />
-        <CareDetails />
-        <MyPlantNotes />
-        <CareForm />
-        <CareLogList />
-        {/* <RemoveFromCollection /> */}
-      </div>
-      {/* </li> */}
-    </>
-  );
-  // });
+  // const { myPlants } = useMyPlants();
+  const listElement = myPlants.map((plant) => {
 
-  // return <ul>{listElement}</ul>;
+    return (
+      <>
+        {/* <li key={uuid()}>
+          <MyPlant 
+            name={plant.common_name}
+            image={plant.image}
+          />
+        </li> */}
+        <ul data-testid="plants">{listElement}</ul>
+        <div>
+          <MaintenanceLevel />
+          <CareDetails />
+          <MyPlantNotes />
+          <CareForm />
+          <CareLogList />
+        </div>
+      </>
+    );
+  });
 }
-
-export default MyCareHistoryPage;

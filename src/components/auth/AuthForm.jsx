@@ -36,7 +36,7 @@ const AuthForm = ({ title, signupFn, loginFn, showLogin, showSignup }) => {
               value={name}
               placeholder="Name"
               onChange={({ target }) => setName(target.value)} />
-            : <div className={styles.greeting}>Welcome Back!</div>
+            : <></>
         }
         <input 
           className={styles.formInput}

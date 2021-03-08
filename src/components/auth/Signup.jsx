@@ -3,7 +3,7 @@ import { useLogin, useSignup } from '../../state/AuthContext';
 import AuthForm from './AuthForm';
 import styles from '../reusable/header/styles/Overlay.css';
 
-const Signup = () => {
+const Signup = ({ open }) => {
   const signup = useSignup();
   const login = useLogin();
   const [state, setState] = useState('signup');

@@ -13,12 +13,12 @@ function Header() {
       
       <div className={styles.headerRight}>
         <Popup
-          className={overlayStyles.overlay}
           modal
           closeOnDocumentClick={true}
-          // overlayStyle={{ background: 'white' }}
-          trigger={open => <button open={open} className={styles.loginButton}>Sign Up / Log In</button>}>
-          { <Signup />}
+          // overlayStyle={{ background: 'white', opacity: '0.5' }}
+          trigger={open => <button open={open} className={styles.loginButton}>Sign Up / Log In</button>
+          }>
+          { <Signup open={open} />}
         </Popup>
         
         <svg className={styles.menuIcon} fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" /></svg>

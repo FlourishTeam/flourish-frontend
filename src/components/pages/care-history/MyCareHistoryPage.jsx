@@ -6,13 +6,13 @@ import CareLogList from '../../pages/care-history/CareLogList';
 import CareForm from '../care-history/care-notes/care-form/CareForm';
 import MyPlantNotes from '../care-history/care-notes/MyPlantNotes';
 import Loading from '../../reusable/loading/Loading';
+import { useMyPlants } from '../../../state/MyPlantsContext';
 // import MyPlant from '../my-plants/MyPlant';
 // import { useMyPlants } from '../../../state/MyPlantsContext';
 
-export default function MyCareHistoryPage() {
+export default function MyCareHistoryPage({ image, commonName, scientificName, maintenanceLevel }) {
 
-  // const { myPlants } = useMyPlants();
-  // const listElement = myPlants.map((plant) => {
+  const { myPlants } = useMyPlants();
   
   return (
     <>
@@ -26,7 +26,7 @@ export default function MyCareHistoryPage() {
       <div>
         Hello I am the history Page
         <Loading />
-        <MaintenanceLevel />
+        <MaintenanceLevel maintenanceLevel={maintenanceLevel} />
         <CareDetails />
         <MyPlantNotes />
         <CareForm />

@@ -4,6 +4,9 @@
   "description": "",
   "main": "dist/index.js",
   "jest": {
+    "setupFiles": [
+      "dotenv/config"
+    ],
     "setupFilesAfterEnv": [
       "@testing-library/jest-dom/extend-expect",
       "<rootDir>/src/setupTests.js"
@@ -14,7 +17,7 @@
     }
   },
   "scripts": {
-    "test": "jest --verbose",
+    "test": "jest --setupFiles dotenv/config --verbose",
     "test:watch": "npm run test -- --watch",
     "start": "webpack serve --hot --mode development --devtool eval-source-map",
     "build": "webpack --devtool source-map"
@@ -63,10 +66,11 @@
     "msw": "^0.27.0",
     "ndb": "^1.1.5",
     "react": "^17.0.1",
+    "react-bootstrap": "^1.5.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
     "react-uuid": "^1.0.2",
-    "uuid": "^8.3.2"
+    "reactjs-popup": "^2.0.4"
   }
 }

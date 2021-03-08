@@ -5,7 +5,8 @@
   },
   "parser": "babel-eslint",
   "globals": {
-    "process": true
+    "process": true,
+    "global": true
   },
   "env": {
     "es6": true,

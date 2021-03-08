@@ -9,21 +9,242 @@ exports[`App component renders App 1`] = `
       class="icon"
       src="/path/image"
     />
-    <svg
-      class="menuIcon"
-      fill="currentColor"
-      viewBox="0 0 20 20"
-      xmlns="http://www.w3.org/2000/svg"
+    <div>
+      <div
+        class="navbar"
+      >
+        <a
+          class="menuBars"
+          href="/"
+        >
+          <svg
+            class="menuIconOpen"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </a>
+      </div>
+      <nav
+        class="navMenu active"
+      >
+        <ul
+          class="navMenuItems"
+        >
+          <li
+            class="navBarToggle"
+          >
+            <a
+              class="menuBars"
+              href="/"
+            >
+              <svg
+                class="menuIconClose"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 18L18 6M6 6l12 12"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </a>
+          </li>
+          <ul>
+            <li
+              class="navText"
+            />
+            <a
+              href="/"
+            >
+              <svg
+                class="homeIcon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+              <span>
+                Home
+              </span>
+            </a>
+          </ul>
+          <ul>
+            <li
+              class="navText"
+            />
+            <a
+              href="/search"
+            >
+              <svg
+                class="searchIcon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+              <span>
+                Search
+              </span>
+            </a>
+          </ul>
+          <ul>
+            <li
+              class="navText"
+            />
+            <a
+              href="/details"
+            >
+              <svg
+                class="listIcon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+              <span>
+                Plant Details
+              </span>
+            </a>
+          </ul>
+          <ul>
+            <li
+              class="navText"
+            />
+            <a
+              href="/my-plants"
+            >
+              <svg
+                class="listIcon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+              <span>
+                My Plant List
+              </span>
+            </a>
+          </ul>
+          <ul>
+            <li
+              class="navText"
+            />
+            <a
+              href="/history"
+            >
+              <svg
+                class="listIcon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+              <span>
+                My Care History
+              </span>
+            </a>
+          </ul>
+        </ul>
+      </nav>
+    </div>
+    <div
+      class="headerRight"
     >
-      <path
-        clip-rule="evenodd"
-        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-        fill-rule="evenodd"
-      />
-    </svg>
+      <button
+        aria-describedby="popup-1"
+        class="loginButton"
+      >
+        Sign Up / Log In
+      </button>
+      <svg
+        class="menuIcon"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
   </div>
-  <div>
-    Hello I am the Home Page
+  <div
+    class="HomePage"
+  >
+    <div
+      class="Search"
+    >
+      <form>
+        <input
+          class="searchInput"
+          placeholder="search"
+          type="text"
+          value=""
+        />
+        <button
+          class="photoMode"
+        >
+          <img
+            src="images/photo-icon.svg"
+          />
+        </button>
+        <button
+          class="submitButton"
+        >
+          <img
+            src="images/search-icon.svg"
+          />
+        </button>
+      </form>
+    </div>
   </div>
 </DocumentFragment>
 `;

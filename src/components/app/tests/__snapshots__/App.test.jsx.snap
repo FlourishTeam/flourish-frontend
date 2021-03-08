@@ -13,6 +13,7 @@ exports[`App component renders App 1`] = `
       class="headerRight"
     >
       <button
+        aria-describedby="popup-1"
         class="loginButton"
       >
         Sign Up / Log In

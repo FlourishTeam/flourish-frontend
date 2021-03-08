@@ -13,6 +13,7 @@ export default function MyCareHistoryPage() {
 
   // const { myPlants } = useMyPlants();
   // const listElement = myPlants.map((plant) => {
+  
   return (
     <>
       {/* <li key={(plant)}>

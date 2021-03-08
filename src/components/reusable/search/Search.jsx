@@ -1,27 +1,52 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import styles from './styles/Search.css';
 import useSearchResults from '../../../hooks/useSearchResults';
+import usePhotoUploader from '../../../hooks/usePhotoUploader';
 
 const Search = () => {
   const { searchQuery, handleChange } = useSearchResults();
+  const {
+    photoMode,
+    setPhotoMode,
+    pictureUpload,
+    handleUpload,
+    handlePreview,
+  } = usePhotoUploader();
 
   return (
-    <div>
-      <label htmlFor="searchInput">Search</label>
-      <input 
-        id="searchInput"
-        value= {searchQuery}
-        type="text" 
-        placeholder="search" 
-        onChange={ handleChange }
-      />
-      <button>Submit</button>
+    <div className={styles.Search}>
+      {photoMode ? (
+        <form onSubmit={handleUpload} className={styles.photoForm}>
+          <div className={styles.uploaderContainer}>
+            <input type="file" name="uploader" onChange={handlePreview} />
+            <button>Submit</button>
+          </div>
+          {pictureUpload && (
+            <img className={styles.uploadThumbnail} src={pictureUpload} />
+          )}
+        </form>
+      ) : (
+        <form onSubmit={(e) => e.preventDefault()}>
+          <input
+            className={styles.searchInput}
+            value={searchQuery}
+            type="text"
+            placeholder="search"
+            onChange={handleChange}
+          />
+          <button
+            className={styles.photoMode}
+            onClick={() => setPhotoMode(true)}
+          >
+            <img src="images/photo-icon.svg" />
+          </button>
+          <button className={styles.submitButton}>
+            <img src="images/search-icon.svg" />
+          </button>
+        </form>
+      )}
     </div>
   );
-};
-
-Search.propTypes = {
-  onSubmit: PropTypes.func.isRequired
 };
 
 export default Search;

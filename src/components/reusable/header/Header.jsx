@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './styles/Header.css';
-import overlayStyles from './styles/Overlay.css';
 import flourishIcon from '../../../images/flourish-icon-2.png';
 import Popup from 'reactjs-popup';
 import Signup from '../../auth/Signup';

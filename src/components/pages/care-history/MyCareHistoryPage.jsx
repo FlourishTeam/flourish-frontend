@@ -7,7 +7,6 @@ import CareForm from '../care-history/care-notes/care-form/CareForm';
 import MyPlantNotes from '../care-history/care-notes/MyPlantNotes';
 import Loading from '../../reusable/loading/Loading';
 // import MyPlant from '../my-plants/MyPlant';
-
 // import { useMyPlants } from '../../../state/MyPlantsContext';
 
 export default function MyCareHistoryPage() {

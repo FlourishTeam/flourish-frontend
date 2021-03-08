@@ -18,10 +18,11 @@ export const AuthProvider = ({ children }) => {
       .finally(() => setLoading(false));
   }, []);
 
-  const signup = (email, password) => {
-    return postSignup(email, password)
+  const signup = (name, email, password) => {
+    return postSignup(name,  email, password)
       .then(user => setSession(user))
       .then(() => history.push('/'))
+      .then(console.log('CONTEXT', name, email, password))
       .catch(err => setError(err));
   };
 

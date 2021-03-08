@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLogin, useSignup } from '../../state/AuthContext';
 import AuthForm from './AuthForm';
-import Login from './Login';
+import styles from '../reusable/header/styles/Overlay.css';
 
 const Signup = () => {
   const signup = useSignup();
@@ -17,12 +17,12 @@ const Signup = () => {
   };
 
   return (
-    <> 
+    <div className={styles.popupContainer}> 
       {
         state === 'signup' && (
           <AuthForm 
             title="Signup" 
-            authFn={signup} 
+            signupFn={signup} 
             showLogin={showLogin}
           />
         )}
@@ -30,11 +30,11 @@ const Signup = () => {
         state === 'login' && (
           <AuthForm 
             title="Login" 
-            authFn={login} 
+            loginFn={login} 
             showSignup={showSignup}
           />
         )}
-    </>
+    </div>
   );
 };
 

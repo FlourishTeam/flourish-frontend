@@ -1,47 +1,84 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useAuthError } from '../../state/AuthContext';
+import styles from '../reusable/header/styles/Overlay.css';
 
-const AuthForm = ({ title, authFn, showLogin, showSignup }) => {
+const AuthForm = ({ title, signupFn, loginFn, showLogin, showSignup }) => {
   const error = useAuthError;
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = e => {
+  const handleSignupSubmit = e => {
     e.preventDefault();
-    authFn(email, password);
+    signupFn(name, email, password);
   };
 
+  // const handleLoginSubmit = e => {
+  //   e.preventDefault();
+  //   loginFn(email, password);
+  //   console.log(email, password);
+  // };
+
   return (
-    <>
-      <div>{title}</div>
+    <div className={styles.formContainer}>
+      <div className={styles.title}>{title}</div>
       {error && <p>{error.message}</p>}
 
-      <form onSubmit={handleSubmit}>
-        <input
+      <form 
+        className={styles.form}
+        onSubmit={handleSignupSubmit}>
+        {
+          (showLogin) 
+            ? <input 
+              className={styles.formInput}
+              type="name"
+              value={name}
+              placeholder="Name"
+              onChange={({ target }) => setName(target.value)} />
+            : <div className={styles.greeting}>Welcome Back!</div>
+        }
+        <input 
+          className={styles.formInput}
           type="email"
           value={email}
           placeholder="Email"
           onChange={({ target }) => setEmail(target.value)} />
-        <input
+        <input 
+          className={styles.formInput}
           type="password"
           value={password}
           placeholder="Password"
           onChange={({ target }) => setPassword(target.value)} />
-        <button>{title}</button>
+        <button className={styles.submitButton}>{title}</button>
       </form>
       {
-        (showLogin) ? <div>Already have an account? <button onClick={showLogin}>Login Here.</button></div>
-          : <div>Want to create an account? <button onClick={showSignup}>Signup Here.</button></div>
+        (showLogin) 
+          ? <div>Already have an account? 
+            <button 
+              className={styles.switch}
+              onClick={showLogin}>
+                Login Here.
+            </button>
+          </div>
+          : <div>Want to create an account? 
+            <button 
+              className={styles.switch}
+              onClick={showSignup}>
+                Signup Here.
+            </button>
+          </div>
       }
-    </>
+    </div>
   );
 };
 
 AuthForm.propTypes = {
   title: PropTypes.string.isRequired,
-  authFn: PropTypes.func.isRequired,
-  triggerLogin: PropTypes.func.isRequired
+  signupFn: PropTypes.func,
+  loginFn: PropTypes.func,
+  showLogin: PropTypes.func,
+  showSignup: PropTypes.func,
 };
 
 export default AuthForm;

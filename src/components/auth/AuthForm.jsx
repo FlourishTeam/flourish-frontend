@@ -14,11 +14,11 @@ const AuthForm = ({ title, signupFn, loginFn, showLogin, showSignup }) => {
     signupFn(name, email, password);
   };
 
-  // const handleLoginSubmit = e => {
-  //   e.preventDefault();
-  //   loginFn(email, password);
-  //   console.log(email, password);
-  // };
+  const handleLoginSubmit = e => {
+    e.preventDefault();
+    loginFn(email, password);
+    console.log(email, password);
+  };
 
   return (
     <div className={styles.formContainer}>

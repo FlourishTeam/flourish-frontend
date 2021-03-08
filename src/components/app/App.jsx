@@ -23,11 +23,7 @@ export default function App() {
               <Route exact path="/details" component={DetailsPage} />
               <Route exact path="/my-plants" component={MyPlantsPage} />
               <Route exact path="/search" component={SearchPage} />
-              <Route
-                exact
-                path="/my-care-history"
-                component={MyCareHistoryPage}
-              />
+              <Route exact path="/history" component={MyCareHistoryPage} />
             </Switch>
           </MyPlantProvider>
         </DetailsProvider>

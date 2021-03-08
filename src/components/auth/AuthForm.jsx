@@ -17,41 +17,56 @@ const AuthForm = ({ title, signupFn, loginFn, showLogin, showSignup }) => {
   const handleLoginSubmit = e => {
     e.preventDefault();
     loginFn(email, password);
-    console.log(email, password);
   };
 
   return (
     <div className={styles.formContainer}>
       <div className={styles.title}>{title}</div>
       {error && <p>{error.message}</p>}
-
-      <form 
-        className={styles.form}
-        onSubmit={handleSignupSubmit}>
-        {
-          (showLogin) 
-            ? <input 
+      {
+        (showLogin)
+          ? <form 
+            className={styles.form}
+            onSubmit={handleSignupSubmit}>
+            <input 
               className={styles.formInput}
               type="name"
               value={name}
               placeholder="Name"
               onChange={({ target }) => setName(target.value)} />
-            : <></>
-        }
-        <input 
-          className={styles.formInput}
-          type="email"
-          value={email}
-          placeholder="Email"
-          onChange={({ target }) => setEmail(target.value)} />
-        <input 
-          className={styles.formInput}
-          type="password"
-          value={password}
-          placeholder="Password"
-          onChange={({ target }) => setPassword(target.value)} />
-        <button className={styles.submitButton}>{title}</button>
-      </form>
+            <input 
+              className={styles.formInput}
+              type="email"
+              value={email}
+              placeholder="Email"
+              onChange={({ target }) => setEmail(target.value)} />
+            <input 
+              className={styles.formInput}
+              type="password"
+              value={password}
+              placeholder="Password"
+              onChange={({ target }) => setPassword(target.value)} />
+            <button className={styles.submitButton}>{title}</button>
+          </form>
+          : <form 
+            className={styles.form}
+            onSubmit={handleLoginSubmit}>
+            <input 
+              className={styles.formInput}
+              type="email"
+              value={email}
+              placeholder="Email"
+              onChange={({ target }) => setEmail(target.value)} />
+            <input 
+              className={styles.formInput}
+              type="password"
+              value={password}
+              placeholder="Password"
+              onChange={({ target }) => setPassword(target.value)} />
+            <button className={styles.submitButton}>{title}</button>
+          </form>
+
+      }
       {
         (showLogin) 
           ? <div>Already have an account? 

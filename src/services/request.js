@@ -1,4 +1,4 @@
-// const API_URL = process.env.REACT_APP_.API_URL;
+const API_URL = process.env.REACT_APP_API_URL;
 
 const WITHOUT_BODY_METHODS = ['GET', 'DELETE'];
 
@@ -9,7 +9,7 @@ const request = (path, method, body) => {
       'Content-Type': 'application/json'
     };
 
-  return fetch(`http://localhost:7890${path}`, {
+  return fetch(`${API_URL}${path}`, {
     method,
     headers,
     credentials: 'include',

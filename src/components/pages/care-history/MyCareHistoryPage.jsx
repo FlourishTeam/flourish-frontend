@@ -12,25 +12,25 @@ import MyPlantNotes from '../care-history/care-notes/MyPlantNotes';
 export default function MyCareHistoryPage() {
 
   // const { myPlants } = useMyPlants();
-  const listElement = myPlants.map((plant) => {
+  // const listElement = myPlants.map((plant) => {
 
-    return (
-      <>
-        {/* <li key={uuid()}>
+  return (
+    <>
+      {/* <li key={uuid()}>
           <MyPlant 
             name={plant.common_name}
             image={plant.image}
           />
-        </li> */}
-        <ul data-testid="plants">{listElement}</ul>
-        <div>
-          <MaintenanceLevel />
-          <CareDetails />
-          <MyPlantNotes />
-          <CareForm />
-          <CareLogList />
-        </div>
-      </>
-    );
-  });
+        // </li> */}
+      {/* // <ul data-testid="plants">{listElement}</ul> */}
+      <div>
+        <MaintenanceLevel />
+        <CareDetails />
+        <MyPlantNotes />
+        <CareForm />
+        <CareLogList />
+      </div>
+    </>
+  );
+  // });
 }

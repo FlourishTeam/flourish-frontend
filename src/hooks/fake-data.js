@@ -10,22 +10,18 @@ export const data = [
       'Grey Mould, Leaf Spot, Mosaic Virus, Red Blotch, Red Spider mites, Soft Bulb Rot, Sooty Mold',
     warnings:
       'Caution - leaves and roots are poisonous, do not consume. Toxic to pets.',
-    physical_characteristics: {
-      height: '18 to 24 inches',
-      spread: '8 to 12 inches',
-      type: 'Perennial (herb/forb)',
-      flowering_period: 'Late summer, early autumn',
-      bloom_size: '2 inches',
-    },
-    planting: {
-      temperature_range: '13 to 21C (55to 70F)',
-      placement: 'Full sun, filtered sun, partial shade',
-      humidity_level: 'Low',
-      substrate_recommendation:
+    height: '18 to 24 inches',
+    spread: '8 to 12 inches',
+    type: 'Perennial (herb/forb)',
+    flowering_period: 'Late summer, early autumn',
+    bloom_size: '2 inches',
+    temperature_range: '13 to 21C (55to 70F)',
+    placement: 'Full sun, filtered sun, partial shade',
+    humidity_level: 'Low',
+    substrate_recommendation:
         'Use an all-purpose or general purpose potting compost.',
-      potting_notes:
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 0.5 gallons or dimensions of approximately 7x5x6 inches.',
-    },
     watering:
       'Keep the substrate moist, but not water-logged, through spring months. A fortnightly watering schedule can usually be applied in spring. It is recommended to avoid watering the plant completely throughout the autumnal season. In winter time, maintain a degree of dryness in the top inch of substrate, without allowing the deeper substrate to fully dry out. A fortnightly watering is usually adequate for Amaryllis in the winter months. This species is tolerant of a wide range of water types and can be hydrated with rainwater, distilled or tap water.',
     propagation:
@@ -33,7 +29,7 @@ export const data = [
   },
   {
     common_name: 'Pothos',
-    synonyms: "Devil's Ivy, Dragontail Plant",
+    synonyms: 'Devil\'s Ivy, Dragontail Plant',
     scientific_name: 'Epipremnum aureum',
     light_range: 'Likes Shade',
     hydration_range: 'Average Hydration',
@@ -42,21 +38,17 @@ export const data = [
       'Bacterial Leaf Spot, Lead Spot, Phytophthora Root Rot, Red Spider Mites, Root Rot, Scale Insects, Stem Rot, Soft Rot',
     warnings:
       'Caution - contains calcium oxalate, do not consume. Toxic to pets.',
-    physical_characteristics: {
-      height: '48 to 60 inches',
-      spread: '48 to 60 inches',
-      type: 'Perennial (vine)',
-      flowering_period: 'Late spring, summer',
-      bloom_size: '',
-    },
-    planting: {
-      temperature_range: '15 to 24C (59 to 75F)',
-      placement: 'Partial shade, dappled shade, full shade',
-      humidity_level: 'Moderate',
-      substrate_recommendation: 'Use a sterilized soil-based compost.',
-      potting_notes:
+    height: '48 to 60 inches',
+    spread: '48 to 60 inches',
+    type: 'Perennial (vine)',
+    flowering_period: 'Late spring, summer',
+    bloom_size: '',
+    temperature_range: '15 to 24C (59 to 75F)',
+    placement: 'Partial shade, dappled shade, full shade',
+    humidity_level: 'Moderate',
+    substrate_recommendation: 'Use a sterilized soil-based compost.',
+    potting_notes:
         'Suitable for standard pots, or containers where no inner potting is used. Use a minimum pot size of 0.5 gallons or dimensions of approximately 7x5x6 inches. Suitable for hanging baskets. Replace the top layer of substrate in spring.',
-    },
     watering:
       'In summer, allow the top inch of the substrate to dry out before re-watering. Ensure that the deeper substrate does not dry out between watering applications. A weekly schedule is usually enough to see this plant through the warmer summer months. During winter, the substrate should be kept moist, but be careful of over-watering (which can lead to root rot).',
     propagation:
@@ -72,22 +64,18 @@ export const data = [
     pests_diseases:
       'Bacterial Leaf Spot, Fungus Gnats, Leaf Spot, Mealy Bugs, Red Spider Mites, Root Rot, Scale Insects, Soft Rot, Thrips',
     warnings: 'Caution - toxic. Do not consume. Toxic to pets.',
-    physical_characteristics: {
-      height: '36 to 60 inches',
-      spread: '8 to 12 inches',
-      type: 'Perennial (herb/forb)',
-      flowering_period: 'Summer',
-      bloom_size: '',
-    },
-    planting: {
-      temperature_range: '15 to 24C (59 to 75F)',
-      placement: 'Full sun, filtered sun, partial shade',
-      humidity_level: 'Low',
-      substrate_recommendation:
+    height: '36 to 60 inches',
+    spread: '8 to 12 inches',
+    type: 'Perennial (herb/forb)',
+    flowering_period: 'Summer',
+    bloom_size: '',
+    temperature_range: '15 to 24C (59 to 75F)',
+    placement: 'Full sun, filtered sun, partial shade',
+    humidity_level: 'Low',
+    substrate_recommendation:
         'Use a cactus-specific compost for best results.',
-      potting_notes:
+    potting_notes:
         'Requires a high-drainage inner pot. Prefers to be planted in a slightly undersized pot. Use a minimum pot size of 0.5 gallons or dimensions of approximately 7x5x6 inches.',
-    },
     watering:
       'In summer, allow the top inch of the substrate to dry out before re-watering. Ensure that the deeper substrate does not dry out between watering applications. A weekly schedule is usually enough to see this Dracaena through the warmer summer months. In winter time, maintain a degree of dryness in the top inch of substrate, without allowing the deeper substrate to fully dry out. A monthly watering schedule can be applied during the winter months. This species is tolerant of a wide range of water types and can be hydrated with rainwater, distilled or tap water.',
     propagation:
@@ -103,22 +91,18 @@ export const data = [
     pests_diseases:
       'Anthracnose, Aphids, Bacterial Leaf Spot, Leaf Spot, Mealy Bugs, red Spider Mites, Root Rot, Scale Insects, Scooty Mold',
     warnings: '',
-    physical_characteristics: {
-      height: '48 to 96 inches',
-      spread: '36 to 48 inches',
-      type: 'Perennial (vine)',
-      flowering_period: 'Late summer, early autumn',
-      bloom_size: '1 inch',
-    },
-    planting: {
-      temperature_range: '5 to 25C',
-      placement: 'Partial shade, dappled shade, full shade',
-      humidity_level: 'Low, moderate',
-      substrate_recommendation:
+    height: '48 to 96 inches',
+    spread: '36 to 48 inches',
+    type: 'Perennial (vine)',
+    flowering_period: 'Late summer, early autumn',
+    bloom_size: '1 inch',
+    temperature_range: '5 to 25C',
+    placement: 'Partial shade, dappled shade, full shade',
+    humidity_level: 'Low, moderate',
+    substrate_recommendation:
         'Use a 50:50 mix of all-purpose or general purpose potting compost and sterilized soil.',
-      potting_notes:
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 0.5 gallons or dimensions of approximately 7x5x6 inches. Suitable for hanging baskets. Repot in fresh substrate every 2 to 3 years.',
-    },
     watering:
       'Between spring and autumn months, ensure that the substrate is kept moist. This species will usually require a weekly watering schedule from spring through to autumn. During winter the substrate should be kept moist, but be careful of over-watering which can lead to root rot. A fortnightly watering is usually adequate in the winter months. This species is tolerant of a wide range of water types and can be hydrated with rainwater, distilled or tap water.',
     propagation:
@@ -135,22 +119,18 @@ export const data = [
       'Anthracnose, Bacterial Leaf Spot, Cercospora Leaf Spot, Crown Gall, Grey Mould, Nematodes, Southern Blight, Viruses',
     warnings:
       'Caution - poisonous, do not consume. Toxic to pets. Handling sap may cause skin irritation.',
-    physical_characteristics: {
-      height: '48 to 72 inches',
-      spread: '36 to 60 inches',
-      type: 'Perennial (tree)',
-      flowering_period: '',
-      bloom_size: '',
-    },
-    planting: {
-      temperature_range: '15 to 24C',
-      placement: 'Full sun, filtered sun, partial shade, dappled shade',
-      humidity_level: 'Moderate',
-      substrate_recommendation:
+    height: '48 to 72 inches',
+    spread: '36 to 60 inches',
+    type: 'Perennial (tree)',
+    flowering_period: '',
+    bloom_size: '',
+    temperature_range: '15 to 24C',
+    placement: 'Full sun, filtered sun, partial shade, dappled shade',
+    humidity_level: 'Moderate',
+    substrate_recommendation:
         'Use a sterilized soil and mix with a light addition of horticultural sand/grit and perlite.',
-      potting_notes:
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 2 gallons or dimensions of approximately 11x9x9 inches. Repot in fresh substrate every 2 to 3 years.',
-    },
     watering:
       'In summer, allow the top inch of the substrate to dry out before re-watering. Ensure that the deeper substrate does not dry out between watering applications. A weekly schedule is usually enough to see this plant through the warmer summer months. In winter time, maintain a degree of dryness in the top inch of substrate, without allowing the deeper substrate to fully dry out. Lightly mist during periods of hot weather to aid with hydration. This species is tolerant of a wide range of water types and can be hydrated with rainwater, distilled or tap water.',
     propagation:
@@ -166,22 +146,18 @@ export const data = [
     pests_diseases:
       'Aphids, Damping Off, Helminthosporium, Leaf Spot, Mealy Bugs, Nematodes, Phytophthora Stem Rot, Red Spider Mites, Root Rot, Scale Insects, Thrips',
     warnings: '',
-    physical_characteristics: {
-      height: '40 to 48 inches',
-      spread: '18 to 24 inches',
-      type: 'Perennial (tree)',
-      flowering_period: 'Late winter, early spring',
-      bloom_size: '',
-    },
-    planting: {
-      temperature_range: '10 to 27C (50 to 81F)',
-      placement: 'Partial shade, dappled shade, full shade',
-      humidity_level: 'Low, moderate',
-      substrate_recommendation:
+    height: '40 to 48 inches',
+    spread: '18 to 24 inches',
+    type: 'Perennial (tree)',
+    flowering_period: 'Late winter, early spring',
+    bloom_size: '',
+    temperature_range: '10 to 27C (50 to 81F)',
+    placement: 'Partial shade, dappled shade, full shade',
+    humidity_level: 'Low, moderate',
+    substrate_recommendation:
         'Use a 50:50 mix of all-purpose or general purpose potting compost and sterilized soil.',
-      potting_notes:
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 2 gallons or dimensions of approximately 11x9x9 inches. Increase the pot size if the plant has become root-bound.',
-    },
     watering:
       'In summer, allow the top inch of the substrate to dry out before re-watering. Ensure that the deeper substrate does not dry out between watering applications. A weekly schedule is usually enough to see this Dracaena through the warmer summer months. In winter time, maintain a degree of dryness in the top inch of substrate, without allowing the deeper substrate to fully dry out. Lightly mist on a twice-weekly basis to help maintain the required humidity level.',
     propagation:
@@ -198,22 +174,18 @@ export const data = [
       'Anthracnose, Bacterial Leaf Spot, Cucumber Mosaic Virus, False Mites, Grey Mould, Leaf Spot, Mealy Bugs',
     warnings:
       'Caution - contains calcium oxalate, do not consume. Toxic to pets.',
-    physical_characteristics: {
-      height: '18 to 24 inches',
-      spread: '12 to 18 inches',
-      type: 'Perennial (herb/forb)',
-      flowering_period: 'Summer, autumn',
-      bloom_size: '',
-    },
-    planting: {
-      temperature_range: '10 to 22C (50 to 72F)',
-      placement: 'Partial shade, dappled shade',
-      humidity_level: 'Moderate',
-      substrate_recommendation:
+    height: '18 to 24 inches',
+    spread: '12 to 18 inches',
+    type: 'Perennial (herb/forb)',
+    flowering_period: 'Summer, autumn',
+    bloom_size: '',
+    temperature_range: '10 to 22C (50 to 72F)',
+    placement: 'Partial shade, dappled shade',
+    humidity_level: 'Moderate',
+    substrate_recommendation:
         'Use a blend of all-purpose or general purpose potting compost and a light addition of perlite.',
-      potting_notes:
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 1 gallon or dimensions of approximately 8.5x7x7.5 inches. Repot in fresh substrate every 3 years.',
-    },
     watering:
       'Ensure that the substrate is kept moist throughout summer to keep the Chinese Evergreen suitably hydrated. In winter time, maintain a degree of dryness in the top inch of substrate, without allowing the deeper substrate to fully dry out. Lightly mist on a twice-weekly basis to help maintain the required humidity level. This species is tolerant of a wide range of water types and can be hydrated with rainwater, distilled or tap water.',
     propagation:
@@ -229,22 +201,18 @@ export const data = [
     pests_diseases:
       'Alternaria Leaf Spot, Aphids, leaf Spot, Cucumber Mosaic Virus, Fusarium Rot, Helminthosporium Leaf Spot, Mealy Bugs, Nematodes, Powdery Mildew',
     warnings: '',
-    physical_characteristics: {
-      height: '24 to 48 inches',
-      spread: '24 to 36 inches',
-      type: 'Perennial (herb/forb)',
-      flowering_period: 'Spring',
-      bloom_size: '',
-    },
-    planting: {
-      temperature_range: '16 to 24C (61 to 75F)',
-      placement: 'Partial shade, dappled shade, full shade',
-      humidity_level: 'Moderate',
-      substrate_recommendation:
+    height: '24 to 48 inches',
+    spread: '24 to 36 inches',
+    type: 'Perennial (herb/forb)',
+    flowering_period: 'Spring',
+    bloom_size: '',
+    temperature_range: '16 to 24C (61 to 75F)',
+    placement: 'Partial shade, dappled shade, full shade',
+    humidity_level: 'Moderate',
+    substrate_recommendation:
         'Use a sterilized soil and mix with a light addition of perlite.',
-      potting_notes:
+    potting_notes:
         'Suitable for standard pots, or containers where no inner potting is used. Use a minimum pot size of 0.5 gallons or dimensions of approximately 7x5x6 inches. Suitable for hanging baskets. Increase the pot size if the plant has become root-bound.',
-    },
     watering:
       'Between spring and autumn months, ensure that the substrate is kept moist. This species will usually require a weekly watering schedule from spring through to autumn. In winter time, maintain a degree of dryness in the top inch of substrate, without allowing the deeper substrate to fully dry out. This species may be sensitive to the chemicals found in tap water, so use rainwater or distilled water where possible.',
     propagation:
@@ -260,22 +228,18 @@ export const data = [
     pests_diseases:
       'Aphids, Fungus Gnats, Grey Mould, Mealy Bugs, Red Spider mites, Root Rot, Thrips',
     warnings: '',
-    physical_characteristics: {
-      height: '6 to 12 inches',
-      spread: '6 to 12 inches',
-      type: 'Perennial (herb/forb, cactus/succulent)',
-      flowering_period: '',
-      bloom_size: '1 inch',
-    },
-    planting: {
-      temperature_range: '15 to 24C (59 to 75F)',
-      placement: 'Partial shade, dappled shade',
-      humidity_level: 'Moderate',
-      substrate_recommendation:
+    height: '6 to 12 inches',
+    spread: '6 to 12 inches',
+    type: 'Perennial (herb/forb, cactus/succulent)',
+    flowering_period: '',
+    bloom_size: '1 inch',
+    temperature_range: '15 to 24C (59 to 75F)',
+    placement: 'Partial shade, dappled shade',
+    humidity_level: 'Moderate',
+    substrate_recommendation:
         'Use a sterilized soil and mix with a light addition of perlite.',
-      potting_notes:
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 0.5 gallons or dimensions of approximately 7x5x6 inches. Repot in fresh substrate every 2 years. Increase the pot size if the plant has become root-bound.',
-    },
     watering:
       'In summer, allow the top inch of the substrate to dry out before re-watering. Ensure that the deeper substrate does not dry out between watering applications. A weekly schedule is usually enough to see this plant through the warmer summer months. During winter, the substrate should be kept moist, but be careful of over-watering (which can lead to root rot). Lightly mist on a twice-weekly basis to help maintain the required humidity level. This species is tolerant of a wide range of water types and can be hydrated with rainwater, distilled or tap water.',
     propagation:
@@ -292,22 +256,18 @@ export const data = [
       'Aphids, Bacterial Leaf Spot, Blight, Leaf Spot, Mealy Bugs, Mosaic Virus, Powdery Mildew, Red Edge, Soft Rot, Viruses',
     warnings:
       'Caution - poisonous, do not consume. Toxic to pets. Handling may cause skin irritation.',
-    physical_characteristics: {
-      height: '48 to 60 inches',
-      spread: '48 to 60 inches',
-      type: 'Perennial (vine)',
-      flowering_period: 'Late spring, summer',
-      bloom_size: '',
-    },
-    planting: {
-      temperature_range: '16 to 24C (61 to 75F)',
-      placement: 'Partial shade, dappled shade, full shade',
-      humidity_level: 'Moderate',
-      substrate_recommendation:
+    height: '48 to 60 inches',
+    spread: '48 to 60 inches',
+    type: 'Perennial (vine)',
+    flowering_period: 'Late spring, summer',
+    bloom_size: '',
+    temperature_range: '16 to 24C (61 to 75F)',
+    placement: 'Partial shade, dappled shade, full shade',
+    humidity_level: 'Moderate',
+    substrate_recommendation:
         'Use a sterilized soil and mix with a light addition of horticultural sand/grit and perlite.',
-      potting_notes:
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 1 gallon or dimensions of approximately 8.5x7x7.5 inches. Suitable for hanging baskets. Repot in fresh substrate annually during spring.',
-    },
     watering:
       'Ensure that the substrate is kept moist throughout summer to keep the Heart Leaf Vine suitably hydrated. A twice-weekly watering schedule can be applied in summer. From autumn until late spring, allow the top inch of substrate to dry out before resuming watering. A weekly watering generally provides enough hydration in winter months. Lightly mist on a twice-weekly basis to help maintain the required humidity level. This species is tolerant of a wide range of water types and can be hydrated with rainwater, distilled or tap water.',
     propagation:
@@ -316,30 +276,26 @@ export const data = [
   {
     common_name: 'Bonnie Spider Plant',
     synonyms: 'Spiderplant, Curly Spider Plant',
-    scientific_name: "Chlorophytum comosum 'Bonnie'",
+    scientific_name: 'Chlorophytum comosum \'Bonnie\'',
     light_range: 'All Conditions',
     hydration_range: 'Average Hydration',
     care_difficulty: 'Suitable for Beginners',
     pests_diseases:
       'Aphids, Fungus Gnats, Mealy Bugs, Red Spider Mites, Nematodes, Root Rot, Thrips',
     warnings: '',
-    physical_characteristics: {
-      height: '12 to 24 inches',
-      spread: '18 to 30 inches',
-      type: 'Perennial (grass)',
-      flowering_period: 'Late spring, summer',
-      bloom_size: '1 to 3 inches',
-    },
-    planting: {
-      temperature_range: '7 to 25C (45 to 77F)',
-      placement:
+    height: '12 to 24 inches',
+    spread: '18 to 30 inches',
+    type: 'Perennial (grass)',
+    flowering_period: 'Late spring, summer',
+    bloom_size: '1 to 3 inches',
+    temperature_range: '7 to 25C (45 to 77F)',
+    placement:
         'Full sun, filtered sun, partial shade, dappled shade, full shade',
-      humidity_level: 'Low',
-      substrate_recommendation:
+    humidity_level: 'Low',
+    substrate_recommendation:
         'Use a 50:50 mix of all-purpose or general purpose potting compost and sterilized soil.',
-      potting_notes:
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 1 gallon or dimensions of approximately 8.5x7x7.5 inches. Suitable for hanging baskets. Repot in fresh substrate every 2 to 3 years during spring. Increase the pot size if the plant has become root-bound.',
-    },
     watering:
       'Between spring and autumn months, ensure that the substrate is kept moist. This species will normally appreciate a twice-weekly watering schedule starting in spring and running through to late autumn. In winter time, maintain a degree of dryness in the top inch of substrate, without allowing the deeper substrate to fully dry out. A weekly watering generally provides enough hydration in winter months. This species is tolerant of a wide range of water types and can be hydrated with rainwater, distilled or tap water.',
     propagation:
@@ -356,21 +312,17 @@ export const data = [
       'Aphids, Bacterial Leaf Spot, Blight, Leaf spot, Mealy Bugs, Mosaic Virus, Powdery Mildew, Root Rot, Soft Rot, Viruses',
     warnings:
       'Caution - contains calcium oxalate, do not consume. Toxic to pets.',
-    physical_characteristics: {
-      height: '96 to 200 inches',
-      spread: '24 to 36 inches',
-      type: 'Perennial (herb/forb, vine)',
-      flowering_period: 'Summer',
-      bloom_size: '',
-    },
-    planting: {
-      temperature_range: '16 to 24C (61 to 75F)',
-      placement: 'Partial shade, dappled shade, full shade',
-      humidity_level: 'Moderate',
-      substrate_recommendation: 'Use a sterilized soil-based compost.',
-      potting_notes:
+    height: '96 to 200 inches',
+    spread: '24 to 36 inches',
+    type: 'Perennial (herb/forb, vine)',
+    flowering_period: 'Summer',
+    bloom_size: '',
+    temperature_range: '16 to 24C (61 to 75F)',
+    placement: 'Partial shade, dappled shade, full shade',
+    humidity_level: 'Moderate',
+    substrate_recommendation: 'Use a sterilized soil-based compost.',
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 2 gallons or dimensions of approximately 11x9x9 inches. Increase the pot size if the plant has become root-bound.',
-    },
     watering:
       'Between spring and autumn months, ensure that the substrate is kept moist. This species will usually require a weekly watering schedule from spring through to autumn. During winter the substrate should be kept moist, but be careful of over-watering which can lead to root rot. A weekly watering generally provides enough hydration in the winter months. This species is tolerant of a wide range of water types and can be hydrated with rainwater, distilled or tap water.',
     propagation:
@@ -385,23 +337,19 @@ export const data = [
     care_difficulty: 'Average Care',
     pests_diseases: 'Mealy Bugs, Root Rot, Scale Insects',
     warnings: 'Caution - poisonous, do not consume. Toxic to pets.',
-    physical_characteristics: {
-      height: '24 to 36 inches',
-      spread: '12 to 24 inches',
-      type: 'Perennial (herb/forb, cactus/succulent)',
-      flowering_period: 'Summer',
-      bloom_size: '1 inch',
-    },
-    planting: {
-      temperature_range: '15 to 24C (59 to 75F)',
-      placement:
+    height: '24 to 36 inches',
+    spread: '12 to 24 inches',
+    type: 'Perennial (herb/forb, cactus/succulent)',
+    flowering_period: 'Summer',
+    bloom_size: '1 inch',
+    temperature_range: '15 to 24C (59 to 75F)',
+    placement:
         'Full sun, filtered sun, partial shade, dappled shade, full shade',
-      humidity_level: 'Low, moderate',
-      substrate_recommendation:
+    humidity_level: 'Low, moderate',
+    substrate_recommendation:
         'Use a sterilized soil and mix with a light addition of horticultural sand/grit.',
-      potting_notes:
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 0.5 gallons or dimensions of approximately 7x5x6 inches. Prefers to be planted in a slightly undersized pot. Repot in fresh substrate every 2 to 3 years.',
-    },
     watering:
       'Prefers drier conditions in summer, so allow the substrate to dry out between summer-time waterings. This species will usually require a weekly watering schedule from spring through to autumn. In winter time, maintain a degree of dryness in the top inch of substrate, without allowing the deeper substrate to fully dry out. A fortnightly watering is usually adequate in the winter months. This species is tolerant of a wide range of water types and can be hydrated with rainwater, distilled or tap water.',
     propagation:
@@ -410,28 +358,24 @@ export const data = [
   {
     common_name: 'Janet Craig Dracaena',
     synonyms: '',
-    scientific_name: "Dracaena fragrans 'Janet Craig'",
+    scientific_name: 'Dracaena fragrans \'Janet Craig\'',
     light_range: 'Moderate Light',
     hydration_range: 'Average Hydration',
     care_difficulty: 'Suitable for Beginners',
     pests_diseases:
       'Bacterial Leaf Spot, Fungus Gnats, Leaf Spot, Mealy Bugs, Red Spider Mites, Root Rot, Scale Insects, Soft Rot, Thrips',
     warnings: 'Caution - toxic. Do not consume. Toxic to pets.',
-    physical_characteristics: {
-      height: '36 to 60 inches',
-      spread: '24 to 48 inches',
-      type: 'Perennial (tree)',
-      flowering_period: 'Summer',
-      bloom_size: '1 inch',
-    },
-    planting: {
-      temperature_range: '15 to 24C (59 to 75F)',
-      placement: 'Full sun, filtered sun, partial shade, dappled shade',
-      humidity_level: 'Low, moderate',
-      substrate_recommendation: 'Use a sterilized soil-based compost.',
-      potting_notes:
+    height: '36 to 60 inches',
+    spread: '24 to 48 inches',
+    type: 'Perennial (tree)',
+    flowering_period: 'Summer',
+    bloom_size: '1 inch',
+    temperature_range: '15 to 24C (59 to 75F)',
+    placement: 'Full sun, filtered sun, partial shade, dappled shade',
+    humidity_level: 'Low, moderate',
+    substrate_recommendation: 'Use a sterilized soil-based compost.',
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 1 gallon or dimensions of approximately 8.5x7x7.5 inches. Repot in fresh substrate every 2 to 3 years.',
-    },
     watering:
       'Between spring and autumn months, ensure that the substrate is kept moist. This species will usually require a weekly watering schedule from spring through to autumn. During winter the substrate should be kept moist, but be careful of over-watering which can lead to root rot. A weekly watering generally provides enough hydration in the winter months. Lightly mist on a weekly basis to help maintain the required humidity level. This species may be sensitive to the chemicals found in tap water, so use rainwater or distilled water where possible.',
     propagation:
@@ -447,21 +391,17 @@ export const data = [
     pests_diseases:
       'Bacterial Leaf Spot, Fungus Gnats, Leaf Spot, Mealy Bugs, Red Spider Mites, Root Rot, Scale Insects, Soft Rot, Thrips',
     warnings: 'Caution - toxic. Do not consume. Toxic to pets.',
-    physical_characteristics: {
-      height: '36 to 60 inches',
-      spread: '24 to 48 inches',
-      type: 'Perennial (tree)',
-      flowering_period: 'Summer',
-      bloom_size: '1 inch',
-    },
-    planting: {
-      temperature_range: '15 to 24C (59 to 75F)',
-      placement: 'Full sun, filtered sun, partial shade, dappled shade',
-      humidity_level: 'Low, moderate',
-      substrate_recommendation: 'Use a sterilized soil-based compost.',
-      potting_notes:
+    height: '36 to 60 inches',
+    spread: '24 to 48 inches',
+    type: 'Perennial (tree)',
+    flowering_period: 'Summer',
+    bloom_size: '1 inch',
+    temperature_range: '15 to 24C (59 to 75F)',
+    placement: 'Full sun, filtered sun, partial shade, dappled shade',
+    humidity_level: 'Low, moderate',
+    substrate_recommendation: 'Use a sterilized soil-based compost.',
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 1 gallon or dimensions of approximately 8.5x7x7.5 inches. Repot in fresh substrate every 2 to 3 years.',
-    },
     watering:
       'Between spring and autumn months, ensure that the substrate is kept moist. This species will usually require a weekly watering schedule from spring through to autumn. During winter the substrate should be kept moist, but be careful of over-watering which can lead to root rot. A weekly watering generally provides enough hydration in the winter months. Lightly mist on a weekly basis to help maintain the required humidity level. This species may be sensitive to the chemicals found in tap water, so use rainwater or distilled water where possible.',
     propagation:
@@ -477,21 +417,17 @@ export const data = [
     pests_diseases:
       'Aphids, Fungus Gnats, Grey Mould, Mealy Bugs, Red Spider Mites, Root Rot, Thrips',
     warnings: '',
-    physical_characteristics: {
-      height: '8 to 12 inches',
-      spread: '8 to 12 inches',
-      type: 'Perennial (herb/forb)',
-      flowering_period: 'Late autumn, early winter',
-      bloom_size: '',
-    },
-    planting: {
-      temperature_range: '15 to 24C (59 to 75F)',
-      placement: 'Partial shade, dappled shade, full shade',
-      humidity_level: 'Moderate',
-      substrate_recommendation: 'Use a sterilized soil-based compost.',
-      potting_notes:
+    height: '8 to 12 inches',
+    spread: '8 to 12 inches',
+    type: 'Perennial (herb/forb)',
+    flowering_period: 'Late autumn, early winter',
+    bloom_size: '',
+    temperature_range: '15 to 24C (59 to 75F)',
+    placement: 'Partial shade, dappled shade, full shade',
+    humidity_level: 'Moderate',
+    substrate_recommendation: 'Use a sterilized soil-based compost.',
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 0.5 gallons or dimensions of approximately 7x5x6 inches. Repot in fresh substrate annually.',
-    },
     watering:
       'Between spring and autumn months, ensure that the substrate is kept moist. This species will usually require a weekly watering schedule from spring through to autumn. In winter time, maintain a degree of dryness in the top inch of substrate, without allowing the deeper substrate to fully dry out. Lightly mist on a weekly basis to help maintain the required humidity level. This species is tolerant of a wide range of water types and can be hydrated with rainwater, distilled or tap water.',
     propagation:
@@ -507,22 +443,18 @@ export const data = [
     pests_diseases:
       'Aphids, Fungus Gnats, Grey Mould, Mealy Bugs, Red Spider Mites, Scale Insects, Thrips',
     warnings: '',
-    physical_characteristics: {
-      height: '60 to 84 inches',
-      spread: '24 to 36 inches',
-      type: 'Perennial (tree)',
-      flowering_period: 'Summer',
-      bloom_size: '1 inch',
-    },
-    planting: {
-      temperature_range: '13 to 24C (55 to 75F)',
-      placement:
+    height: '60 to 84 inches',
+    spread: '24 to 36 inches',
+    type: 'Perennial (tree)',
+    flowering_period: 'Summer',
+    bloom_size: '1 inch',
+    temperature_range: '13 to 24C (55 to 75F)',
+    placement:
         'Full sun, filtered sun, partial shade, dappled shade, full shade',
-      humidity_level: 'Moderate',
-      substrate_recommendation: 'Use a sterilized soil-based compost.',
-      potting_notes:
+    humidity_level: 'Moderate',
+    substrate_recommendation: 'Use a sterilized soil-based compost.',
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 1 gallon or dimensions of approximately 8.5x7x7.5 inches. Repot in fresh substrate every 3 years. Increase the pot size if the plant has become root-bound.',
-    },
     watering:
       'Between spring and autumn it is recommended that the substrate is allowed to dry out before a regular watering schedule is recommenced. This species will usually require a weekly watering schedule from spring to autumn. In winter time, maintain a degree of dryness in the top inch of substrate, without allowing the deeper substrate to fully dry out. A twice-weekly watering schedule should be used during winter months. Lightly mist on a twice-weekly basis to help maintain the required humidity level. This species is tolerant to a wide range of water types and can be hydrated with rainwater, distilled or tap water.',
     propagation:
@@ -539,21 +471,17 @@ export const data = [
       'Aphids, Bacterial Leaf Spot, Grey Mould, Leaf Spot, Mealy Bugs, Powdery Mildew, Red Spider Mites, Root Rot, Soft Rot, Thrips, Whitefly',
     warnings:
       'Caution - contains calcium oxalate, do not consume. Toxic to pets.',
-    physical_characteristics: {
-      height: '12 to 30 inches',
-      spread: '18 to 24 inches',
-      type: 'Perennial (herb/forb, vine)',
-      flowering_period: 'Spring',
-      bloom_size: '',
-    },
-    planting: {
-      temperature_range: '15 to 28C (59 to 82F)',
-      placement: 'Partial shade, dappled shade, full shade',
-      humidity_level: 'Moderate',
-      substrate_recommendation: 'Use a sterilized soil-based compost.',
-      potting_notes:
+    height: '12 to 30 inches',
+    spread: '18 to 24 inches',
+    type: 'Perennial (herb/forb, vine)',
+    flowering_period: 'Spring',
+    bloom_size: '',
+    temperature_range: '15 to 28C (59 to 82F)',
+    placement: 'Partial shade, dappled shade, full shade',
+    humidity_level: 'Moderate',
+    substrate_recommendation: 'Use a sterilized soil-based compost.',
+    potting_notes:
         'Suitable for standard pots, or containers where no inner potting is used. Use a minimum pot size of 2 gallons or dimensions of approximately 11x9x9 inches. Suitable for hanging baskets. Replace the top layer of substrate in spring.',
-    },
     watering:
       'Between spring and autumn months, ensure that the substrate is kept moist. This species will usually require a weekly watering schedule from spring through to autumn. In winter time, maintain a degree of dryness in the top inch of substrate, without allowing the deeper substrate to fully dry out. Ensure that the substrate is never allowed to completely dry out through any period of watering. Lightly mist on a twice-weekly basis to help maintain the required humidity level. This species is tolerant of a wide range of water types and can be hydrated with rainwater, distilled or tap water.',
     propagation:
@@ -568,21 +496,17 @@ export const data = [
     care_difficulty: 'Average Care',
     pests_diseases: 'Grey Mould, Root Rot, Rust',
     warnings: 'Caution - noxious or invasive species. Toxic to pets.',
-    physical_characteristics: {
-      height: '36 to 60 inches',
-      spread: '18 to 24 inches',
-      type: 'Perennial (herb/forb)',
-      flowering_period: 'Summer, early autumn',
-      bloom_size: '1 inch',
-    },
-    planting: {
-      temperature_range: '13 to 24C (55 to 75F)',
-      placement: 'Partial shade, dappled shade',
-      humidity_level: 'Low, moderate',
-      substrate_recommendation: 'Use a sterilized soil-based compost.',
-      potting_notes:
+    height: '36 to 60 inches',
+    spread: '18 to 24 inches',
+    type: 'Perennial (herb/forb)',
+    flowering_period: 'Summer, early autumn',
+    bloom_size: '1 inch',
+    temperature_range: '13 to 24C (55 to 75F)',
+    placement: 'Partial shade, dappled shade',
+    humidity_level: 'Low, moderate',
+    substrate_recommendation: 'Use a sterilized soil-based compost.',
+    potting_notes:
         'Suitable for standard pots, or containers where no inner potting is used. Use a minimum pot size of 1 gallon or dimensions of approximately 8.5x7x7.5 inches. Increase the pot size if the plant has become root-bound.',
-    },
     watering:
       'Between spring and autumn months, ensure that the substrate is kept moist. This species will normally appreciate a twice-weekly watering schedule starting in spring and running through to late autumn. In winter time, maintain a degree of dryness in the top inch of substrate, without allowing the deeper substrate to fully dry out. A weekly watering generally provides enough hydration in winter months. Lightly mist on a daily basis. This species is tolerant of a wide range of water types and can be hydrated with rainwater, distilled or tap water.',
     propagation:
@@ -598,30 +522,26 @@ export const data = [
     pests_diseases:
       'Anthracnose, Cucumber Mosaic Virus, Leaf Spot, Mealy Bugs, Phytophthora Root Rot, Red Spider Mites, Ring Spot, Root Rot, Southern Blight, Viruses, Whitefly',
     warnings: '',
-    physical_characteristics: {
-      height: '6 to 10 inches',
-      spread: '8 to 12 inches',
-      type: 'Perennial (herb/forb)',
-      flowering_period: 'Summer',
-      bloom_size: '1 inch',
-    },
-    planting: {
-      temperature_range: '15 to 24C (59 to 75F)',
-      placement: 'Partial shade, dappled shade',
-      humidity_level: 'Moderate, high',
-      substrate_recommendation:
+    height: '6 to 10 inches',
+    spread: '8 to 12 inches',
+    type: 'Perennial (herb/forb)',
+    flowering_period: 'Summer',
+    bloom_size: '1 inch',
+    temperature_range: '15 to 24C (59 to 75F)',
+    placement: 'Partial shade, dappled shade',
+    humidity_level: 'Moderate, high',
+    substrate_recommendation:
         'Use a sterilized soil and mix with a light addition of horticultural sand/grit and perlite.',
-      potting_notes:
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 0.5 gallons or dimensions of approximately 7x5x6 inches. Repot in fresh substrate every 2 to 3 years. Increase the pot size if the plant has become root-bound.',
-    },
     watering:
       'In summer, allow the top inch of the substrate to dry out before re-watering. Ensure that the deeper substrate does not dry out between watering applications. A weekly schedule is usually enough to see this plant through the warmer summer months. In winter time, maintain a degree of dryness in the top inch of substrate, without allowing the deeper substrate to fully dry out. Lightly mist on a twice-weekly basis to help maintain the required humidity level. This species is tolerant of a wide range of water types and can be hydrated with rainwater, distilled or tap water.',
     propagation:
       'Stem cuttings can be used to propagate. Use a pair of secateurs to cleanly cut a non-flowering steam from just below a leaf joint. Ensure that a suitable length of stem is available, otherwise trim the lower leaves from the removed cutting. Dab the base of the cutting into a freshly filled pot or seeding tray. Water the substrate and cover the plant with a plastic bag, secured to the pot with an elastic band, while the plant roots and develops.',
   },
   {
-    common_name: "Baby's Tears",
-    synonyms: "Angel's Tears, Corsican Creeper, Friendship Plant",
+    common_name: 'Baby\'s Tears',
+    synonyms: 'Angel\'s Tears, Corsican Creeper, Friendship Plant',
     scientific_name: 'Soleirolia soleirolii',
     light_range: 'Likes Shade',
     hydration_range: 'Average Hydration',
@@ -629,30 +549,26 @@ export const data = [
     pests_diseases:
       'Aphids, Fungus Gnats, Red Spider Mites, Root Rot, Stem Rot',
     warnings: '',
-    physical_characteristics: {
-      height: '2 to 6 inches',
-      spread: '18 to 24 inches',
-      type: 'Perennial (herb/forb)',
-      flowering_period: 'Spring, early summer',
-      bloom_size: '1 inch',
-    },
-    planting: {
-      temperature_range: '9 to 24C (48 to 75F)',
-      placement: 'Partial shade, dappled shade, full shade',
-      humidity_level: 'Moderate',
-      substrate_recommendation:
+    height: '2 to 6 inches',
+    spread: '18 to 24 inches',
+    type: 'Perennial (herb/forb)',
+    flowering_period: 'Spring, early summer',
+    bloom_size: '1 inch',
+    temperature_range: '9 to 24C (48 to 75F)',
+    placement: 'Partial shade, dappled shade, full shade',
+    humidity_level: 'Moderate',
+    substrate_recommendation:
         'Use a sterilized soil and mix with a light addition of horticultural sand/grit.',
-      potting_notes:
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 0.5 gallons or dimensions of approximately 7x5x6 inches. Repot in fresh substrate every 2 years.',
-    },
     watering:
       'Between spring and autumn months, ensure that the substrate is kept moist. This species will normally appreciate a twice-weekly watering schedule starting in spring and running through to late autumn. During winter the substrate should be kept moist, but be careful of over-watering which can lead to root rot. A weekly watering generally provides enough hydration in winter months. Lightly mist on a twice-weekly basis to help maintain the required humidity level. This species is tolerant of a wide range of water types and can be hydrated with rainwater, distilled or tap water.',
     propagation:
       'Stem cuttings can be used to propagate. Use a pair of secateurs to cleanly cut a non-flowering steam from just below a leaf joint. Ensure that a suitable length of stem is available, otherwise trim the lower leaves from the removed cutting. Dab the base of the cutting into a freshly filled pot or seeding tray. Water the substrate and cover the plant with a plastic bag, secured to the pot with an elastic band, while the plant roots and develops.',
   },
   {
-    common_name: "Bird's Nest Fern",
-    synonyms: "Crow's Nest Fern, Akaha, Japanese Asplenium",
+    common_name: 'Bird\'s Nest Fern',
+    synonyms: 'Crow\'s Nest Fern, Akaha, Japanese Asplenium',
     scientific_name: 'Asplenium nidus',
     light_range: 'Prefers Partial Shade',
     hydration_range: 'Likes Moderate Hydration',
@@ -660,22 +576,18 @@ export const data = [
     pests_diseases:
       'Aphids, Blight, Grey Mould, Nematodes, Powdery Mildew, Rhizoctonia Aerial Blight, Root Rot, Rust, Scale Insects',
     warnings: '',
-    physical_characteristics: {
-      height: '12 to 18 inches',
-      spread: '18 to 24 inches',
-      type: 'Perennial (fern)',
-      flowering_period: '',
-      bloom_size: '',
-    },
-    planting: {
-      temperature_range: '13 to 24C (55 to 75F)',
-      placement: 'Partial shade, dappled shade',
-      humidity_level: 'Moderate, high',
-      substrate_recommendation:
+    height: '12 to 18 inches',
+    spread: '18 to 24 inches',
+    type: 'Perennial (fern)',
+    flowering_period: '',
+    bloom_size: '',
+    temperature_range: '13 to 24C (55 to 75F)',
+    placement: 'Partial shade, dappled shade',
+    humidity_level: 'Moderate, high',
+    substrate_recommendation:
         'Use an all-purpose or general purpose potting compost.',
-      potting_notes:
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 0.5 gallons or dimensions of approximately 7x5x6 inches. Repot in fresh substrate every 2 years in spring.',
-    },
     watering:
       'Between spring and autumn months, ensure that the substrate is kept moist. This species will normally appreciate a twice-weekly watering schedule starting in spring and running through to late autumn. During winter the substrate should be kept moist, but be careful of over-watering which can lead to root rot. A weekly watering generally provides enough hydration in winter months. Lightly mist on a daily basis. This species may be sensitive to the chemicals found in tap water, so use rainwater or distilled water where possible.',
     propagation: '',
@@ -690,22 +602,18 @@ export const data = [
     pests_diseases:
       'Aphids, Blight, Grey Mould, Mealy Bugs, Nematodes, Powdery Mildew, Rhizoctonia Aerial Blight, Root Rot, Rust, Scale Insects, Whitefly',
     warnings: '',
-    physical_characteristics: {
-      height: '24 to 30 inches',
-      spread: '18 to 30 inches',
-      type: 'Perennial (fern)',
-      flowering_period: '',
-      bloom_size: '',
-    },
-    planting: {
-      temperature_range: '12 to 24C (53 to 75F)',
-      placement: 'Partial shade, dappled shade, full shade',
-      humidity_level: 'Moderate, high',
-      substrate_recommendation:
+    height: '24 to 30 inches',
+    spread: '18 to 30 inches',
+    type: 'Perennial (fern)',
+    flowering_period: '',
+    bloom_size: '',
+    temperature_range: '12 to 24C (53 to 75F)',
+    placement: 'Partial shade, dappled shade, full shade',
+    humidity_level: 'Moderate, high',
+    substrate_recommendation:
         'Use a 50:50 mix of all-purpose or general purpose potting compost and sterilized soil.',
-      potting_notes:
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 1 gallon or dimensions of approximately 8.5x7x7.5 inches. Suitable for hanging baskets. Repot in fresh substrate every 2 to 3 years during spring.',
-    },
     watering:
       'Requires a moist, but not water-logged, substrate during spring and summer. A twice-weekly water schedule can be applied in summer. The top inch of substrate should be allowed to dry out from autumn until late winter. A weekly watering generally provides enough hydration in winter months. Ensure that the substrate is never allowed to completely dry out through any period of watering. Lightly mist on a twice-weekly basis to help maintain the required humidity level. This species may be sensitive to the chemicals found in tap water, so use rainwater or distilled water where possible.',
     propagation:
@@ -722,22 +630,18 @@ export const data = [
       'Aphids, Bacterial Leaf Spot, Fusarium Wilt, leaf Spot, mealy Bugs, Mosaic Virus, Red Spider Mites, Viruses',
     warnings:
       'Caution - contains calcium oxalate, do not consume. Toxic to pets.',
-    physical_characteristics: {
-      height: '12 to 24 inches',
-      spread: '6 to 9 inches',
-      type: 'Perennial (herb/forb)',
-      flowering_period: '',
-      bloom_size: '',
-    },
-    planting: {
-      temperature_range: '15 to 24C (59 to 75F)',
-      placement: 'Partial shade, dappled shade',
-      humidity_level: 'Low, moderate',
-      substrate_recommendation:
+    height: '12 to 24 inches',
+    spread: '6 to 9 inches',
+    type: 'Perennial (herb/forb)',
+    flowering_period: '',
+    bloom_size: '',
+    temperature_range: '15 to 24C (59 to 75F)',
+    placement: 'Partial shade, dappled shade',
+    humidity_level: 'Low, moderate',
+    substrate_recommendation:
         'Use a 50:50 mix of all-purpose or general purpose potting compost and sterilized soil.',
-      potting_notes:
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 0.5 gallons or dimensions of approximately 7x5x6 inches. Repot in fresh substrate annually during spring.',
-    },
     watering:
       'Requires a moist, but not water-logged, substrate during spring and summer. In most cases, a weekly watering schedule will be sufficient in spring and summer. In winter time, maintain a degree of dryness in the top inch of substrate, without allowing the deeper substrate to fully dry out. A monthly watering schedule can be applied during the winter months. This species is tolerant of a wide range of water types and can be hydrated with rainwater, distilled or tap water.',
     propagation:
@@ -753,22 +657,18 @@ export const data = [
     pests_diseases:
       'Alternaria Leaf Spot, Aphids, Leaf Spot, Cucumber Mosaic Virus, Fusarium Rot, Helminthosporium Leaf Spot, Mealy Bugs, Nematodes, Powdery Mildew, Red Spider Mites, Root Rot, Rust, Scale Insects, Thrips, Viruses, Whitefly',
     warnings: '',
-    physical_characteristics: {
-      height: '18 to 36 inches',
-      spread: '18 to 36 inches',
-      type: 'Perennial (herb/forb)',
-      flowering_period: 'Annual',
-      bloom_size: '1 inch',
-    },
-    planting: {
-      temperature_range: '16 to 24C (60 to 75F)',
-      placement: 'Partial shade, dappled shade, full shade',
-      humidity_level: 'High',
-      substrate_recommendation:
+    height: '18 to 36 inches',
+    spread: '18 to 36 inches',
+    type: 'Perennial (herb/forb)',
+    flowering_period: 'Annual',
+    bloom_size: '1 inch',
+    temperature_range: '16 to 24C (60 to 75F)',
+    placement: 'Partial shade, dappled shade, full shade',
+    humidity_level: 'High',
+    substrate_recommendation:
         'Use a sterilized soil and mix with a light addition of perlite.',
-      potting_notes:
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 1 gallon or dimensions of approximately 8.5x7x7.5 inches. Repot in fresh substrate every 2 to 3 years.',
-    },
     watering:
       'Between spring and autumn months, ensure that the substrate is kept moist. During winter the substrate should be kept moist, but be careful of over-watering which can lead to root rot. A weekly watering generally provides enough hydration in winter months. Lightly mist on a daily basis. This species may be sensitive to the chemicals found in tap water, so use rainwater or distilled water where possible.',
     propagation:
@@ -784,22 +684,18 @@ export const data = [
     pests_diseases:
       'Alternaria Leaf Spot, Aphids, Leaf spot, Cucumber Mosaic Virus, Fusarium Rot, Helminthosporium Leaf Spot, Mealy Bugs, Nematodes, Powdery Mildew, Red Spider Mites, Root Rot, Rust, Scale Insects, Thrips, Viruses, Whitefly',
     warnings: '',
-    physical_characteristics: {
-      height: '24 to 30 inches',
-      spread: '24 to 36 inches',
-      type: 'Perennial (herb/forb)',
-      flowering_period: 'Late spring, early summer',
-      bloom_size: '',
-    },
-    planting: {
-      temperature_range: '15 to 24C (59 to 75F)',
-      placement: 'Partial shade, dappled shade',
-      humidity_level: 'Moderate',
-      substrate_recommendation:
+    height: '24 to 30 inches',
+    spread: '24 to 36 inches',
+    type: 'Perennial (herb/forb)',
+    flowering_period: 'Late spring, early summer',
+    bloom_size: '',
+    temperature_range: '15 to 24C (59 to 75F)',
+    placement: 'Partial shade, dappled shade',
+    humidity_level: 'Moderate',
+    substrate_recommendation:
         'Use a sterilized soil and mix with a light addition of perlite.',
-      potting_notes:
+    potting_notes:
         'Suitable for standard pots, or containers where no inner potting is used. Use a minimum pot size of 0.5 gallons or dimensions of approximately 7x5x6 inches. Increase the pot size if the plant has become root-bound.',
-    },
     watering:
       'Between spring and autumn months, ensure that the substrate is kept moist. This species will usually require a weekly watering schedule from spring through to autumn. In winter time, maintain a degree of dryness in the top inch of substrate, without allowing the deeper substrate to fully dry out. This species may be sensitive to the chemicals found in tap water, so use rainwater or distilled water where possible.',
     propagation:
@@ -815,22 +711,18 @@ export const data = [
     pests_diseases:
       'Aphids, Grey Mould, Leafhoppers, Mealy Bugs, Powdery Mildew, Red Spider Mites, Scale Insects, Thrips',
     warnings: '',
-    physical_characteristics: {
-      height: '4 to 8 inches',
-      spread: '8 to 10 inches',
-      type: 'Biennial (herb/forb, carnivorous)',
-      flowering_period: 'Spring, early summer',
-      bloom_size: '',
-    },
-    planting: {
-      temperature_range: '7 to 28C (44 to 82F)',
-      placement: 'Full sun',
-      humidity_level: 'Moderate',
-      substrate_recommendation:
+    height: '4 to 8 inches',
+    spread: '8 to 10 inches',
+    type: 'Biennial (herb/forb, carnivorous)',
+    flowering_period: 'Spring, early summer',
+    bloom_size: '',
+    temperature_range: '7 to 28C (44 to 82F)',
+    placement: 'Full sun',
+    humidity_level: 'Moderate',
+    substrate_recommendation:
         'Use a sphagnum-moss-heavy blend of moss and perlite.',
-      potting_notes:
+    potting_notes:
         'Suitable for standard pots, or containers where no inner potting is used. Use a minimum pot size of 0.5 gallons or dimensions of approximately 7x5x6 inches. Repot in fresh substrate annually.',
-    },
     watering:
       'In spring and summer, it is recommended that the substrate is fully saturated and then allowed to drain through for at least 30 minutes. A daily watering schedule is best applied to this species in spring and summer. During winter the substrate should be kept moist, but be careful of over-watering which can lead to root rot. A twice-weekly watering schedule should be used during winter months. Ensure that the substrate is never allowed to completely dry out through any period of watering. This species may be sensitive to the chemicals found in tap water, so use rainwater or distilled water where possible.',
     propagation:
@@ -847,22 +739,18 @@ export const data = [
       'Aphids, Fungus Gnats, Mealy Bugs, Red Spider Mites, Root Rot, Scale Insects, Thrips',
     warnings:
       'Caution - plant and seeds are poisonous, do not consume. Toxic to pets.',
-    physical_characteristics: {
-      height: '36 to 48 inches',
-      spread: '48 to 60 inches',
-      type: 'Perennial (shrub)',
-      flowering_period: 'Spring, early summer',
-      bloom_size: '',
-    },
-    planting: {
-      temperature_range: '13 to 24C (55 to 75F)',
-      placement: 'Partial shade, dappled shade',
-      humidity_level: 'Moderate',
-      substrate_recommendation:
+    height: '36 to 48 inches',
+    spread: '48 to 60 inches',
+    type: 'Perennial (shrub)',
+    flowering_period: 'Spring, early summer',
+    bloom_size: '',
+    temperature_range: '13 to 24C (55 to 75F)',
+    placement: 'Partial shade, dappled shade',
+    humidity_level: 'Moderate',
+    substrate_recommendation:
         'Use a 50:50 mix of all-purpose or general purpose potting compost and sterilized soil.',
-      potting_notes:
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 2 gallons or dimensions of approximately 11x9x9 inches. Increase the pot size if the plant has become root-bound.',
-    },
     watering:
       'In summer, allow the top inch of the substrate to dry out before re-watering. Ensure that the deeper substrate does not dry out between watering applications. A weekly schedule is usually enough to see this plant through the warmer summer months. Withold watering during winter and only re-water when the substrate has dried out. Lightly mist on a twice-weekly basis to help maintain the required humidity level.',
     propagation:
@@ -878,22 +766,18 @@ export const data = [
     pests_diseases:
       'Black Ring Disease, Black Soft Spot, Blight, Fungus Gnats, Mealy Bugs, Powdery Mildew, Root Rot, Rust, Scale Insects, Vine Weevil, Whitefly',
     warnings: 'Caution - noxious or invasive species. Toxic to pets.',
-    physical_characteristics: {
-      height: '6 to 12 inches',
-      spread: '12 to 24 inches',
-      type: 'Perennial (cactus/succulent)',
-      flowering_period: 'Late summer, autumn, winter',
-      bloom_size: '1 inch',
-    },
-    planting: {
-      temperature_range: '15 to 25C (59 to 77F)',
-      placement: 'Full sun, filtered sun, partial shade, dappled shade',
-      humidity_level: 'Low',
-      substrate_recommendation:
+    height: '6 to 12 inches',
+    spread: '12 to 24 inches',
+    type: 'Perennial (cactus/succulent)',
+    flowering_period: 'Late summer, autumn, winter',
+    bloom_size: '1 inch',
+    temperature_range: '15 to 25C (59 to 77F)',
+    placement: 'Full sun, filtered sun, partial shade, dappled shade',
+    humidity_level: 'Low',
+    substrate_recommendation:
         'Use a sterilized soil and mix with a light addition of horticultural sand/grit.',
-      potting_notes:
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 0.5 gallons or dimensions of approximately 7x5x6 inches. Repot in fresh substrate every 2 to 3 years in the spring.',
-    },
     watering:
       'In summer, allow the top inch of the substrate to dry out before re-watering. Ensure that the deeper substrate does not dry out between watering applications. This species will usually require a weekly watering schedule from spring through to autumn. Withhold watering during winter and only re-water when the substrate has dried out. A monthly watering schedule can be applied during the winter months. This species is tolerant of a wide range of water types and can be hydrated with rainwater, distilled or tap water.',
     propagation:
@@ -909,22 +793,18 @@ export const data = [
     pests_diseases: 'Bacterial Leaf Spot, Crown Gall, Grey Mould, Viruses',
     warnings:
       'Caution - plant and seeds are poisonous, do not consume. Toxic to pets. Handling may cause skin irritation.',
-    physical_characteristics: {
-      height: '24 to 36 inches',
-      spread: '24 to 36 inches',
-      type: 'Perennial (vine)',
-      flowering_period: '',
-      bloom_size: '1 inch',
-    },
-    planting: {
-      temperature_range: '13 to 24C (55 to 75F)',
-      placement:
+    height: '24 to 36 inches',
+    spread: '24 to 36 inches',
+    type: 'Perennial (vine)',
+    flowering_period: '',
+    bloom_size: '1 inch',
+    temperature_range: '13 to 24C (55 to 75F)',
+    placement:
         'Full sun, filtered sun, partial shade, dappled shade, full shade',
-      humidity_level: 'Low',
-      substrate_recommendation: 'Use a sterilized soil-based compost.',
-      potting_notes:
+    humidity_level: 'Low',
+    substrate_recommendation: 'Use a sterilized soil-based compost.',
+    potting_notes:
         'Suitable for standard pots, or containers where no inner potting is used. Use a minimum pot size of 0.5 gallons or dimensions of approximately 7x5x6 inches. Suitable for hanging baskets. Repot in fresh substrate every 2 years in spring.',
-    },
     watering:
       'Between spring and autumn months, ensure that the substrate is kept moist. This species will normally appreciate a twice-weekly watering schedule from spring through to late autumn. During winter the substrate should be kept moist, but be careful of over-watering which can lead to root rot. A weekly watering generally provides enough hydration in winter months. Lightly mist during periods of hot weather to aid with hydration. This species is tolerant to a wide range of water types and can be hydrated with rainwater, distilled or tap water.',
     propagation:
@@ -941,22 +821,18 @@ export const data = [
       'Bacterial Leaf Spot, Mealy Bugs, Powdery Mildew, Red Spider mites, Root Rot, Rust, Scale Insects, Thrips',
     warnings:
       'Caution - poisonous and known irritant, do not consume. Toxic to pets.',
-    physical_characteristics: {
-      height: '12 to 18 inches',
-      spread: '18 to 24 inches',
-      type: 'Perennial (herb/forb)',
-      flowering_period: 'Summer',
-      bloom_size: '',
-    },
-    planting: {
-      temperature_range: '18 to 25C (64 to 77F)',
-      placement: 'Partial shade, dappled shade, full shade',
-      humidity_level: 'High',
-      substrate_recommendation:
+    height: '12 to 18 inches',
+    spread: '18 to 24 inches',
+    type: 'Perennial (herb/forb)',
+    flowering_period: 'Summer',
+    bloom_size: '',
+    temperature_range: '18 to 25C (64 to 77F)',
+    placement: 'Partial shade, dappled shade, full shade',
+    humidity_level: 'High',
+    substrate_recommendation:
         'Use a blend of all-purpose or general purpose potting compost and loose bark pieces.',
-      potting_notes:
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 1 gallon or dimensions of approximately 8.5x7x7.5 inches. Repot in fresh substrate every 2 to 3 years.',
-    },
     watering:
       'Between spring and autumn months, ensure that the substrate is kept moist. This species will usually require a weekly watering schedule from spring through to autumn. In winter time, maintain a degree of dryness in the top inch of substrate, without allowing the deeper substrate to fully dry out. Lightly mist on a daily basis.This species may be sensitive to the chemicals found in tap water, so use rainwater or distilled water where possible.',
     propagation:
@@ -973,21 +849,17 @@ export const data = [
       'Anthracnose, Aphids, Bacterial Leaf Spot, Grey Mould, Leaf Spot, Mealy Bugs, Phytophthora Leaf Spot, Phytophthora Root Rot, Red Spider Mites, Rhizoctonia Stem Rot, Root Rot, Scale Insects, Sooty Mold, Southern Blight',
     warnings:
       'Caution - poisonous, do not consume. Toxic to pets. Noxious or invasive weed. Handling plant may cause skin irritation.',
-    physical_characteristics: {
-      height: '48 to 144 inches',
-      spread: '36 to 96 inches',
-      type: 'Perennial (vine)',
-      flowering_period: 'Autumn, early winter',
-      bloom_size: '1 inch',
-    },
-    planting: {
-      temperature_range: '10 to 21C (50 to 69F)',
-      placement: 'Partial shade, dappled shade, full shade',
-      humidity_level: 'Moderate',
-      substrate_recommendation: 'Use a sterilized soil-based compost.',
-      potting_notes:
+    height: '48 to 144 inches',
+    spread: '36 to 96 inches',
+    type: 'Perennial (vine)',
+    flowering_period: 'Autumn, early winter',
+    bloom_size: '1 inch',
+    temperature_range: '10 to 21C (50 to 69F)',
+    placement: 'Partial shade, dappled shade, full shade',
+    humidity_level: 'Moderate',
+    substrate_recommendation: 'Use a sterilized soil-based compost.',
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 0.5 gallons or dimensions of approximately 7x5x6 inches. Suitable for hanging baskets. Repot in fresh substrate annually.',
-    },
     watering:
       'Between spring and autumn months, ensure that the substrate is kept moist. This species will normally appreciate a twice-weekly watering schedule starting in spring and running through to late autumn. In winter time, maintain a degree of dryness in the top inch of substrate, without allowing the deeper substrate to fully dry out. A weekly watering generally provides enough hydration in winter months. This species is tolerant of a wide range of water types and can be hydrated with rainwater, distilled or tap water.',
     propagation:
@@ -1004,22 +876,18 @@ export const data = [
       'Anthracnose, Bacterial Leaf Spot, Crown Gall, Grey Mould, Southern Blight, Viruses',
     warnings:
       'Caution - poisonous, do not consume. Toxic to pets. Handling sap may cause skin irritation.',
-    physical_characteristics: {
-      height: '48 to 72 inches',
-      spread: '36 to 60 inches',
-      type: 'Perennial (shrub, tree)',
-      flowering_period: 'Annual',
-      bloom_size: '',
-    },
-    planting: {
-      temperature_range: '15 to 24C (59 to 75F)',
-      placement: 'Full sun, filtered sun, partial shade, dappled shade',
-      humidity_level: 'Low, moderate',
-      substrate_recommendation:
+    height: '48 to 72 inches',
+    spread: '36 to 60 inches',
+    type: 'Perennial (shrub, tree)',
+    flowering_period: 'Annual',
+    bloom_size: '',
+    temperature_range: '15 to 24C (59 to 75F)',
+    placement: 'Full sun, filtered sun, partial shade, dappled shade',
+    humidity_level: 'Low, moderate',
+    substrate_recommendation:
         'Use a 50:50 mix of all-purpose or general purpose potting compost and sterilized soil.',
-      potting_notes:
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 2 gallons or dimensions of approximately 11x9x9 inches. Repot in fresh substrate every 2 to 3 years.',
-    },
     watering:
       'In summer, allow the top inch of the substrate to dry out before re-watering. Ensure that the deeper substrate does not dry out between watering applications. A weekly schedule is usually enough to see this Ficus through the warmer summer months. During winter, the substrate should be kept moist, but be careful of over-watering which can lead to root rot. Lightly might during periods of hot weather to aid with hydration. This species is tolerant of a wide range of water types and can be hydrated with rainwater, distilled or tap water.',
     propagation:
@@ -1035,21 +903,17 @@ export const data = [
     pests_diseases:
       'Bacterial Leaf Spot, Fungus Gnats, Leaf Spot, Mealy Bugs, Red Spider Mites, Root Rot, Scale Insects, Soft Rot, Thrips',
     warnings: 'Caution - toxic. Do not consume. Toxic to pets.',
-    physical_characteristics: {
-      height: '24 to 36 inches',
-      spread: '36 to 48 inches',
-      type: 'Perennial (shrub)',
-      flowering_period: 'Late autumn, early winter',
-      bloom_size: '1 inch',
-    },
-    planting: {
-      temperature_range: '15 to 24C (59 to 75F)',
-      placement: 'Filtered sun, partial shade, dappled shade',
-      humidity_level: 'Low, moderate',
-      substrate_recommendation: 'Use a sterilized soil-based compost.',
-      potting_notes:
+    height: '24 to 36 inches',
+    spread: '36 to 48 inches',
+    type: 'Perennial (shrub)',
+    flowering_period: 'Late autumn, early winter',
+    bloom_size: '1 inch',
+    temperature_range: '15 to 24C (59 to 75F)',
+    placement: 'Filtered sun, partial shade, dappled shade',
+    humidity_level: 'Low, moderate',
+    substrate_recommendation: 'Use a sterilized soil-based compost.',
+    potting_notes:
         'Requires a high-drainage inner pot. Use a minimum pot size of 1 gallon or dimensions of approximately 8.5x7x7.5 inches. Repot in fresh substrate every 2 to 3 years.',
-    },
     watering:
       'Between spring and autumn months, ensure that the substrate is kept moist. This species will usually require a weekly watering schedule from spring through to autumn. During winter the substrate should be kept moist, but be careful of over-watering which can lead to root rot. A weekly watering generally provides enough hydration in the winter months. Lightly mist on a weekly basis to help maintain the required humidity level. This species may be sensitive to the chemicals found in tap water, so use rainwater or distilled water where possible.',
     propagation:

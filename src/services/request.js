@@ -1,4 +1,4 @@
-const API_URL = process.env.REACT_APP_API_URL;
+const HEROKU_URL = process.env.REACT_APP_HEROKU_URL;
 
 const WITHOUT_BODY_METHODS = ['GET', 'DELETE'];
 
@@ -9,7 +9,7 @@ const request = (path, method, body) => {
       'Content-Type': 'application/json'
     };
 
-  return fetch(`${API_URL}${path}`, {
+  return fetch(`${HEROKU_URL}${path}`, {
     method,
     headers,
     credentials: 'include',

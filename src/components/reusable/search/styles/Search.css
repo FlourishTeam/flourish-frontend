@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        border: 2px inset #ccc;
+        padding: 2px;
+        position: relative;
+    }
+
+    .searchInput, .photoMode, .submitButton {
+        height: 70px;
+        border: none;
+        outline-width: 0;
+        margin: 5px;
+        height: 99%;
+    }
+
+    .searchInput {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .submitButton {
+        width: 35px;
+        opacity: 0.8;
+        background: none;
+    }
+
+    .uploaderContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .photoForm {
+     display: flex;
+     flex-direction: column;
+     height: inherit;
+    }
+
+    .fileContainer > img {
+        display: none;
+        height: auto;
+    }
+
+    .uploadThumbnail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25vh;
+    }
+}

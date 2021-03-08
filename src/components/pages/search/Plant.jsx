@@ -8,7 +8,7 @@ const Plant = ({
   light_range,
   hydration_range,
   care_difficulty,
-  planting,
+  temperature_range,
 }) => {
   return (
     <div className={styles.Plant}>
@@ -18,7 +18,7 @@ const Plant = ({
       />
       <div>{common_name}</div>
       <div className={styles.scientific}>{scientific_name}</div>
-      <div>{planting.temperature_range}</div>
+      <div>{temperature_range}</div>
       <div>{light_range}</div>
       <div>{hydration_range}</div>
       <div>{care_difficulty}</div>
@@ -32,9 +32,7 @@ Plant.propTypes = {
   light_range: PropTypes.string.isRequired,
   hydration_range: PropTypes.string.isRequired,
   care_difficulty: PropTypes.string.isRequired,
-  planting: PropTypes.shape({
-    temperature_range: PropTypes.string.isRequired,
-  }).isRequired,
+  temperature_range: PropTypes.string.isRequired,
 };
 
 export default Plant;

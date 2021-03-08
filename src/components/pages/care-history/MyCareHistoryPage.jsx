@@ -4,10 +4,9 @@ import React from 'react';
 import Loading from '../../reusable/loading/Loading';
 // import uuid from 'react-uuid';
 import MaintenanceLevel from '../../reusable/maintenance/MaintenanceLevel';
-// import CareDetails from '../../reusable/care/CareDetails';
-// import CareLogList from '../../reusable/care/CareLog';
+import CareDetails from '../../reusable/care/CareDetails';
+import CareLogList from '../care-history/CareLogList';
 import CareForm from '../care-history/care-notes/care-form/CareForm';
-// import CareLogItem from '../care-history/CareLogItem';
 import MyPlantNotes from '../care-history/care-notes/MyPlantNotes';
 // import MyPlant from '../my-plants/MyPlant';
 // import RemoveFromCollection from '../../reusable/collection/RemoveFromCollection';
@@ -30,10 +29,10 @@ function MyCareHistoryPage() {
               name={plant.common_name}
             /> */}
         <MaintenanceLevel />
-        {/* <CareDetails /> */}
+        <CareDetails />
         <MyPlantNotes />
         <CareForm />
-        {/* <CareLogList /> */}
+        <CareLogList />
         {/* <RemoveFromCollection /> */}
       </div>
       {/* </li> */}

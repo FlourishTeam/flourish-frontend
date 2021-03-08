@@ -1,11 +1,11 @@
 import React from 'react';
 
-const CareLogItem = () => {
+function CareLogItem() {
   return (
     <div>
             Care Log Item Here.
     </div>
   );
-};
+}
 
 export default CareLogItem;

@@ -1,13 +1,11 @@
 import React from 'react';
-import CareLogItem from './CareLogItem';
+import CareLogItem from '../care-history/CareLogItem';
 
 function CareLogList() {
   return (
     <>
       <div>
             Care Log List Here.
-      </div>
-      <div>
         <CareLogItem />
       </div>
     </>

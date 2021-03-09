@@ -9,4 +9,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+
+
+    .bannerContainer {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .bannerContainer > img {
+        width: 100%;
+        opacity: 0.75;
+    }
+
+    .bannerContainer > :last-child {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+    }
 }

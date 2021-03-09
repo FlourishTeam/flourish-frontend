@@ -1,0 +1,85 @@
+import React, { createContext, useContext, useState } from 'react';
+import { gql } from 'apollo-boost';
+import client from './GraphQLContext';
+
+export const SearchContext = createContext(null);
+
+export const SearchProvider = ({ children }) => {
+  const [loading, setLoading] = useState(null);
+  const [searchResults, setSearchResults] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [error, setError] = useState(null);
+
+  const handleSearch = (name) => {
+    setError(null);
+    setLoading(true);
+    client
+      .query({
+        query: gql`
+        query {
+          plantByName(name: "${name}") {
+          plantId,
+          image,
+          commonName,
+          scientificName,
+          lightRange,
+          hydrationRange,
+          careDifficulty,
+          temperatureRange
+          }
+        }
+        `,
+      })
+      .then(({ data }) => {
+        setSearchResults(data.plantByName);
+        setLoading(false);
+      })
+      .catch((error) => setError(error.status));
+  };
+
+  const handleChange = ({ target }) => {
+    setSearchQuery(target.value);
+  };
+
+  return (
+    <SearchContext.Provider value={{ 
+      loading, 
+      searchResults, 
+      searchQuery, 
+      handleChange, 
+      handleSearch,
+      error }}>
+      {children}
+    </SearchContext.Provider>
+  );
+};
+
+export const useSearchLoading = () => {
+  const { loading } = useContext(SearchContext);
+  return loading;
+};
+
+export const useSearchResults = () => {
+  const { searchResults } = useContext(SearchContext);
+  return searchResults;
+};
+
+export const useSearchQuery = () => {
+  const { searchQuery } = useContext(SearchContext);
+  return searchQuery;
+};
+
+export const useHandleChange = () => {
+  const { handleChange } = useContext(SearchContext);
+  return handleChange;
+};
+
+export const useHandleSearch = () => {
+  const { handleSearch } = useContext(SearchContext);
+  return handleSearch;
+};
+
+export const useSearchError = () => {
+  const { error } = useContext(SearchContext);
+  return error;
+};

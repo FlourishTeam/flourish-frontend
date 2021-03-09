@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './styles/Plant.css';
+import MaintenanceLevel from '../../reusable/maintenance/MaintenanceLevel';
 
 const Plant = ({
   common_name,
@@ -21,7 +22,7 @@ const Plant = ({
       <div>{temperature_range}</div>
       <div>{light_range}</div>
       <div>{hydration_range}</div>
-      <div>{care_difficulty}</div>
+      <MaintenanceLevel maintenanceLevel={care_difficulty} />
     </div>
   );
 };

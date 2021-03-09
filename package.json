@@ -65,8 +65,11 @@
   "dependencies": {
     "@apollo/client": "^3.3.11",
     "apollo-boost": "^0.4.9",
+    "cross-fetch": "^3.0.6",
+    "graphql": "^15.5.0",
     "msw": "^0.27.0",
     "react": "^17.0.1",
+    "react-apollo": "^3.1.5",
     "react-bootstrap": "^1.5.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",

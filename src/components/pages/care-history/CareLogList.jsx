@@ -2,7 +2,7 @@ import React from 'react';
 import CareLogItem from './CareLogItem';
 import uuid from 'react-uuid';
 import styles from './styles/CareLogItem.css';
-import { useCareLogItems } from '../../../state/CareLogsContext';
+import { useCareLogItems } from '../../../state/CareLogContext';
 
 const CareLogList = () => {
 //make a hook to pass in CareLogItems

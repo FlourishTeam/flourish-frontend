@@ -1,0 +1,19 @@
+.MyPlant {
+    display: flex;
+    align-items: center;
+    border: 1px inset #ccc;
+    width: 100vw;
+
+    .plantImg {
+        height: 90px;
+    }
+
+    .caption {
+        text-decoration: none;
+        margin-left: 20px;
+    }
+
+    .scientificName {
+        font-style: italic;
+    }
+}

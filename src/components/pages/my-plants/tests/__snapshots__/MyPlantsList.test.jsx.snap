@@ -3,618 +3,1095 @@
 exports[`MyPlantList component renders MyPlantList 1`] = `
 <DocumentFragment>
   <ul
+    class="MyPlantsList"
     data-testid="plants"
   >
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Amaryllis"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Amaryllis"
-            />
-            <figcaption>
-              <p>
-                Amaryllis
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Amaryllis"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Amaryllis
+            </p>
+            <p
+              class="scientificName"
+            >
+              Amaryllis belladonna
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Pothos"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Pothos"
-            />
-            <figcaption>
-              <p>
-                Pothos
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Pothos"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Pothos
+            </p>
+            <p
+              class="scientificName"
+            >
+              Epipremnum aureum
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Congo Spear"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Congo Spear"
-            />
-            <figcaption>
-              <p>
-                Congo Spear
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Congo Spear"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Congo Spear
+            </p>
+            <p
+              class="scientificName"
+            >
+              Dracaena bacularis
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Canadian Ivy"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Canadian Ivy"
-            />
-            <figcaption>
-              <p>
-                Canadian Ivy
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Canadian Ivy"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Canadian Ivy
+            </p>
+            <p
+              class="scientificName"
+            >
+              Hedera canariensis
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Rubber Plant"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Rubber Plant"
-            />
-            <figcaption>
-              <p>
-                Rubber Plant
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Rubber Plant"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Rubber Plant
+            </p>
+            <p
+              class="scientificName"
+            >
+              Ficus elastica
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Parlor Palm"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Parlor Palm"
-            />
-            <figcaption>
-              <p>
-                Parlor Palm
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Parlor Palm"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Parlor Palm
+            </p>
+            <p
+              class="scientificName"
+            >
+              Chamaedorea elegans
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Chinese Evergreen"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Chinese Evergreen"
-            />
-            <figcaption>
-              <p>
-                Chinese Evergreen
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Chinese Evergreen"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Chinese Evergreen
+            </p>
+            <p
+              class="scientificName"
+            >
+              Aglaonema commutatum
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Zebra Plant (Goeppertia sp.)"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Zebra Plant (Goeppertia sp.)"
-            />
-            <figcaption>
-              <p>
-                Zebra Plant (Goeppertia sp.)
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Zebra Plant (Goeppertia sp.)"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Zebra Plant (Goeppertia sp.)
+            </p>
+            <p
+              class="scientificName"
+            >
+              Goeppertia zebrina
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Chinese Money Plant"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Chinese Money Plant"
-            />
-            <figcaption>
-              <p>
-                Chinese Money Plant
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Chinese Money Plant"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Chinese Money Plant
+            </p>
+            <p
+              class="scientificName"
+            >
+              Pilea peperomiodes
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Heart Leaf Vine"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Heart Leaf Vine"
-            />
-            <figcaption>
-              <p>
-                Heart Leaf Vine
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Heart Leaf Vine"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Heart Leaf Vine
+            </p>
+            <p
+              class="scientificName"
+            >
+              Philodendron scandens
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Bonnie Spider Plant"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Bonnie Spider Plant"
-            />
-            <figcaption>
-              <p>
-                Bonnie Spider Plant
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Bonnie Spider Plant"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Bonnie Spider Plant
+            </p>
+            <p
+              class="scientificName"
+            >
+              Chlorophytum comosum 'Bonnie'
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Swiss Cheese Plant"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Swiss Cheese Plant"
-            />
-            <figcaption>
-              <p>
-                Swiss Cheese Plant
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Swiss Cheese Plant"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Swiss Cheese Plant
+            </p>
+            <p
+              class="scientificName"
+            >
+              Monstera deliciosa
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/ZZ Plant"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="ZZ Plant"
-            />
-            <figcaption>
-              <p>
-                ZZ Plant
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="ZZ Plant"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              ZZ Plant
+            </p>
+            <p
+              class="scientificName"
+            >
+              Zamioculcas zamiifolia
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Janet Craig Dracaena"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Janet Craig Dracaena"
-            />
-            <figcaption>
-              <p>
-                Janet Craig Dracaena
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Janet Craig Dracaena"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Janet Craig Dracaena
+            </p>
+            <p
+              class="scientificName"
+            >
+              Dracaena fragrans 'Janet Craig'
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Corn Plant"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Corn Plant"
-            />
-            <figcaption>
-              <p>
-                Corn Plant
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Corn Plant"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Corn Plant
+            </p>
+            <p
+              class="scientificName"
+            >
+              Dracaena fragrans
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Aluminum Plant"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Aluminum Plant"
-            />
-            <figcaption>
-              <p>
-                Aluminum Plant
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Aluminum Plant"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Aluminum Plant
+            </p>
+            <p
+              class="scientificName"
+            >
+              Pilea cadierei
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Areca Palm"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Areca Palm"
-            />
-            <figcaption>
-              <p>
-                Areca Palm
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Areca Palm"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Areca Palm
+            </p>
+            <p
+              class="scientificName"
+            >
+              Dypsis lutescens
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Arrowhead Plant"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Arrowhead Plant"
-            />
-            <figcaption>
-              <p>
-                Arrowhead Plant
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Arrowhead Plant"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Arrowhead Plant
+            </p>
+            <p
+              class="scientificName"
+            >
+              Syngonium podophyllum
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Asparagus Fern"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Asparagus Fern"
-            />
-            <figcaption>
-              <p>
-                Asparagus Fern
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Asparagus Fern"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Asparagus Fern
+            </p>
+            <p
+              class="scientificName"
+            >
+              Asparagus setaceus
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Baby Rubber Plant"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Baby Rubber Plant"
-            />
-            <figcaption>
-              <p>
-                Baby Rubber Plant
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Baby Rubber Plant"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Baby Rubber Plant
+            </p>
+            <p
+              class="scientificName"
+            >
+              Peperomia obtusifolia
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Baby's Tears"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Baby's Tears"
-            />
-            <figcaption>
-              <p>
-                Baby's Tears
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Baby's Tears"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Baby's Tears
+            </p>
+            <p
+              class="scientificName"
+            >
+              Soleirolia soleirolii
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Bird's Nest Fern"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Bird's Nest Fern"
-            />
-            <figcaption>
-              <p>
-                Bird's Nest Fern
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Bird's Nest Fern"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Bird's Nest Fern
+            </p>
+            <p
+              class="scientificName"
+            >
+              Asplenium nidus
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Boston Fern"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Boston Fern"
-            />
-            <figcaption>
-              <p>
-                Boston Fern
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Boston Fern"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Boston Fern
+            </p>
+            <p
+              class="scientificName"
+            >
+              Nephrolepis exaltata
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Angel Wings"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Angel Wings"
-            />
-            <figcaption>
-              <p>
-                Angel Wings
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Angel Wings"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Angel Wings
+            </p>
+            <p
+              class="scientificName"
+            >
+              Caladium bicolor
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Orbifolia Prayer Plant"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Orbifolia Prayer Plant"
-            />
-            <figcaption>
-              <p>
-                Orbifolia Prayer Plant
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Orbifolia Prayer Plant"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Orbifolia Prayer Plant
+            </p>
+            <p
+              class="scientificName"
+            >
+              Geoppertia orbifolia
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Rattlesnake Plant"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Rattlesnake Plant"
-            />
-            <figcaption>
-              <p>
-                Rattlesnake Plant
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Rattlesnake Plant"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Rattlesnake Plant
+            </p>
+            <p
+              class="scientificName"
+            >
+              Goeppertia lancifolia
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Cape Sundew"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Cape Sundew"
-            />
-            <figcaption>
-              <p>
-                Cape Sundew
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Cape Sundew"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Cape Sundew
+            </p>
+            <p
+              class="scientificName"
+            >
+              Drosera capensis
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Cardboard Palm"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Cardboard Palm"
-            />
-            <figcaption>
-              <p>
-                Cardboard Palm
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Cardboard Palm"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Cardboard Palm
+            </p>
+            <p
+              class="scientificName"
+            >
+              Zamia furfuracea
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Watch Chain Plant"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Watch Chain Plant"
-            />
-            <figcaption>
-              <p>
-                Watch Chain Plant
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Watch Chain Plant"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Watch Chain Plant
+            </p>
+            <p
+              class="scientificName"
+            >
+              Crassula muscosa
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Creeping Fig"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Creeping Fig"
-            />
-            <figcaption>
-              <p>
-                Creeping Fig
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Creeping Fig"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Creeping Fig
+            </p>
+            <p
+              class="scientificName"
+            >
+              Ficus pumila
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Elephant Ear"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Elephant Ear"
-            />
-            <figcaption>
-              <p>
-                Elephant Ear
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Elephant Ear"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Elephant Ear
+            </p>
+            <p
+              class="scientificName"
+            >
+              Alocasia amazonica
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/English Ivy"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="English Ivy"
-            />
-            <figcaption>
-              <p>
-                English Ivy
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="English Ivy"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              English Ivy
+            </p>
+            <p
+              class="scientificName"
+            >
+              Hedera helix
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Fiddle Leaf Fig"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Fiddle Leaf Fig"
-            />
-            <figcaption>
-              <p>
-                Fiddle Leaf Fig
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Fiddle Leaf Fig"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Fiddle Leaf Fig
+            </p>
+            <p
+              class="scientificName"
+            >
+              Ficus lyrata
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
-    <li>
+    <li
+      class="plantListItem"
+    >
       <a
         href="/my-plants/Gold Dust Dracaena"
+        style="text-decoration: none; color: black;"
       >
-        <div>
-          <figure>
-            <img
-              alt="Gold Dust Dracaena"
-            />
-            <figcaption>
-              <p>
-                Gold Dust Dracaena
-              </p>
-            </figcaption>
-          </figure>
-        </div>
+        <figure
+          class="MyPlant"
+        >
+          <img
+            alt="Gold Dust Dracaena"
+            class="plantImg"
+            src="images/photo-icon.svg"
+          />
+          <figcaption
+            class="caption"
+          >
+            <p
+              class="commonName"
+            >
+              Gold Dust Dracaena
+            </p>
+            <p
+              class="scientificName"
+            >
+              Dracaena surculosa
+            </p>
+          </figcaption>
+        </figure>
       </a>
     </li>
   </ul>

@@ -21,7 +21,7 @@
     }
     
     .bannerContainer > img {
-        width: 100%;
+        width: 100vw;
         opacity: 0.75;
     }
 
@@ -31,5 +31,6 @@
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: white;
+
     }
 }

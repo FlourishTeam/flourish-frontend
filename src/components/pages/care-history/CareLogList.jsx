@@ -1,15 +1,25 @@
 import React from 'react';
-import CareLogItem from '../care-history/CareLogItem';
+import CareLogItem from './CareLogItem';
+import uuid from 'react-uuid';
+import styles from './styles/CareLogItem.css';
+import { useCareLogItems } from '../../../state/CareLogsContext';
 
-function CareLogList() {
+const CareLogList = () => {
+//make a hook to pass in CareLogItems
+  const { careLogItems } = useCareLogItems();
+  const logListElement = careLogItems.map((careLogItem) => {
+    return (
+      <li key={uuid()} className={styles.plantListItem}>
+        <CareLogItem {...careLogItem} />
+      </li>
+    );
+  });
+
   return (
-    <>
-      <div>
-            Care Log List Here.
-        <CareLogItem />
-      </div>
-    </>
+    <ul data-testid="careLog" className={styles.CareLogList}>
+      {logListElement}
+    </ul>
   );
-}
+};
 
 export default CareLogList;

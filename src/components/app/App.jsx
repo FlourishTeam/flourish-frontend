@@ -11,6 +11,7 @@ import Header from '../reusable/header/Header';
 import { MyPlantProvider } from '../../state/MyPlantsContext';
 import { AuthProvider } from '../../state/AuthContext';
 import { DetailsProvider } from '../../state/DetailsContext';
+import { CareLogProvider } from '../../state/CareLogContext';
 
 export default function App() {
   return (
@@ -19,18 +20,20 @@ export default function App() {
         <AuthProvider>
           <DetailsProvider>
             <MyPlantProvider>
-              <Header />
-              <Switch>
-                <Route exact path="/" component={HomePage} />
-                <Route exact path="/details" component={DetailsPage} />
-                <Route exact path="/my-plants" component={MyPlantsPage} />
-                <Route exact path="/search" component={SearchPage} />
-                <Route
-                  exact
-                  path="/my-plants/:common-name"
-                  component={MyCareHistoryPage}
-                />
-              </Switch>
+              <CareLogProvider>
+                <Header />
+                <Switch>
+                  <Route exact path="/" component={HomePage} />
+                  <Route exact path="/details" component={DetailsPage} />
+                  <Route exact path="/my-plants" component={MyPlantsPage} />
+                  <Route exact path="/search" component={SearchPage} />
+                  <Route
+                    exact
+                    path="/my-plants/:common-name"
+                    component={MyCareHistoryPage}
+                  />
+                </Switch>
+              </CareLogProvider>
             </MyPlantProvider>
           </DetailsProvider>
         </AuthProvider>

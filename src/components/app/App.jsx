@@ -1,7 +1,6 @@
 /* eslint-disable max-len */
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 import HomePage from '../../components/pages/home/HomePage';
 import DetailsPage from '../../components/pages/details/DetailsPage';
 import MyPlantsPage from '../pages/my-plants/MyPlantsPage';
@@ -11,6 +10,7 @@ import Header from '../reusable/header/Header';
 import { MyPlantProvider } from '../../state/MyPlantsContext';
 import { AuthProvider } from '../../state/AuthContext';
 import { DetailsProvider } from '../../state/DetailsContext';
+import { SearchProvider } from '../../state/SearchContext';
 import { CareLogProvider } from '../../state/CareLogContext';
 
 export default function App() {
@@ -18,24 +18,26 @@ export default function App() {
     <>
       <Router>
         <AuthProvider>
-          <DetailsProvider>
-            <MyPlantProvider>
-              <CareLogProvider>
-                <Header />
-                <Switch>
-                  <Route exact path="/" component={HomePage} />
-                  <Route exact path="/details" component={DetailsPage} />
-                  <Route exact path="/my-plants" component={MyPlantsPage} />
-                  <Route exact path="/search" component={SearchPage} />
-                  <Route
-                    exact
-                    path="/my-plants/:common-name"
-                    component={MyCareHistoryPage}
-                  />
-                </Switch>
-              </CareLogProvider>
-            </MyPlantProvider>
-          </DetailsProvider>
+          <SearchProvider>
+            <DetailsProvider>
+              <MyPlantProvider>
+                <CareLogProvider>
+                  <Header />
+                  <Switch>
+                    <Route exact path="/" component={HomePage} />
+                    <Route exact path="/details" component={DetailsPage} />
+                    <Route exact path="/my-plants" component={MyPlantsPage} />
+                    <Route exact path="/search" component={SearchPage} />
+                    <Route
+                      exact
+                      path="/my-plants/:common-name"
+                      component={MyCareHistoryPage}
+                    />
+                  </Switch>
+                </CareLogProvider>
+              </MyPlantProvider>
+            </DetailsProvider>
+          </SearchProvider>
         </AuthProvider>
       </Router>
     </>

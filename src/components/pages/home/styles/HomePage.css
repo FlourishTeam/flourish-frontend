@@ -22,7 +22,7 @@
     
     .bannerContainer > img {
         width: 100vw;
-        opacity: 0.75;
+        opacity: 0.9;
     }
 
     .bannerContainer > :last-child {

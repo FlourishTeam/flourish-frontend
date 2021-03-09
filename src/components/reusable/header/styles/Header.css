@@ -1,7 +1,6 @@
- .header{
+ .header {
     background-color: rgb(205, 205, 205);
     height: 5rem;
-    margin: -1%;
  }
 
 .icon {
@@ -15,12 +14,7 @@
     float: right;
 }
 
-.menuIcon {
-    height: 3rem;
-    float: right;
-    margin: 1rem;
-    margin-bottom: 40px;
-}
+
 
 .loginButton {
     height: 3rem;

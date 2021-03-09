@@ -1,64 +1,115 @@
-.icon {
-    height: 4rem;
-    float: right;
-    margin-top: .5rem;
-    margin-left: .5rem;
-    }
-   
-    .sideBar, .menuBars {
-        float: right;
-            svg {
-                width: 2rem;
-            }
-    }
-    .navMenuItems, .menuBars {
-        display: flex;
-        flex-direction: column;
-        background-color: grey;
-
-    }
-
-    .navMenuItems {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        svg {
-            height: 1rem;
-        }
-    }
-
-  
-.navMenu, .menuItems {
+.navMenu {
     display: flex;
-    flex-direction: column;
-    background-color: grey;
-    height: 40rem;
-    width: 10rem;
-    float: right;
-}
+    background: none;
+    height: 10rem;
+    width: 5rem;
 
-ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    float: right;
-}
-
-.menuIconOpen, .menuIconClose {
-    height: 3rem;
-    float: left;
-    margin: 1rem;
+  float:right;
+  background-color: blueviolet;
+    
+    
+    svg {
+        height: 3rem;
+      float: left;
+    }
+        
 }
 
 a {
-    float: inline-start;
+    display: flex;
+    flex-direction: row;
+      svg {
+      float: left;
+    }
 }
 
+
 .menuBars {
-    height: 6rem;
-    align-self: center;
-    float: inline-start;
+    margin-left: 2rem;
+    font-size: 2rem;
+    background-color: blue;
+    svg {
+        height: 3rem;
+    }
 }
+
+
+ul {
+    float: right;
+    background-color: rgb(130, 255, 105);
+    height: 40rem;
+    width: 10rem;
+    padding-left: 1rem;
+    svg {
+        height: 1rem;
+    }
+}
+
+li {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    list-style-type: none;  
+}
+
+.navBar {
+    background-color: hotpink;
+    width: 35rem;
+    height: 80rem;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+    margin-top: 100rem;
+    
+    float: right;
+    
+}
+
+.navBar.active {
+    left: 0;
+    transition: 350ms;
+} 
+
+.navText {
+    display: flex;
+  
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 60px;
+}
+
+
+.navText a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+  }
+
+  .navText a:hover {
+    background-color: #1a83ff;
+  }
+
+
+.navMenuToggle {
+    background: none;
+    width: 20%;
+    height: 80px;
+    display: flex;
+    
+    align-items: center;
+  }
+
+
+
+
+
 

@@ -1,27 +1,27 @@
-/* eslint-disable max-len */
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './styles/MyPlant.css';
 // import RemoveFromCollection from '../../reusable/collection/RemoveFromCollection';
 
+const MyPlant = ({ common_name, scientific_name }) => (
+  <figure className={styles.MyPlant}>
+    <img
+      src="images/photo-icon.svg"
+      alt={common_name}
+      className={styles.plantImg}
+    />
 
-const MyPlant = ({ name, image }) => (
-  <div>
-    <figure>
-      <img src={image} alt={name}/>
-
-      <figcaption>
-        <p>{name}</p>
-      </figcaption>
-    
-    </figure>
+    <figcaption className={styles.caption}>
+      <p className={styles.commonName}>{common_name}</p>
+      <p className={styles.scientificName}>{scientific_name}</p>
+    </figcaption>
     {/* <RemoveFromCollection /> */}
-  </div>
-
+  </figure>
 );
 
 MyPlant.propTypes = {
-  name: PropTypes.string.isRequired,
-  // image:PropTypes.string.isRequired,
+  common_name: PropTypes.string.isRequired,
+  scientific_name: PropTypes.string.isRequired,
 };
 
 export default MyPlant;

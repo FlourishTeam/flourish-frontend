@@ -4,6 +4,7 @@ import styles from './styles/Plant.css';
 import MaintenanceLevel from '../../reusable/maintenance/MaintenanceLevel';
 
 const Plant = ({
+  image,
   commonName,
   scientificName,
   lightRange,
@@ -14,7 +15,7 @@ const Plant = ({
   return (
     <div className={styles.Plant}>
       <img
-        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fa%2Fad%2FPlaceholder_no_text.svg%2F1200px-Placeholder_no_text.svg.png&f=1&nofb=1"
+        src={image}
         height="100px"
       />
       <div>{commonName}</div>
@@ -28,6 +29,7 @@ const Plant = ({
 };
 
 Plant.propTypes = {
+  image: PropTypes.string.isRequired,
   commonName: PropTypes.string.isRequired,
   scientificName: PropTypes.string.isRequired,
   lightRange: PropTypes.string.isRequired,

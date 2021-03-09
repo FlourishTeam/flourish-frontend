@@ -5,7 +5,7 @@ import Search from '../../reusable/search/Search';
 const HomePage = () => {
   return (
     <div className={styles.HomePage}>
-      <Search />
+      {/* <Search /> */}
     </div>
   );
 };

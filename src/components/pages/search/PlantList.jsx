@@ -2,7 +2,11 @@ import React from 'react';
 import Plant from './Plant';
 import styles from './styles/PlantList.css';
 import uuid from 'react-uuid';
-import { useSearchError, useSearchLoading, useSearchResults } from '../../../state/SearchContext';
+import {
+  useSearchError,
+  useSearchLoading,
+  useSearchResults,
+} from '../../../state/SearchContext';
 import Loading from '../../reusable/loading/Loading';
 
 const PlantList = () => {
@@ -20,14 +24,10 @@ const PlantList = () => {
 
   // correct loading logic later:
   // opposite of loading for now because loading will never not be true
-  if(loading) return <Loading />;
-  if(error) return <div>{error}</div>;
-  
-  return (
-    <ul className={styles.PlantList}>
-      {plantElements}
-    </ul>
-  );
+  if (loading) return <Loading />;
+  if (error) return <div>{error}</div>;
+
+  return <ul className={styles.PlantList}>{plantElements}</ul>;
 };
 
 export default PlantList;

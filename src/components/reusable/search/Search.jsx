@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './styles/Search.css';
-import usePhotoUploader from '../../../hooks/usePhotoUploader';
 import {
   useHandleChange,
   useHandleSearch,
   useSearchQuery,
 } from '../../../state/SearchContext';
 import { useHistory } from 'react-router-dom';
+import { usePhotoUploader } from '../../../state/PhotoUploadContext';
 
 const Search = () => {
   const searchQuery = useSearchQuery();

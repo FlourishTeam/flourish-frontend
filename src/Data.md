@@ -53,7 +53,7 @@ SearchPage.jsx
     - care_difficulty
     - temperature_range
 
-MyCareHistoryPage.jsx
+- MyCareHistoryPage.jsx
     - user_plant_id
     - plant_id
     - user_id

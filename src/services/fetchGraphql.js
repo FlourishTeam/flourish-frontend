@@ -3,13 +3,13 @@ import client from '../state/graphqlContext';
 import { gql } from 'apollo-boost';
 
 export const addPlantToCollection = (user, plantId) => {
-  console.log(user);
-
+  console.log(user,'beeeeeeeeeeep');
+ 
   return  client
     .query({
       query: gql`
       query {
-          addToCollection(userId: ${user.userId}, plantId: ${plantId}) {
+          addToCollection(userId: ${user.id}, plantId: ${plantId}) {
           userPlantId
           plantId
           userId

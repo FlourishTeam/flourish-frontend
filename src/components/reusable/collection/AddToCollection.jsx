@@ -3,18 +3,30 @@
 
 import React from 'react';
 // import PropTypes from "prop-types";
-import useAddToCollection from '../../../hooks/useAddToCollection';
+// import useAddToCollection from '../../../hooks/useAddToCollection';
+import { addPlantToCollection } from '../../../services/fetchGraphql';
+import { useSession } from '../../../state/AuthContext';
 import styles from './styles/AddToCollection.css';
 
-function AddToCollection() {
 
+function AddToCollection({ plantId }) {
+  const user = useSession();
+
+
+  const handleClick = () => {
+    addPlantToCollection(user, plantId);
+      
+  };
 
   return (
     <div>
-      <button onClick={() => useAddToCollection(this.id)} className="addToCollectionButton">
-        Save Plant to Collection
-        <svg className={styles.addIcon} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+      
+      <button onClick={handleClick} className="addToCollectionButton">
+        <span>Save Plant to Collection</span>
+        <span><svg className={styles.addIcon} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+        </span>
       </button> 
+      
     </div>
   );
 }

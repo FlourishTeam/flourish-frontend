@@ -17,7 +17,15 @@ const Details = ({
   bloomSize,
   humidityLevel,
   propagation,
-  careDifficulty
+  careDifficulty,
+  humidityLevel,
+  lightRange,
+  temperatureRange,
+  placement,
+  substrateRecommendation,
+  pottingNotes,
+  watering
+
 }) => {
   return (
     <div className={styles.Details}>

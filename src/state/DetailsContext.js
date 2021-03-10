@@ -30,8 +30,16 @@ export const DetailsProvider = ({ children }) => {
           type,
           floweringPeriod,
           bloomSize,
+          humidityLevel,
           propagation,
-          careDifficulty
+          careDifficulty,
+          lightRange,
+          hydrationRange,
+          temperatureRange,
+          placement,
+          substrateRecommendation,
+          pottingNotes,
+          watering
           }
         }
         `, })

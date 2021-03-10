@@ -1,29 +1,29 @@
 DetailsPage.jsx
 
 - Details.jsx
-    - plant_id
+    - plantId
     - image
-    - common_name
-    - scientific_name
+    - commonName
+    - scientificName
     - synonyms
-    - pests_diseases
+    - pestsDiseases
     - warnings
     - height
     - spread
     - type
-    - flowering_period
-    - bloom_size
-    - humidity_level
+    - floweringPeriod
+    - bloomSize
+    - humidityLevel
     - propagation
 
 
 - MaintenanceLevel.jsx
-    - care_difficulty
+    - careDifficulty
 
 - CareDetails.jsx
-    - light_range
-    - hydration_range
-    - planting.temperature_range
+    - lightRange
+    - hydrationRange
+    - planting.temperatureRange
     - planting.placement
     - planting.substrate_recommendation
     - planting.potting_notes

@@ -4,9 +4,12 @@ import Search from '../../reusable/search/Search';
 
 const HomePage = () => {
   return (
-    <div className={styles.HomePage}>
-      <Search />
-    </div>
+    <section className={styles.HomePage}>
+      <header className={styles.bannerContainer}>
+        <img src="images/home-page/banner-1.jpeg" />
+        <Search className={styles.Search} />
+      </header>
+    </section>
   );
 };
 

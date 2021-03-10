@@ -3,10 +3,11 @@ import { useLogin, useSignup } from '../../state/AuthContext';
 import AuthForm from './AuthForm';
 import styles from '../reusable/header/styles/Overlay.css';
 
-const Signup = () => {
+const Signup = ({ name, email, setName, setEmail }) => {
   const signup = useSignup();
   const login = useLogin();
   const [state, setState] = useState('signup');
+  // console.log(login);
 
   const showLogin = () => {
     setState('login');
@@ -24,6 +25,10 @@ const Signup = () => {
             title="Signup" 
             signupFn={signup} 
             showLogin={showLogin}
+            name={name}
+            setName={setName}
+            email={email}
+            setEmail={setEmail}
           />
         )}
       {
@@ -32,6 +37,8 @@ const Signup = () => {
             title="Login" 
             loginFn={login} 
             showSignup={showSignup}
+            email={email}
+            setEmail={setEmail}
           />
         )}
     </div>

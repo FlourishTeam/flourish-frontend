@@ -3,10 +3,8 @@ import PropTypes from 'prop-types';
 import { useAuthError } from '../../state/AuthContext';
 import styles from '../reusable/header/styles/Overlay.css';
 
-const AuthForm = ({ title, signupFn, loginFn, showLogin, showSignup }) => {
+const AuthForm = ({ email, setEmail, name, setName, title, signupFn, loginFn, showLogin, showSignup }) => {
   const error = useAuthError;
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSignupSubmit = e => {
@@ -94,6 +92,10 @@ AuthForm.propTypes = {
   loginFn: PropTypes.func,
   showLogin: PropTypes.func,
   showSignup: PropTypes.func,
+  name: PropTypes.string,
+  setName: PropTypes.func,
+  email: PropTypes.string.isRequired,
+  setEmail: PropTypes.func
 };
 
 export default AuthForm;

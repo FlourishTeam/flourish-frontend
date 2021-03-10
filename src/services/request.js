@@ -24,5 +24,6 @@ const request = (path, method, body) => {
 
 export const post = (path, body) => request(path, 'POST', body);
 export const get = path => request(path, 'GET');
+export const getByEmail = (path, body) => request(path, 'GET', body);
 export const put = (path, body) => request(path, 'PUT', body);
 export const del = path => request(path, 'DELETE');

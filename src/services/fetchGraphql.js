@@ -1,5 +1,5 @@
 import React from 'react';
-import client from '../state/graphqlContext';
+import client from '../state/GraphQLContext';
 import { gql } from 'apollo-boost';
 
 export const addPlantToCollection = (user, plantId) => {

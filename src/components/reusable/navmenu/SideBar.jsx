@@ -13,11 +13,14 @@ const SideBar = ({ show }) => {
       <a id="home" className="menu-item" href="/">
         Home
       </a>
-      <a id="about" className="menu-item" href="/about">
-        About
+      <a id="search" className="menu-item" href="/search">
+        Search Flourish Library
       </a>
-      <a id="contact" className="menu-item" href="/contact">
-        Contact
+      <a id="my-plants" className="menu-item" href="/my-plants">
+        My Plants
+      </a>
+      <a id="about-us" className="menu-item" href="/about-us">
+        About Us
       </a>
       <a onClick={showSettings} className="menu-item--small" href="">
         Settings

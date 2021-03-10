@@ -1,15 +1,18 @@
 import React from 'react';
-import useSearchResults from '../../../hooks/useSearchResults';
 import Plant from './Plant';
 import styles from './styles/PlantList.css';
 import uuid from 'react-uuid';
+import {
+  useSearchError,
+  useSearchLoading,
+  useSearchResults,
+} from '../../../state/SearchContext';
+import Loading from '../../reusable/loading/Loading';
 
 const PlantList = () => {
-  // state: loading, searchResults (from Hook)
-  const { loading, searchResults } = useSearchResults();
-
-  // if there are no search results, render Loading
-  // if there are search results, render Plant
+  const searchResults = useSearchResults();
+  const loading = useSearchLoading();
+  const error = useSearchError();
 
   const plantElements = searchResults.map((plant) => {
     return (
@@ -21,11 +24,10 @@ const PlantList = () => {
 
   // correct loading logic later:
   // opposite of loading for now because loading will never not be true
-  return (
-    <ul className={styles.PlantList}>
-      {!loading ? <>Loading</> : plantElements}
-    </ul>
-  );
+  if (loading) return <Loading />;
+  if (error) return <div>{error}</div>;
+
+  return <ul className={styles.PlantList}>{plantElements}</ul>;
 };
 
 export default PlantList;

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './styles/Details.css';
 import MaintenanceLevel from '../../reusable/maintenance/MaintenanceLevel';
+import AddToCollection from '../../reusable/collection/AddToCollection';
 
 const Details = ({
   image,
@@ -20,30 +21,33 @@ const Details = ({
   careDifficulty
 }) => {
   return (
-    <div className={styles.Details}>
-      <img src={image} alt={commonName} />
-      <div>{commonName}</div>
-      <div>{scientificName}</div>
-      <div>Maintenance Level: <MaintenanceLevel maintenanceLevel={careDifficulty} /></div>
-      {/* import ADD/REMOVE component */}
-      {/* import CARE DETAILS component */}
-      {/* ABOUT SECTION */}
-      <section>
-        <div>Other Names: {synonyms}</div>
-        <div>Warnings: {warnings}</div>
-        <div>Common Pests and Diseases: {pestsDiseases}</div>
-        <ul>
+    <>
+      <div className={styles.Details}>
+        <img src={image} alt={commonName} />
+        <div>{commonName}</div>
+        <div>{scientificName}</div>
+        <div>Maintenance Level: <MaintenanceLevel maintenanceLevel={careDifficulty} /></div>
+        {/* import ADD/REMOVE component */}
+        {/* import CARE DETAILS component */}
+        {/* ABOUT SECTION */}
+        <section>
+          <div>Other Names: {synonyms}</div>
+          <div>Warnings: {warnings}</div>
+          <div>Common Pests and Diseases: {pestsDiseases}</div>
+          <ul>
         Physical Characteristics:
-          <li>Height: {height}</li>
-          <li>Spread: {spread}</li>
-          <li>Type: {type}</li>
-          <li>Flowering Period: {floweringPeriod}</li>
-          <li>Bloom Size: {bloomSize}</li>
-        </ul>
-        <div>Propagation: {propagation}</div>
-        <div>Humidity Level: {humidityLevel}</div>
-      </section>
-    </div>
+            <li>Height: {height}</li>
+            <li>Spread: {spread}</li>
+            <li>Type: {type}</li>
+            <li>Flowering Period: {floweringPeriod}</li>
+            <li>Bloom Size: {bloomSize}</li>
+          </ul>
+          <div>Propagation: {propagation}</div>
+          <div>Humidity Level: {humidityLevel}</div>
+        </section>    
+      </div>
+      <AddToCollection />
+    </>
   );
 };
 

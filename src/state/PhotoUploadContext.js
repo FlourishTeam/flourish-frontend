@@ -1,12 +1,18 @@
-import React, { useState } from 'react';
+import React, { createContext, useContext, useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import { useHandleSearch } from './SearchContext';
 
 const API_URL = process.env.REACT_APP_API_URL;
 const API_KEY = process.env.REACT_APP_API_KEY;
 
-const usePhotoUploader = () => {
+export const PhotoUploadContext = createContext(null);
+
+export const PhotoUploadProvider = ({ children }) => {
   const [photoMode, setPhotoMode] = useState(false);
   const [pictureUpload, setPictureUpload] = useState({});
-  const [lookAlikes, setLookAlikes] = useState([]);
+  const handleSearch = useHandleSearch();
+
+  const history = useHistory();
 
   const handlePreview = (e) => {
     setPictureUpload(URL.createObjectURL(e.target.files[0]));
@@ -42,21 +48,27 @@ const usePhotoUploader = () => {
         body: JSON.stringify(data),
       })
         .then((res) => res.json())
-        .then((json) => setLookAlikes(json.suggestions));
+        .then((json) => handleSearch(json.suggestions[0].plant_name));
     });
 
-    // should trigger a loading spinner while we wait for the fetch to return
+    history.push('/search');
   };
 
-  console.log(lookAlikes);
-
-  return {
-    photoMode,
-    setPhotoMode,
-    pictureUpload,
-    handleUpload,
-    handlePreview,
-  };
+  return (
+    <PhotoUploadContext.Provider
+      value={{
+        photoMode,
+        setPhotoMode,
+        pictureUpload,
+        handleUpload,
+        handlePreview,
+      }}
+    >
+      {children}
+    </PhotoUploadContext.Provider>
+  );
 };
 
-export default usePhotoUploader;
+export const usePhotoUploader = () => {
+  return useContext(PhotoUploadContext);
+};

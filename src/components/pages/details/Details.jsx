@@ -1,43 +1,47 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './styles/Details.css';
+import MaintenanceLevel from '../../reusable/maintenance/MaintenanceLevel';
 
 const Details = ({
   image,
-  common_name,
-  scientific_name,
+  commonName,
+  scientificName,
   synonyms,
+  pestsDiseases,
   warnings,
-  pests_diseases,
   height,
   spread,
   type,
-  flowering_period,
-  bloom_size,
+  floweringPeriod,
+  bloomSize,
+  humidityLevel,
   propagation,
+  careDifficulty
 }) => {
   return (
     <div className={styles.Details}>
-      <img src={image} alt={common_name} />
+      <img src={image} alt={commonName} />
+      <div>{commonName}</div>
+      <div>{scientificName}</div>
+      <div>Maintenance Level: <MaintenanceLevel maintenanceLevel={careDifficulty} /></div>
       {/* import ADD/REMOVE component */}
-      <div>{common_name}</div>
-      <div>{scientific_name}</div>
-      {/* import MAINTENANCE LEVEL component */}
       {/* import CARE DETAILS component */}
       {/* ABOUT SECTION */}
       <section>
         <div>Other Names: {synonyms}</div>
         <div>Warnings: {warnings}</div>
-        <div>Common Pests and Diseases: {pests_diseases}</div>
+        <div>Common Pests and Diseases: {pestsDiseases}</div>
         <ul>
         Physical Characteristics:
           <li>Height: {height}</li>
           <li>Spread: {spread}</li>
           <li>Type: {type}</li>
-          <li>Flowering Period: {flowering_period}</li>
-          <li>Bloom Size: {bloom_size}</li>
+          <li>Flowering Period: {floweringPeriod}</li>
+          <li>Bloom Size: {bloomSize}</li>
         </ul>
         <div>Propagation: {propagation}</div>
+        <div>Humidity Level: {humidityLevel}</div>
       </section>
     </div>
   );
@@ -45,17 +49,19 @@ const Details = ({
 
 Details.propTypes = {
   image: PropTypes.string.isRequired,
-  common_name: PropTypes.string.isRequired,
+  commonName: PropTypes.string.isRequired,
   synonyms: PropTypes.string.isRequired,
-  scientific_name: PropTypes.string.isRequired,
-  pests_diseases: PropTypes.string.isRequired,
+  scientificName: PropTypes.string.isRequired,
+  pestsDiseases: PropTypes.string.isRequired,
   warnings: PropTypes.string.isRequired,
   height: PropTypes.string.isRequired,
   spread: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  flowering_period: PropTypes.string.isRequired,
-  bloom_size: PropTypes.string.isRequired,
+  floweringPeriod: PropTypes.string.isRequired,
+  bloomSize: PropTypes.string.isRequired,
   propagation: PropTypes.string.isRequired,
+  humidityLevel: PropTypes.string,
+  careDifficulty: PropTypes.string.isRequired,
 };
 
 export default Details;

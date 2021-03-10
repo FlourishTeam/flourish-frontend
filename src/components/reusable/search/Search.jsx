@@ -1,10 +1,13 @@
 import React from 'react';
 import styles from './styles/Search.css';
-import useSearchResults from '../../../hooks/useSearchResults';
 import usePhotoUploader from '../../../hooks/usePhotoUploader';
+import { useHandleChange, useHandleSearch, useSearchQuery } from '../../../state/SearchContext';
 
 const Search = () => {
-  const { searchQuery, handleChange } = useSearchResults();
+  const searchQuery = useSearchQuery();
+  const handleChange = useHandleChange();
+  const handleSearch = useHandleSearch();
+
   const {
     photoMode,
     setPhotoMode,
@@ -12,6 +15,11 @@ const Search = () => {
     handleUpload,
     handlePreview,
   } = usePhotoUploader();
+
+  const handleSearchSubmit = e => {
+    e.preventDefault();
+    handleSearch(searchQuery);
+  };
 
   return (
     <div className={styles.Search}>
@@ -26,7 +34,7 @@ const Search = () => {
           )}
         </form>
       ) : (
-        <form onSubmit={(e) => e.preventDefault()}>
+        <form onSubmit={handleSearchSubmit}>
           <input
             className={styles.searchInput}
             value={searchQuery}

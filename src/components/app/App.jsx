@@ -12,6 +12,7 @@ import { AuthProvider } from '../../state/AuthContext';
 import { DetailsProvider } from '../../state/DetailsContext';
 import { SearchProvider } from '../../state/SearchContext';
 import { CareLogProvider } from '../../state/CareLogContext';
+import { PhotoUploadProvider } from '../../state/PhotoUploadContext';
 
 export default function App() {
   return (
@@ -19,24 +20,26 @@ export default function App() {
       <Router>
         <AuthProvider>
           <SearchProvider>
-            <DetailsProvider>
-              <MyPlantProvider>
-                <CareLogProvider>
-                  <Header />
-                  <Switch>
-                    <Route exact path="/" component={HomePage} />
-                    <Route exact path="/details/:id" component={DetailsPage} />
-                    <Route exact path="/my-plants" component={MyPlantsPage} />
-                    <Route exact path="/search" component={SearchPage} />
-                    <Route
-                      exact
-                      path="/my-plants/:common-name"
-                      component={MyCareHistoryPage}
-                    />
-                  </Switch>
-                </CareLogProvider>
-              </MyPlantProvider>
-            </DetailsProvider>
+            <PhotoUploadProvider>
+              <DetailsProvider>
+                <MyPlantProvider>
+                  <CareLogProvider>
+                    <Header />
+                    <Switch>
+                      <Route exact path="/" component={HomePage} />
+                      <Route exact path="/details/:id" component={DetailsPage} />
+                      <Route exact path="/my-plants" component={MyPlantsPage} />
+                      <Route exact path="/search" component={SearchPage} />
+                      <Route
+                        exact
+                        path="/my-plants/:common-name"
+                        component={MyCareHistoryPage}
+                      />
+                    </Switch>
+                  </CareLogProvider>
+                </MyPlantProvider>
+              </DetailsProvider>
+            </PhotoUploadProvider>
           </SearchProvider>
         </AuthProvider>
       </Router>

@@ -2,8 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './styles/Plant.css';
 import MaintenanceLevel from '../../reusable/maintenance/MaintenanceLevel';
+import { Link } from 'react-router-dom';
 
 const Plant = ({
+  plantId,
   image,
   commonName,
   scientificName,
@@ -13,22 +15,22 @@ const Plant = ({
   temperatureRange,
 }) => {
   return (
-    <div className={styles.Plant}>
-      <img
-        src={image}
-        height="100px"
-      />
-      <div>{commonName}</div>
-      <div className={styles.scientific}>{scientificName}</div>
-      <div>{temperatureRange}</div>
-      <div>{lightRange}</div>
-      <div>{hydrationRange}</div>
-      <MaintenanceLevel maintenanceLevel={careDifficulty} />
-    </div>
+    <Link to={`/details/${plantId}`}>
+      <div className={styles.Plant}>
+        <img src={image} height="100px"/>
+        <div>{commonName}</div>
+        <div className={styles.scientific}>{scientificName}</div>
+        <div>{temperatureRange}</div>
+        <div>{lightRange}</div>
+        <div>{hydrationRange}</div>
+        <MaintenanceLevel maintenanceLevel={careDifficulty} />
+      </div>
+    </Link>
   );
 };
 
 Plant.propTypes = {
+  plantId: PropTypes.number.isRequired,
   image: PropTypes.string.isRequired,
   commonName: PropTypes.string.isRequired,
   scientificName: PropTypes.string.isRequired,

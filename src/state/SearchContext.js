@@ -13,6 +13,7 @@ export const SearchProvider = ({ children }) => {
   const handleSearch = (name) => {
     setError(null);
     setLoading(true);
+
     client
       .query({
         query: gql`
@@ -28,13 +29,12 @@ export const SearchProvider = ({ children }) => {
           temperatureRange
           }
         }
-        `,
-      })
+        `, })
       .then(({ data }) => {
         setSearchResults(data.plantByName);
         setLoading(false);
       })
-      .catch((error) => setError(error.status));
+      .catch((error) => setError(error.message));
   };
 
   const handleChange = ({ target }) => {

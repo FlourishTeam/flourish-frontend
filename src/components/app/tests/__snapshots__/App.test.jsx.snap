@@ -216,35 +216,42 @@ exports[`App component renders App 1`] = `
       </svg>
     </div>
   </div>
-  <div
+  <section
     class="HomePage"
   >
-    <div
-      class="Search"
+    <header
+      class="bannerContainer"
     >
-      <form>
-        <input
-          class="searchInput"
-          placeholder="search"
-          type="text"
-          value=""
-        />
-        <button
-          class="photoMode"
-        >
-          <img
-            src="images/photo-icon.svg"
+      <img
+        src="images/home-page/banner-1.jpeg"
+      />
+      <div
+        class="Search"
+      >
+        <form>
+          <input
+            class="searchInput"
+            placeholder="search"
+            type="text"
+            value=""
           />
-        </button>
-        <button
-          class="submitButton"
-        >
-          <img
-            src="images/search-icon.svg"
-          />
-        </button>
-      </form>
-    </div>
-  </div>
+          <button
+            class="photoMode"
+          >
+            <img
+              src="images/photo-icon.svg"
+            />
+          </button>
+          <button
+            class="submitButton"
+          >
+            <img
+              src="images/search-icon.svg"
+            />
+          </button>
+        </form>
+      </div>
+    </header>
+  </section>
 </DocumentFragment>
 `;

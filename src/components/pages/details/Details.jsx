@@ -18,7 +18,6 @@ const Details = ({
   humidityLevel,
   propagation,
   careDifficulty,
-  humidityLevel,
   lightRange,
   temperatureRange,
   placement,

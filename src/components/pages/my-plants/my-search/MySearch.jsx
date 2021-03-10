@@ -5,7 +5,7 @@ const MySearch = () => {
 
 
   return (
-    <input onChange={onChange} />
+    <input />
   );
 };
 

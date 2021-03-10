@@ -6,6 +6,8 @@ const MyPlantsPage = () => {
 
   return (
     <>
+
+    Hello I am myPlants
       <MySearch />
       <MyPlantList />
     </>

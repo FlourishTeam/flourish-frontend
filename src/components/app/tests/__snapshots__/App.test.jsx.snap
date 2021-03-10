@@ -159,7 +159,7 @@ exports[`App component renders App 1`] = `
           class="navText"
         />
         <a
-          href="/history"
+          href="/my-plants/:common-name"
         >
           <svg
             class="listIcon"

@@ -12,6 +12,7 @@ import { AuthProvider } from '../../state/AuthContext';
 import { DetailsProvider } from '../../state/DetailsContext';
 import { SearchProvider } from '../../state/SearchContext';
 import { CareLogProvider } from '../../state/CareLogContext';
+import { PhotoUploadProvider } from '../../state/PhotoUploadContext';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <Router>
         <AuthProvider>
           <SearchProvider>
+            <PhotoUploadProvider>
             <DetailsProvider>
               <MyPlantProvider>
                 <CareLogProvider>
@@ -37,6 +39,7 @@ export default function App() {
                 </CareLogProvider>
               </MyPlantProvider>
             </DetailsProvider>
+          </PhotoUploadProvider>
           </SearchProvider>
         </AuthProvider>
       </Router>

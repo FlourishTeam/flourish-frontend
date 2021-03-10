@@ -27,7 +27,7 @@ export default function App() {
                     <Header />
                     <Switch>
                       <Route exact path="/" component={HomePage} />
-                      <Route exact path="/details" component={DetailsPage} />
+                      <Route exact path="/details/:id" component={DetailsPage} />
                       <Route exact path="/my-plants" component={MyPlantsPage} />
                       <Route exact path="/search" component={SearchPage} />
                       <Route

@@ -1,34 +1,75 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
-import Loading from '../components/reusable/loading/Loading';
-//replace with real API fetch plantById
-import { data } from '../hooks/fake-data';
+import React, { createContext, useContext, useState } from 'react';
+import client from './GraphQLContext';
+import { gql } from 'apollo-boost';
 
 export const DetailsContext = createContext(null);
 
 export const DetailsProvider = ({ children }) => {
   const [loading, setLoading]  = useState(true);
-  // 
-  const [plant, setPlant] = useState(data[0]);
+  const [plant, setPlant] = useState({});
+  const [error, setError] = useState(null);
 
-  // uncomment when fetch by plantById is added
+  const renderDetails = (id) => {
+    setError(null);
+    setLoading(true);
 
-  // useEffect(() => {
-  //   // replace data with API fetch plantById
-  //   data()
-  //     .then(plant => {
-  //       setPlant(plant);
-  //       setLoading(false);
-  //     });
-  // }, {});
+    client
+      .query({
+        query: gql`
+        query {
+          plantById(id: ${id}) {
+          plantId,
+          image,
+          commonName,
+          scientificName,
+          synonyms,
+          pestsDiseases,
+          warnings,
+          height,
+          spread,
+          type,
+          floweringPeriod,
+          bloomSize,
+          propagation,
+          careDifficulty
+          }
+        }
+        `, })
+      .then(({ data }) => {
+        setPlant(data.plantById);
+        setLoading(false);
+        console.log('DETAILS CONTEXT PLANT', plant);
+      })
+      .catch((error) => setError(error.message));
+  };
   
   return (
-    <DetailsContext.Provider value={{ plant, loading }}>
-      {/* remove ! when API fetch plantById is added */}
-      {!loading ? <Loading /> : children}
+    <DetailsContext.Provider value={{ 
+      loading, 
+      plant, 
+      error,
+      renderDetails }}>
+      {children}
     </DetailsContext.Provider>
   );
 };
 
-export const usePlantById = () => {
-  return useContext(DetailsContext);
+export const useDetailsLoading = () => {
+  const { loading } = useContext(DetailsContext);
+  return loading;
+};
+
+export const usePlant = () => {
+  const { plant } = useContext(DetailsContext);
+  return plant;
+};
+
+export const useDetailsError = () => {
+  const { error } = useContext(DetailsContext);
+  return error;
+};
+
+export const useRenderDetails = () => {
+  const { renderDetails } = useContext(DetailsContext);
+  return renderDetails;
 };

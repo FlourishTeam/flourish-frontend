@@ -3,6 +3,7 @@ import { render, cleanup } from '@testing-library/react';
 import { MemoryRouter as Router } from 'react-router';
 import SearchPage from '../SearchPage';
 import { SearchProvider } from '../../../../state/SearchContext';
+import { PhotoUploadProvider } from '../../../../state/PhotoUploadContext';
 
 describe('Search component', () => {
   afterEach(() => cleanup());
@@ -10,7 +11,9 @@ describe('Search component', () => {
     const { asFragment } = render(
       <Router>
         <SearchProvider>
-          <SearchPage />
+          <PhotoUploadProvider>
+            <SearchPage />
+          </PhotoUploadProvider>
         </SearchProvider>
       </Router>
     );

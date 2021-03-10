@@ -18,11 +18,11 @@ DetailsPage.jsx
 
 
 - MaintenanceLevel.jsx
-    - light_range
-    - hydration_range
     - care_difficulty
 
 - CareDetails.jsx
+    - light_range
+    - hydration_range
     - planting.temperature_range
     - planting.placement
     - planting.substrate_recommendation

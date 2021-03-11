@@ -1,13 +1,10 @@
 import React, { createContext, useContext, useState } from 'react';
-import { gql } from 'apollo-boost';
-import client from './GraphQLContext';
-
-
+import { plantById } from '../services/queries/plantById';
 
 export const DetailsContext = createContext(null);
 
 export const DetailsProvider = ({ children }) => {
-  const [loading, setLoading]  = useState(true);
+  const [loading, setLoading] = useState(true);
   const [plant, setPlant] = useState({});
   const [error, setError] = useState(null);
 
@@ -15,35 +12,7 @@ export const DetailsProvider = ({ children }) => {
     setError(null);
     setLoading(true);
 
-    client
-      .query({
-        query: gql`
-        query {
-          plantById(id: ${id}) {
-          plantId,
-          image,
-          commonName,
-          scientificName,
-          lightRange,
-          hydrationRange,
-          temperatureRange,
-          placement,
-          substrateRecommendation,
-          pottingNotes,
-          watering,
-          synonyms,
-          pestsDiseases,
-          warnings,
-          height,
-          spread,
-          type,
-          floweringPeriod,
-          bloomSize,
-          propagation,
-          careDifficulty
-          }
-        }
-        `, })
+    plantById(id)
       .then(({ data }) => {
         setPlant(data.plantById);
         setLoading(false);
@@ -51,13 +20,16 @@ export const DetailsProvider = ({ children }) => {
       })
       .catch((error) => setError(error.message));
   };
-  
+
   return (
-    <DetailsContext.Provider value={{ 
-      loading, 
-      plant, 
-      error,
-      renderDetails }}>
+    <DetailsContext.Provider
+      value={{
+        loading,
+        plant,
+        error,
+        renderDetails,
+      }}
+    >
       {children}
     </DetailsContext.Provider>
   );

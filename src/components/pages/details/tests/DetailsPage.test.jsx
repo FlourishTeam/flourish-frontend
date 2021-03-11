@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
 import { MemoryRouter as Router } from 'react-router';
-import { DetailsProvider } from '../../../../state/DetailsContext';
+import { DetailsProvider } from '../../../../providers/DetailsContext';
 import DetailsPage from '../DetailsPage';
 
 describe('DetailsPage component', () => {

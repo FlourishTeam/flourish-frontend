@@ -20,7 +20,7 @@
     "test": "jest --setupFiles dotenv/config --verbose",
     "test:watch": "npm run test -- --watch",
     "start": "webpack serve --hot --mode development --devtool eval-source-map",
-    "build": "webpack dotenv/config --devtool source-map"
+    "build": "webpack --devtool source-map"
   },
   "keywords": [],
   "author": "",
@@ -76,6 +76,7 @@
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
+    "react-slideshow-image": "^3.4.3",
     "react-uuid": "^1.0.2",
     "reactjs-popup": "^2.0.4"
   }

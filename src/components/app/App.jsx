@@ -24,14 +24,26 @@ export default function App() {
                 <CareLogProvider>
                   <Header />
                   <Switch>
-                    <Route exact path="/" component={HomePage} />
-                    <Route
-                      exact
-                      path="/details/:id"
-                      component={DetailsPage}
+                    <Route 
+                      exact 
+                      path="/" 
+                      component={HomePage} 
                     />
-                    <Route exact path="/my-plants" component={MyPlantsPage} />
-                    <Route exact path="/search" component={SearchPage} />
+                    <Route 
+                      exact 
+                      path="/details/:id" 
+                      component={DetailsPage} 
+                    />
+                    <Route 
+                      exact 
+                      path="/my-plants" 
+                      component={MyPlantsPage} 
+                    />
+                    <Route 
+                      exact 
+                      path="/search" 
+                      component={SearchPage} 
+                    />
                     <Route
                       exact
                       path="/my-plants/:id"

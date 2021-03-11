@@ -9,7 +9,9 @@ export const PhotoUploadContext = createContext(null);
 
 export const PhotoUploadProvider = ({ children }) => {
   const [photoMode, setPhotoMode] = useState(false);
-  const [pictureUpload, setPictureUpload] = useState({});
+  const [pictureUpload, setPictureUpload] = useState(
+    'images/placeholder-img.png'
+  );
   const handleSearch = useHandleSearch();
 
   const history = useHistory();

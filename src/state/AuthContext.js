@@ -35,9 +35,6 @@ export const AuthProvider = ({ children }) => {
       .then(() => history.push('/'))
       .catch(err => setError(err));
   };
-<<<<<<< HEAD
-  
-=======
 
   const deleteUser = (email) => {
     return deleteUser(email)
@@ -45,7 +42,6 @@ export const AuthProvider = ({ children }) => {
       .catch(err => setError(err));
   };
 
->>>>>>> 254a4d2fb80989c13d87f9ba169abb296816140f
   return (
     <AuthContext.Provider value={{
       session,

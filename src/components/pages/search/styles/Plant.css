@@ -15,6 +15,11 @@
         
         div {
             display: flex;
+            align-items: center;
+        }
+
+        a {
+            display: flex;
             text-overflow: ellipsis;
             margin: 5px;
             height: inherit;
@@ -32,25 +37,39 @@
     }
 }
 
-@media (min-width: 651px) {
+@media (min-width: 651px) and (max-width: 974px) {
 .Plant {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
     margin: 2em;
     background-color: white;
     border-radius: 12px;
     
-    div {
+    a {
         display: flex;
-        text-overflow: ellipsis;
-        margin: 20px;
-        text-align: center;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-evenly;
         align-items: center;
+        text-align: center;
+        text-overflow: ellipsis;
         font-size: .9em;
+    }
+
+    a > div:first-of-type {
+        margin-left: 5px;
+    }
+
+    .Plant :last-child {
+        height: inherit;
+        margin-right: 5px;
+    }
+
+   button {
+        margin-right: 5px;
+        border: 1px solid black;
+        font-family: 'Noto Sans KR', sans-serif;
     }
 
     img {
@@ -63,20 +82,19 @@
 }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 975px) {
     .Plant {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        flex-direction: row;
         margin: 2em;
         background-color: white;
         border-radius: 12px;
         max-width: 80%;
         margin: auto;
     
-        div {
+        a {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -85,8 +103,19 @@
             font-size: 1em;
         }
     
+        button  {
+            margin-right: 5px;
+            background-color: lightgrey;
+            border: 1px solid black;
+            font-family: 'Noto Sans KR', sans-serif;
+            padding: 2px;
+        }
+    
         img {
+            background-color: white;
             border-radius: 12px;
+            margin-left: -5px;
+            margin-right: 5px;
         }
     
         .scientific {

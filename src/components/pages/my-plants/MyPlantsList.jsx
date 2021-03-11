@@ -17,6 +17,7 @@ const MyPlantList = () => {
 
     getAllUserPlants(user)
       .then(res => {
+        // eslint-disable-next-line no-console
         console.log(res.data);
         setPlantsList(res.data.getMyPlants);
       });

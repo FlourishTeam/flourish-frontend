@@ -1,9 +1,10 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import client from '../state/GraphQLContext';
 import { gql } from 'apollo-boost';
 
 export const addPlantToCollection = (user, plantId) => {
-  console.log(user,'beeeeeeeeeeep');
+  console.log(user, 'beeeeeeeeeeep');
  
   return  client
     .query({

@@ -1,23 +1,12 @@
 import React, { useState } from 'react';
-import { gql } from 'apollo-boost';
-import client from '../providers/GraphQLContext';
+import { removeFromCollection } from '../services/queries/removeFromCollection';
 
-function useRemoveFromCollection(userPlantId, plantId, userId) {
+function useRemoveFromCollection(userId, plantId) {
   const [removeUserPlant, setRemoveUserPlant] = useState([]);
 
-  client
-    .query({
-      query: gql`
-          query {
-              removeFromCollection(userId: "${userId}", userPlantId "${userPlantId}, plantId: "${plantId}") {  
-                userId
-                userPlantId
-                plantId
-              }
-          }
-      `,
-    })
-    .then(({ data }) => setRemoveUserPlant(data.useRemoveFromCollection));
+  removeFromCollection(userId, plantId).then(({ data }) =>
+    setRemoveUserPlant(data.useRemoveFromCollection)
+  );
 
   return <div>{removeUserPlant}</div>;
 }

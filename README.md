@@ -29,7 +29,6 @@ _Questions or comments can be directed to [Dee Watson](dlarkinwatson@gmail.com),
 * Any others????
 
 ## External API
-
 * Link to our API???? 
 
 ### License

@@ -19,7 +19,7 @@ const Plant = ({
     <>
       <Link to={`/details/${plantId}`}>
         <div className={styles.Plant}>
-          <img src={image} height="100px"/>
+          <img src={image} height="100px" />
           <div>{commonName}</div>
           <div className={styles.scientific}>{scientificName}</div>
           <div>{temperatureRange}</div>
@@ -28,7 +28,7 @@ const Plant = ({
           <MaintenanceLevel maintenanceLevel={careDifficulty} />
         </div>
       </Link>
-      <AddToCollection plantId={plantId}/>
+      <AddToCollection plantId={plantId} />
     </>
   );
 };

@@ -1,5 +1,41 @@
+@media (max-width: 650px) {
+    .Plant {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin: 2em;
+        background-color: white;
+        border-radius: 12px;
+
+        div :last-child {
+            display: none;
+        }
+        
+        div {
+            display: flex;
+            text-overflow: ellipsis;
+            margin: 5px;
+            height: inherit;
+            text-align: center;
+            font-size: .9em;
+        }
+    
+        img {
+            border-radius: 12px;
+        }
+    
+        .scientific {
+            font-style: italic;
+        }
+    }
+}
+
+@media (min-width: 651px) {
 .Plant {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
@@ -7,14 +43,13 @@
     background-color: white;
     border-radius: 12px;
     
-    /* 
-    normalize height for plant items 
-    probably breaking on text and/or photo size
-    */
-
     div {
+        display: flex;
+        text-overflow: ellipsis;
         margin: 20px;
         text-align: center;
+        justify-content: center;
+        align-items: center;
         font-size: .9em;
     }
 
@@ -26,3 +61,37 @@
         font-style: italic;
     }
 }
+}
+
+@media (min-width: 1150px) {
+    .Plant {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin: 2em;
+        background-color: white;
+        border-radius: 12px;
+        max-width: 80%;
+        margin: auto;
+    
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: inherit;
+            font-size: 1em;
+        }
+    
+        img {
+            border-radius: 12px;
+        }
+    
+        .scientific {
+            font-style: italic;
+        }
+    }
+}
+    

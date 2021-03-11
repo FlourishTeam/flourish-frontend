@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import styles from './styles/MyPlant.css';
 // import RemoveFromCollection from '../../reusable/collection/RemoveFromCollection';
 
-const MyPlant = ({ common_name, scientific_name }) => (
+const MyPlant = ({ common_name, scientific_name, image }) => (
+
   <figure className={styles.MyPlant}>
     <img
-      src="images/photo-icon.svg"
+      src={image}
       alt={common_name}
       className={styles.plantImg}
     />
@@ -22,6 +23,7 @@ const MyPlant = ({ common_name, scientific_name }) => (
 MyPlant.propTypes = {
   common_name: PropTypes.string.isRequired,
   scientific_name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 };
 
 export default MyPlant;

@@ -5,7 +5,7 @@ import client from './GraphQLContext';
 export const SearchContext = createContext(null);
 
 export const SearchProvider = ({ children }) => {
-  const [loading, setLoading] = useState(null);
+  const [loading, setLoading] = useState(false);
   const [searchResults, setSearchResults] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [error, setError] = useState(null);
@@ -29,7 +29,8 @@ export const SearchProvider = ({ children }) => {
           temperatureRange
           }
         }
-        `, })
+        `,
+      })
       .then(({ data }) => {
         setSearchResults(data.plantByName);
         setLoading(false);
@@ -42,13 +43,17 @@ export const SearchProvider = ({ children }) => {
   };
 
   return (
-    <SearchContext.Provider value={{ 
-      loading, 
-      searchResults, 
-      searchQuery, 
-      handleChange, 
-      handleSearch,
-      error }}>
+    <SearchContext.Provider
+      value={{
+        loading,
+        searchResults,
+        searchQuery,
+        handleChange,
+        handleSearch,
+        setLoading,
+        error,
+      }}
+    >
       {children}
     </SearchContext.Provider>
   );
@@ -57,6 +62,11 @@ export const SearchProvider = ({ children }) => {
 export const useSearchLoading = () => {
   const { loading } = useContext(SearchContext);
   return loading;
+};
+
+export const useSetSearchLoading = () => {
+  const { setLoading } = useContext(SearchContext);
+  return setLoading;
 };
 
 export const useSearchResults = () => {

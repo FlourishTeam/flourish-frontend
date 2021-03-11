@@ -1,6 +1,10 @@
 import React, { createContext, useContext, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { useHandleSearch } from './SearchContext';
+import {
+  useHandleSearch,
+  useSearchLoading,
+  useSetSearchLoading,
+} from './SearchContext';
 
 const API_URL = process.env.REACT_APP_API_URL;
 const API_KEY = process.env.REACT_APP_API_KEY;
@@ -14,6 +18,7 @@ export const PhotoUploadProvider = ({ children }) => {
   );
   const [empty, setEmpty] = useState(true);
   const handleSearch = useHandleSearch();
+  const setLoading = useSetSearchLoading();
 
   const history = useHistory();
 
@@ -24,10 +29,11 @@ export const PhotoUploadProvider = ({ children }) => {
 
   const handleUpload = (e) => {
     e.preventDefault();
-
     const files = [...e.target.elements.uploader.files];
 
     if (files.length > 0) {
+      setLoading(true);
+
       const promise = files.map((file) => {
         return new Promise((resolve, reject) => {
           const reader = new FileReader();
@@ -53,9 +59,12 @@ export const PhotoUploadProvider = ({ children }) => {
           body: JSON.stringify(data),
         })
           .then((res) => res.json())
-          .then((json) => handleSearch(json.suggestions[0].plant_name));
+          .then((json) => {
+            handleSearch(json.suggestions[0].plant_name);
+          });
       });
 
+      setPhotoMode(false);
       history.push('/search');
     }
   };

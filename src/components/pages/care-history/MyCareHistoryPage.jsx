@@ -14,15 +14,14 @@ import styles from './styles/MyCareHistory.css';
 import { useParams } from 'react-router';
 
 export default function MyCareHistoryPage() {
-  const user = useSession();
-  const loading = useCareLogLoading();
-  const { id } = useParams();
-  console.log(user, id);
-  const error = useCareLogError();
   const plantDetails = usePlantDetails();
+  const loading = useCareLogLoading();
+  const error = useCareLogError();
+  const { id } = useParams();
+  const user = useSession();
   const renderMyCareHistory = useRenderMyCareHistory();
   useEffect(() => {
-    renderMyCareHistory(id, 3);
+    renderMyCareHistory(user.id, id);
   }, []);
 
   return (

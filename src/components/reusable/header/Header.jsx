@@ -11,7 +11,6 @@ function Header() {
   const [email, setEmail] = useState('');
 
   const user = useSession();
-  console.log(user);
 
   return !user ? (
     <div className={styles.Header}>

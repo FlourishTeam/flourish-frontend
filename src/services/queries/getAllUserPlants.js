@@ -3,9 +3,11 @@ import client from '../../providers/GraphQLContext';
 
 export const getAllUserPlants = (user) => {
   const id = 2;
+  console.log(user);
 
-  return client.query({
-    query: gql`
+  return client
+    .query({
+      query: gql`
     query {
         getMyPlants(userId: ${id}) {
             commonName
@@ -14,6 +16,5 @@ export const getAllUserPlants = (user) => {
 
         } 
     }
-`,
-  });
+`, });
 };

@@ -26,9 +26,6 @@ const DetailsPage = () => {
       <div className={styles.DetailsPage}>
         <Details {...plant}/>
       </div>
-      <div>
-        <AddToCollection plantId={id} />
-      </div>
     </>
   );
 };

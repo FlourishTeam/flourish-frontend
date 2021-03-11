@@ -17,3 +17,4 @@ describe('MyPlantList component', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 });
+

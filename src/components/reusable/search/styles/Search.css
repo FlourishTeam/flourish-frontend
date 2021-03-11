@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .Search {
     display: flex;
     flex-direction: row;
@@ -30,6 +24,18 @@
         height: 99%;
     }
 
+    .photoMode, .submitButton {
+        cursor: pointer;
+    }
+
+    .photoMode :hover {
+        transform: scale(1.2);
+    }
+
+    .submitButton :hover {
+        transform: scale(1.2);
+    }
+
     .searchInput {
         font-size: 2rem;
         margin: 0;
@@ -46,12 +52,37 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* height: 240px;
+        width: 220px; */
+    }
+
+    .uploaderContainer > button {
+        padding: 5px;
+        margin: 4px;
+        border: 1px inset #ccc;
+        border-radius: 3px;
+    }
+
+    .uploaderContainer > input {
+        margin: 5px;
+        width: 180px;        
+        background-color: lightgrey;
+        padding: 1px;
+        border-radius: 3px;
     }
 
     .photoForm {
-     display: flex;
-     flex-direction: column;
-     height: inherit;
+        display: flex;
+        flex-direction: column;
+        height: inherit;
+        border-radius: 12px;
+    }
+
+    .backButton {
+        margin-top: 5px;
+        border-radius: 3px;
     }
 
     .fileContainer > img {
@@ -64,5 +95,6 @@
         justify-content: center;
         align-items: center;
         height: 25vh;
+        border-radius: 12px;
     }
 }

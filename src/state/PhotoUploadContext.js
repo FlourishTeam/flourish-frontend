@@ -12,12 +12,14 @@ export const PhotoUploadProvider = ({ children }) => {
   const [pictureUpload, setPictureUpload] = useState(
     'images/placeholder-img.png'
   );
+  const [empty, setEmpty] = useState(true);
   const handleSearch = useHandleSearch();
 
   const history = useHistory();
 
   const handlePreview = (e) => {
     setPictureUpload(URL.createObjectURL(e.target.files[0]));
+    setEmpty(false);
   };
 
   const handleUpload = (e) => {
@@ -25,35 +27,37 @@ export const PhotoUploadProvider = ({ children }) => {
 
     const files = [...e.target.elements.uploader.files];
 
-    const promise = files.map((file) => {
-      return new Promise((resolve, reject) => {
-        const reader = new FileReader();
-        reader.onload = (e) => {
-          const res = e.target.result;
-          resolve(res);
-        };
-        reader.readAsDataURL(file);
+    if (files.length > 0) {
+      const promise = files.map((file) => {
+        return new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload = (e) => {
+            const res = e.target.result;
+            resolve(res);
+          };
+          reader.readAsDataURL(file);
+        });
       });
-    });
 
-    Promise.all(promise).then((encodedStr) => {
-      const data = {
-        api_key: `${API_KEY}`,
-        images: encodedStr,
-      };
+      Promise.all(promise).then((encodedStr) => {
+        const data = {
+          api_key: `${API_KEY}`,
+          images: encodedStr,
+        };
 
-      fetch(`${API_URL}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      })
-        .then((res) => res.json())
-        .then((json) => handleSearch(json.suggestions[0].plant_name));
-    });
+        fetch(`${API_URL}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        })
+          .then((res) => res.json())
+          .then((json) => handleSearch(json.suggestions[0].plant_name));
+      });
 
-    history.push('/search');
+      history.push('/search');
+    }
   };
 
   return (
@@ -64,6 +68,7 @@ export const PhotoUploadProvider = ({ children }) => {
         pictureUpload,
         handleUpload,
         handlePreview,
+        empty,
       }}
     >
       {children}

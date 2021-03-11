@@ -21,6 +21,7 @@ const Search = () => {
     pictureUpload,
     handleUpload,
     handlePreview,
+    empty,
   } = usePhotoUploader();
 
   const handleSearchSubmit = (e) => {
@@ -33,10 +34,15 @@ const Search = () => {
     <form onSubmit={handleUpload} className={styles.photoForm}>
       <div className={styles.uploaderContainer}>
         <input type="file" name="uploader" onChange={handlePreview} />
-        <button>Submit</button>
-        {pictureUpload && (
-          <img className={styles.uploadThumbnail} src={pictureUpload} />
-        )}
+        <img className={styles.uploadThumbnail} src={pictureUpload} />
+        {!empty && <button>Submit</button>}
+
+        <button
+          className={styles.backButton}
+          onClick={() => setPhotoMode(false)}
+        >
+          Back to Search by Text
+        </button>
       </div>
     </form>
   );
@@ -47,14 +53,14 @@ const Search = () => {
         className={styles.searchInput}
         value={searchQuery}
         type="text"
-        placeholder="search"
+        placeholder="search a plant by name..."
         onChange={handleChange}
       />
       <button className={styles.photoMode} onClick={() => setPhotoMode(true)}>
-        <img src="images/photo-icon.svg" />
+        <img src="images/photo-icon.svg" title="Search by photo" />
       </button>
       <button className={styles.submitButton}>
-        <img src="images/search-icon.svg" />
+        <img src="images/search-icon.svg" title="Search by text" />
       </button>
     </form>
   );

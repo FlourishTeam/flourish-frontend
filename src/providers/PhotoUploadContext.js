@@ -1,6 +1,10 @@
 import React, { createContext, useContext, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { useHandleSearch, useSetSearchLoading } from './SearchContext';
+import {
+  useHandleSearch,
+  useSetSearchLoading,
+  useSetSearchQuery,
+} from './SearchContext';
 
 const API_URL = process.env.REACT_APP_API_URL;
 const API_KEY = process.env.REACT_APP_API_KEY;
@@ -15,6 +19,7 @@ export const PhotoUploadProvider = ({ children }) => {
   const [empty, setEmpty] = useState(true);
   const handleSearch = useHandleSearch();
   const setLoading = useSetSearchLoading();
+  const setSearchQuery = useSetSearchQuery();
 
   const history = useHistory();
 
@@ -56,7 +61,9 @@ export const PhotoUploadProvider = ({ children }) => {
         })
           .then((res) => res.json())
           .then((json) => {
-            handleSearch(json.suggestions[0].plant_name);
+            const plant = json.suggestions[0].plant_name;
+            setSearchQuery(plant);
+            handleSearch(plant);
           });
       });
 

@@ -31,6 +31,7 @@ export const SearchProvider = ({ children }) => {
         loading,
         searchResults,
         searchQuery,
+        setSearchQuery,
         handleChange,
         handleSearch,
         setLoading,
@@ -60,6 +61,11 @@ export const useSearchResults = () => {
 export const useSearchQuery = () => {
   const { searchQuery } = useContext(SearchContext);
   return searchQuery;
+};
+
+export const useSetSearchQuery = () => {
+  const { setSearchQuery } = useContext(SearchContext);
+  return setSearchQuery;
 };
 
 export const useHandleChange = () => {

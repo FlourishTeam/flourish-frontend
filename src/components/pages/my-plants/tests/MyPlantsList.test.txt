@@ -1,11 +1,7 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
 import MyPlantList from '../MyPlantsList';
-<<<<<<< HEAD:src/components/pages/my-plants/tests/MyPlantsList.test.jsx
 import { MyPlantProvider } from '../../../../providers/MyPlantsContext';
-=======
-// import { MyPlantProvider } from '../../../../state/MyPlantsContext';
->>>>>>> bc93641ddb17ed40ff346cd482b7f1d812dd2ce7:src/components/pages/my-plants/tests/MyPlantsList.test.txt
 import { MemoryRouter as Router } from 'react-router';
 
 describe('MyPlantList component', () => {

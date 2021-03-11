@@ -1,12 +1,10 @@
 import React, { createContext, useContext, useState } from 'react';
-import { data } from '../hooks/fake-data';
-
 
 export const MyPlantContext = createContext(null);
 
 export const MyPlantProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
-  const [myPlants, setMyPlants] = useState(data);
+  const [myPlants, setMyPlants] = useState([]);
 
   return (
     <MyPlantContext.Provider value={{ myPlants, loading }}>

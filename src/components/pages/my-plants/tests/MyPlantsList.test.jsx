@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
 import MyPlantList from '../MyPlantsList';
-import { MyPlantProvider } from '../../../../state/MyPlantsContext';
+import { MyPlantProvider } from '../../../../providers/MyPlantsContext';
 import { MemoryRouter as Router } from 'react-router';
 
 describe('MyPlantList component', () => {

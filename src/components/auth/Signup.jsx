@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useLogin, useSignup } from '../../state/AuthContext';
+import { useLogin, useSignup } from '../../providers/AuthContext';
 import AuthForm from './AuthForm';
 import styles from '../reusable/navmenu/styles/Overlay.css';
 

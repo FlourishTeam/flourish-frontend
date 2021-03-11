@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { useAuthError } from '../../state/AuthContext';
+import { useAuthError } from '../../providers/AuthContext';
 import styles from '../reusable/navmenu/styles/Overlay.css';
 
 const AuthForm = ({ title, signupFn, loginFn, showLogin, showSignup }) => {

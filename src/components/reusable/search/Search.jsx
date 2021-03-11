@@ -4,9 +4,9 @@ import {
   useHandleChange,
   useHandleSearch,
   useSearchQuery,
-} from '../../../state/SearchContext';
+} from '../../../providers/SearchContext';
 import { useHistory } from 'react-router-dom';
-import { usePhotoUploader } from '../../../state/PhotoUploadContext';
+import { usePhotoUploader } from '../../../providers/PhotoUploadContext';
 
 const Search = () => {
   const searchQuery = useSearchQuery();

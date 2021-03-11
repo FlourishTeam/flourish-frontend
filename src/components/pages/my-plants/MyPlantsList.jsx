@@ -3,7 +3,7 @@ import MyPlant from './MyPlant';
 import { Link } from 'react-router-dom';
 import uuid from 'react-uuid';
 import styles from './styles/MyPlantsList.css';
-import { useMyPlants } from '../../../state/MyPlantsContext';
+import { useMyPlants } from '../../../providers/MyPlantsContext';
 
 const MyPlantList = () => {
   const { myPlants } = useMyPlants();

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { gql } from 'apollo-boost';
-import client from '../state/GraphQLContext';
+import client from '../providers/GraphQLContext';
 
 function useRemoveFromCollection(userPlantId, plantId, userId) {
   const [removeUserPlant, setRemoveUserPlant] = useState([]);

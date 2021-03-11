@@ -1,6 +1,6 @@
 const HEROKU_URL = process.env.REACT_APP_HEROKU_URL;
 
-const WITHOUT_BODY_METHODS = ['GET'];
+const WITHOUT_BODY_METHODS = ['GET', 'DELETE'];
 
 const request = (path, method, body) => {
   const headers = WITHOUT_BODY_METHODS.includes(method)

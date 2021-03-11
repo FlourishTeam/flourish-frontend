@@ -1,15 +1,11 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-<<<<<<< HEAD:src/state/AuthContext.js
-import { deleteUser, getVerify, postLogin, postSignup } from '../services/auth';
-=======
 import {
-  deleteUser,
+  getLogout,
   getVerify,
   postLogin,
   postSignup,
 } from '../services/fetches/auth';
->>>>>>> 8a071c48755b990b4c29d05e0189caddcba6d0fe:src/providers/AuthContext.js
 
 const AuthContext = createContext(null);
 
@@ -28,42 +24,32 @@ export const AuthProvider = ({ children }) => {
   }, []);
   const signup = (name, email, password) => {
     return postSignup(name, email, password)
-      .then((user) => setSession(user))
+      .then((user) => {
+        setSession(user);
+        console.log('CONTEXT SIGNUP', name, email);
+      })
       .then(() => history.push('/'))
-      .then(console.log('CONTEXT', name, email, password))
       .catch((err) => setError(err));
   };
   const login = (email, password) => {
     return postLogin(email, password)
-      .then((user) => setSession(user))
+      .then((user) => {
+        setSession(user);
+        console.log('CONTEXT LOGIN', email);
+      })
       .then(() => history.push('/'))
       .catch((err) => setError(err));
   };
 
-  const deleteUser = (email) => {
-    return deleteUser(email)
-      .then(() => history.push('/'))
-      .catch((err) => setError(err));
-  };
-
-  const deleteUser = (email) => {
-    return deleteUser(email)
-      .then(() => history.push('/'))
-      .catch(err => setError(err));
+  const logout = () => {
+    return getLogout()
+      .then(() => {
+        setSession(null);
+        history.push('/');
+      });
   };
 
   return (
-<<<<<<< HEAD:src/state/AuthContext.js
-    <AuthContext.Provider value={{
-      session,
-      loading,
-      error,
-      isAuthenticated,
-      signup,
-      login,
-      deleteUser
-    }}>{children}</AuthContext.Provider>
-=======
     <AuthContext.Provider
       value={{
         session,
@@ -72,12 +58,11 @@ export const AuthProvider = ({ children }) => {
         isAuthenticated,
         signup,
         login,
-        deleteUser,
+        logout,
       }}
     >
       {children}
     </AuthContext.Provider>
->>>>>>> 8a071c48755b990b4c29d05e0189caddcba6d0fe:src/providers/AuthContext.js
   );
 };
 
@@ -111,11 +96,7 @@ export const useLogin = () => {
   return login;
 };
 
-export const useDeleteUser = () => {
-  const { deleteUser } = useContext(AuthContext);
-  return deleteUser;
+export const useLogout = () => {
+  const { logout } = useContext(AuthContext);
+  return logout;
 };
-<<<<<<< HEAD:src/state/AuthContext.js
-
-=======
->>>>>>> 8a071c48755b990b4c29d05e0189caddcba6d0fe:src/providers/AuthContext.js

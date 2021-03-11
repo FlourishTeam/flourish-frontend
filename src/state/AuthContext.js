@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { getVerify, postLogin, postSignup } from '../services/auth';
+import { deleteUser, getVerify, postLogin, postSignup } from '../services/auth';
 
 const AuthContext = createContext(null);
 
@@ -33,6 +33,12 @@ export const AuthProvider = ({ children }) => {
       .catch(err => setError(err));
   };
 
+  const deleteUser = (email) => {
+    return deleteUser(email)
+      .then(() => history.push('/'))
+      .catch(err => setError(err));
+  };
+
   return (
     <AuthContext.Provider value={{
       session,
@@ -40,7 +46,8 @@ export const AuthProvider = ({ children }) => {
       error,
       isAuthenticated,
       signup,
-      login
+      login,
+      deleteUser
     }}>{children}</AuthContext.Provider>
   );
 };
@@ -73,5 +80,10 @@ export const useSignup = () => {
 export const useLogin = () => {
   const { login } = useContext(AuthContext);
   return login;
+};
+
+export const useDeleteUser = () => {
+  const { deleteUser } = useContext(AuthContext);
+  return deleteUser;
 };
 

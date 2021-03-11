@@ -1,6 +1,6 @@
 const HEROKU_URL = process.env.REACT_APP_HEROKU_URL;
 
-const WITHOUT_BODY_METHODS = ['GET', 'DELETE'];
+const WITHOUT_BODY_METHODS = ['GET'];
 
 const request = (path, method, body) => {
   const headers = WITHOUT_BODY_METHODS.includes(method)
@@ -25,4 +25,4 @@ const request = (path, method, body) => {
 export const post = (path, body) => request(path, 'POST', body);
 export const get = path => request(path, 'GET');
 export const put = (path, body) => request(path, 'PUT', body);
-export const del = path => request(path, 'DELETE');
+export const del = (path, body) => request(path, 'DELETE', body);

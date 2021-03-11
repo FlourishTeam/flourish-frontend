@@ -56,11 +56,11 @@ const Search = () => {
         placeholder="search a plant by name..."
         onChange={handleChange}
       />
-      <button className={styles.photoMode} onClick={() => setPhotoMode(true)}>
-        <img src="images/photo-icon.svg" title="Search by photo" />
-      </button>
       <button className={styles.submitButton}>
         <img src="images/search-icon.svg" title="Search by text" />
+      </button>
+      <button className={styles.photoMode} onClick={() => setPhotoMode(true)}>
+        <img src="images/photo-icon.svg" title="Search by photo" />
       </button>
     </form>
   );

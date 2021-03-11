@@ -13,19 +13,19 @@ exports[`Search component renders Search 1`] = `
         value=""
       />
       <button
-        class="photoMode"
-      >
-        <img
-          src="images/photo-icon.svg"
-          title="Search by photo"
-        />
-      </button>
-      <button
         class="submitButton"
       >
         <img
           src="images/search-icon.svg"
           title="Search by text"
+        />
+      </button>
+      <button
+        class="photoMode"
+      >
+        <img
+          src="images/photo-icon.svg"
+          title="Search by photo"
         />
       </button>
     </form>

@@ -3,7 +3,7 @@ import { useLogin, useSignup } from '../../state/AuthContext';
 import AuthForm from './AuthForm';
 import styles from '../reusable/navmenu/styles/Overlay.css';
 
-const Signup = () => {
+const Signup = ({ name, email, setName, setEmail }) => {
   const signup = useSignup();
   const login = useLogin();
   const [state, setState] = useState('signup');
@@ -19,10 +19,22 @@ const Signup = () => {
   return (
     <div className={styles.popupContainer}>
       {state === 'signup' && (
-        <AuthForm title="Signup" signupFn={signup} showLogin={showLogin} />
+        <AuthForm 
+          title="Signup" 
+          signupFn={signup} 
+          showLogin={showLogin} 
+          name={name}
+          setName={setName}
+          email={email}
+          setEmail={setEmail}/>
       )}
       {state === 'login' && (
-        <AuthForm title="Login" loginFn={login} showSignup={showSignup} />
+        <AuthForm 
+          title="Login" 
+          loginFn={login} 
+          showSignup={showSignup}
+          email={email}
+          setEmail={setEmail} />
       )}
     </div>
   );

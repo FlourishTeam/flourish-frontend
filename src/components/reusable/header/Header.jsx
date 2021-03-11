@@ -1,30 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './styles/Header.css';
 import flourishIcon from '../../../images/flourish-icon-2.png';
 import Popup from 'reactjs-popup';
 import Signup from '../../auth/Signup';
 import SideBar from '../navmenu/NavMenu';
+import { useSession } from '../../../state/AuthContext';
 
 function Header() {
-  return (
-    <div className={styles.Header}>
-      <img className={styles.icon} src={flourishIcon} />
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
 
-      <div className={styles.headerRight}>
-        <Popup
-          modal
-          closeOnDocumentClick={true}
-          trigger={(open) => (
-            <button open={open} className={styles.loginButton}>
+  const user = useSession();
+  console.log(user);
+
+  return (
+    !user ? (
+      <div className={styles.Header}>
+        <img className={styles.icon} src={flourishIcon} />
+
+        <div className={styles.headerRight}>
+          <Popup
+            modal
+            closeOnDocumentClick={true}
+            trigger={(open) => (
+              <button open={open} className={styles.loginButton}>
               Sign Up / Log In
-            </button>
-          )}
-        >
-          {<Signup open={open} />}
-        </Popup>
+              </button>
+            )}
+          >
+            {<Signup 
+              open={open} 
+              name={name}
+              email={email}
+              setName={setName}
+              setEmail={setEmail} />}
+          </Popup>
+        </div>
+        <SideBar />
       </div>
-      <SideBar />
-    </div>
+    ) : (
+      <div className={styles.Header}>
+        <img className={styles.icon} src={flourishIcon} />
+        <div className={styles.headerRight}>
+          <div className={styles.greeting}>Hello {user.name}!</div>
+        </div>
+        <SideBar />
+      </div>
+    )
   );
 }
 

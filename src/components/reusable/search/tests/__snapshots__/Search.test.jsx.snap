@@ -8,7 +8,7 @@ exports[`Search component renders Search 1`] = `
     <form>
       <input
         class="searchInput"
-        placeholder="search"
+        placeholder="search a plant by name..."
         type="text"
         value=""
       />
@@ -17,6 +17,7 @@ exports[`Search component renders Search 1`] = `
       >
         <img
           src="images/photo-icon.svg"
+          title="Search by photo"
         />
       </button>
       <button
@@ -24,6 +25,7 @@ exports[`Search component renders Search 1`] = `
       >
         <img
           src="images/search-icon.svg"
+          title="Search by text"
         />
       </button>
     </form>

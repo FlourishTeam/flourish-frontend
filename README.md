@@ -25,7 +25,6 @@ _Questions or comments can be directed to [Dee Watson](dlarkinwatson@gmail.com),
 * _JavaScript_
 * _CSS_
 * _JSX_
-* _Twilio_
 * _GraphQL_
 * Any others????
 

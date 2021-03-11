@@ -1,6 +1,6 @@
 import React from 'react';
-import { removePlantFromCollection } from '../../../services/fetchRemovePlant';
-import { useSession } from '../../../state/AuthContext';
+import { useSession } from '../../../providers/AuthContext';
+import { removePlantFromCollection } from '../../../services/queries/removePlantFromCollection';
 import styles from './styles/AddToCollection.css';
 
 // eslint-disable-next-line react/prop-types

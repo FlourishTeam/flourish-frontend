@@ -3,7 +3,7 @@ import { render, screen, waitFor } from '@testing-library/react';
 import { setupServer } from 'msw/node';
 import { MemoryRouter } from 'react-router-dom';
 import MyPlantPage from '../MyPlantsPage';
-import MyPlantProvider from '../../../../state/MyPlantsContext';
+import MyPlantProvider from '../../../../providers/MyPlantsContext';
 
 const server = setupServer(
   rest.get('', (req, res, ctx) => {

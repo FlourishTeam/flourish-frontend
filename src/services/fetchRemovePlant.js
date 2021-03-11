@@ -4,10 +4,8 @@ import client from '../state/GraphQLContext';
 import { gql } from 'apollo-boost';
 
 export const removePlantFromCollection = (user, plantId) => {
-  
-
   console.log(user, 'remooooooooove');
-   
+  
   return  client
     .query({
       query: gql`

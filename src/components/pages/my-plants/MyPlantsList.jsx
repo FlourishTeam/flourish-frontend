@@ -3,9 +3,9 @@ import MyPlant from './MyPlant';
 import { Link } from 'react-router-dom';
 import uuid from 'react-uuid';
 import styles from './styles/MyPlantsList.css';
-import { getAllUserPlants } from '../../../services/fetchUserPlant';
-import { useSession } from '../../../state/AuthContext';
+import { getAllUserPlants } from '../../../services/queries/getAllUserPlants';
 import { useParams } from 'react-router';
+import { useSession } from '../../../providers/AuthContext';
 
 const MyPlantList = () => {
   const user = useSession();

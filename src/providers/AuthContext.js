@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import {
-  deleteUser,
+  getLogout,
   getVerify,
   postLogin,
   postSignup,
@@ -24,22 +24,29 @@ export const AuthProvider = ({ children }) => {
   }, []);
   const signup = (name, email, password) => {
     return postSignup(name, email, password)
-      .then((user) => setSession(user))
+      .then((user) => {
+        setSession(user);
+        console.log('CONTEXT SIGNUP', name, email);
+      })
       .then(() => history.push('/'))
-      .then(console.log('CONTEXT', name, email, password))
       .catch((err) => setError(err));
   };
   const login = (email, password) => {
     return postLogin(email, password)
-      .then((user) => setSession(user))
+      .then((user) => {
+        setSession(user);
+        console.log('CONTEXT LOGIN', email);
+      })
       .then(() => history.push('/'))
       .catch((err) => setError(err));
   };
 
-  const deleteUser = (email) => {
-    return deleteUser(email)
-      .then(() => history.push('/'))
-      .catch((err) => setError(err));
+  const logout = () => {
+    return getLogout()
+      .then(() => {
+        setSession(null);
+        history.push('/');
+      });
   };
 
   return (
@@ -51,7 +58,7 @@ export const AuthProvider = ({ children }) => {
         isAuthenticated,
         signup,
         login,
-        deleteUser,
+        logout,
       }}
     >
       {children}
@@ -89,7 +96,7 @@ export const useLogin = () => {
   return login;
 };
 
-export const useDeleteUser = () => {
-  const { deleteUser } = useContext(AuthContext);
-  return deleteUser;
+export const useLogout = () => {
+  const { logout } = useContext(AuthContext);
+  return logout;
 };

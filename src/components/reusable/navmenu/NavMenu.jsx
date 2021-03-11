@@ -1,9 +1,17 @@
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
+import { useLogout, useSession } from '../../../providers/AuthContext';
 import { menuStyle } from './styles/menuStyle';
 import styles from './styles/NavMenu.css';
 
 const NavMenu = () => {
+  const logout = useLogout();
+
+  const handleDelete = (e) => {
+    e.preventDefault();
+    logout();
+  };
+
   return (
     <Menu className={styles.NavMenu} styles={menuStyle} right={true}>
       <a id="home" className="menu-item" href="/">
@@ -21,10 +29,9 @@ const NavMenu = () => {
       <a
         id="sign-out"
         className="menu-item"
-        onClick={(e) => e.preventDefault()}
-        href=""
-      >
-        Sign Out
+        onClick={handleDelete}
+        href="/">
+        Log Out
       </a>
     </Menu>
   );

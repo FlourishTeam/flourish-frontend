@@ -22,7 +22,6 @@ export const AuthProvider = ({ children }) => {
       .catch(() => console.log('user not logged in'))
       .finally(() => setLoading(false));
   }, []);
-
   const signup = (name, email, password) => {
     return postSignup(name, email, password)
       .then((user) => setSession(user))
@@ -30,7 +29,6 @@ export const AuthProvider = ({ children }) => {
       .then(console.log('CONTEXT', name, email, password))
       .catch((err) => setError(err));
   };
-
   const login = (email, password) => {
     return postLogin(email, password)
       .then((user) => setSession(user))

@@ -3,7 +3,7 @@ import styles from './styles/Header.css';
 import flourishIcon from '../../../images/flourish-icon-2.png';
 import Popup from 'reactjs-popup';
 import Signup from '../../auth/Signup';
-import SideBar from '../navmenu/SideBar';
+import SideBar from '../navmenu/NavMenu';
 
 function Header() {
   return (

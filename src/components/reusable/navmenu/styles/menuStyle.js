@@ -42,13 +42,13 @@ export const menuStyle = {
   bmItemList: {
     display: 'flex',
     flexDirection: 'column',
-    color: '#888682',
-    textDecoration: 'none',
     padding: '0.8em',
   },
 
   bmItem: {
     display: 'inline-block',
+    textDecoration: 'none',
+    color: '#888682',
   },
 
   bmOverlay: {

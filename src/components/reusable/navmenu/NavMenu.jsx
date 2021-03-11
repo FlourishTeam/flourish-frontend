@@ -1,51 +1,33 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { NavMenuData } from './NavMenuData';
+import React from 'react';
+import { slide as Menu } from 'react-burger-menu';
+import { menuStyle } from './styles/menuStyle';
 import styles from './styles/NavMenu.css';
-import { IconContext } from 'react-icons';
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
 
-function NavMenu() {
-  const [sideMenu, setSideMenu] = useState(true);
-
-  const showSideMenu = () => {
-    setSideMenu(!sideMenu);
-    console.log('click');
-  };
-
+const NavMenu = () => {
   return (
-    <>
-      <IconContext.Provider value={{ color: '#fff' }}>
-        <div className={styles.navMenu}>
-          <Link to="#" className={styles.menuBars}>
-            <FaIcons.FaBars onClick={showSideMenu} />
-          </Link>
-        </div>
-        <nav className={sideMenu ? styles.menuBars.active : styles.menuBars}>
-          <ul className={styles.navBarItems} onClick={showSideMenu}>
-            <li className={styles.navMenuToggle}>
-              <Link to="#" className={styles.menuBars}>
-                <AiIcons.AiOutlineClose />
-              </Link>
-            </li>
-
-            {NavMenuData.map((item, index) => {
-              return (
-                <>
-                  <li key={index} className={item.cName} />
-                  <Link to={item.path}>
-                    {item.icon}
-                    <span>{item.title}</span>
-                  </Link>
-                </>
-              );
-            })}
-          </ul>
-        </nav>
-      </IconContext.Provider>
-    </>
+    <Menu className={styles.NavMenu} styles={menuStyle} right={true}>
+      <a id="home" className="menu-item" href="/">
+        Home
+      </a>
+      <a id="search" className="menu-item" href="/search">
+        Search Flourish Library
+      </a>
+      <a id="my-plants" className="menu-item" href="/my-plants">
+        My Plants
+      </a>
+      <a id="about-us" className="menu-item" href="/about-us">
+        About Us
+      </a>
+      <a
+        id="sign-out"
+        className="menu-item"
+        onClick={(e) => e.preventDefault()}
+        href=""
+      >
+        Sign Out
+      </a>
+    </Menu>
   );
-}
+};
 
 export default NavMenu;

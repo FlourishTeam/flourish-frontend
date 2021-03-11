@@ -1,7 +1,5 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react';
-import client from '../state/GraphQLContext';
 import { gql } from 'apollo-boost';
+import client from '../../providers/GraphQLContext';
 
 export const removePlantFromCollection = (user, plantId) => {
   console.log(user, 'remooooooooove');

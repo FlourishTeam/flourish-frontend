@@ -5,7 +5,8 @@ import styles from './styles/CareLogItem.css';
 import { useCareLogItems } from '../../../state/CareLogContext';
 
 const CareLogList = () => {
-  const { careLogItems } = useCareLogItems();
+  const careLogItems = useCareLogItems();
+  console.log(careLogItems);
   const logListElement = careLogItems.map((careLogItem) => {
     return (
       <li key={uuid()} className={styles.plantListItem}>

@@ -18,7 +18,7 @@ export const CareLogProvider = ({ children }) => {
       .query({
         query: gql`
         query {
-          getMyCareHistoryById(plantId: ${plantId}, userId: ${userId}) {
+          getMyCareHistoryById(userId: ${userId}) {
             careLogs {
               userPlantLogId
               userId
@@ -27,8 +27,11 @@ export const CareLogProvider = ({ children }) => {
               careDate
               careType
               careNote
-            }
-            plantDetails {
+        ` }
+        .query({
+          query: gql`
+            query {
+            plantDetails(plantId: ${plantId}) {
               plantId
               image
               commonName
@@ -54,15 +57,14 @@ export const CareLogProvider = ({ children }) => {
           }
         }
       `, })
-      .then(({ data }) => {
-        setCareLog(data.getMyCareHistoryById.careLogs);
-        setPlantDetails(data.plantDetails);
-        console.log(data.getMyCareHistoryById.plantDetails);
-        setLoading(false);
-      })
-      .catch((error) => setError(error.message));
+        .then(({ data }) => {
+          console.log('heeellllllllllllooooooo', data);
+          setCareLog(data.getMyCareHistoryById.careLogs);
+          setPlantDetails(data.plantDetails);
+          setLoading(false);
+        })
+        .catch((error) => setError(error.message)));
   };
-
 
   return (
     <CareLogContext.Provider value={{ 

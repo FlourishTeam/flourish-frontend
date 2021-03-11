@@ -7,6 +7,11 @@
     background-color: white;
     border-radius: 12px;
     
+    /* 
+    normalize height for plant items 
+    probably breaking on text and/or photo size
+    */
+
     div {
         margin: 20px;
         text-align: center;

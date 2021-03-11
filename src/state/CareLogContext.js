@@ -55,8 +55,9 @@ export const CareLogProvider = ({ children }) => {
         }
       `, })
       .then(({ data }) => {
-        setCareLog(data.getMyCareHistoryById);
+        setCareLog(data.getMyCareHistoryById.careLogs);
         setPlantDetails(data.plantDetails);
+        console.log(data.getMyCareHistoryById.plantDetails);
         setLoading(false);
       })
       .catch((error) => setError(error.message));

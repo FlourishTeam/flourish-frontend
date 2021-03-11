@@ -1,10 +1,7 @@
 import React from 'react';
-// import uuid from 'react-uuid';
 import MaintenanceLevel from '../../reusable/maintenance/MaintenanceLevel';
-import CareDetails from '../../reusable/care/CareDetails';
 import CareLogList from '../../pages/care-history/CareLogList';
 import CareForm from '../care-history/care-notes/care-form/CareForm';
-import MyPlantNotes from '../care-history/care-notes/MyPlantNotes';
 import Loading from '../../reusable/loading/Loading';
 import { 
   usePlantDetails, 
@@ -41,14 +38,12 @@ export default function MyCareHistoryPage() {
           <div> Temperature Range: {plantDetails.temperatureRange}</div>
           <div> Placement: {plantDetails.placement}</div>
           <div> Substrate Recommendation: {plantDetails.substrateRecommendation}</div>
-          <div> Potting Notes: {plantDetails.pottingNote}</div>
+          <div> Potting Notes: {plantDetails.pottingNotes}</div>
           <div> Watering: {plantDetails.watering}</div>
         </section>  
       </div>
-      <MyPlantNotes />
       <CareForm />
       <CareLogList /> 
     </>
   );
-  // });
 }

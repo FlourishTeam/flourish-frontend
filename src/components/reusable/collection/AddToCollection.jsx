@@ -8,8 +8,10 @@ function AddToCollection({ plantId }) {
   const user = useSession();
 
   const handleClick = () => {
-    addPlantToCollection(user, plantId);
+    addPlantToCollection(user.id, plantId);
   };
+
+  console.log(user);
 
   return (
     <div>

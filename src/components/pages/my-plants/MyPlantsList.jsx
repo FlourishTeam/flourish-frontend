@@ -3,9 +3,9 @@ import MyPlant from './MyPlant';
 import { Link } from 'react-router-dom';
 import uuid from 'react-uuid';
 import styles from './styles/MyPlantsList.css';
-import { getAllUserPlants } from '../../../services/fetchUserPlant';
-import { useSession } from '../../../state/AuthContext';
+import { getAllUserPlants } from '../../../services/queries/getAllUserPlants';
 import { useParams } from 'react-router';
+import { useSession } from '../../../providers/AuthContext';
 
 const MyPlantList = () => {
   const user = useSession();
@@ -13,14 +13,10 @@ const MyPlantList = () => {
 
   const [plantsList, setPlantsList] = useState([]);
 
-  useEffect(() => { 
-
-    getAllUserPlants(user)
-      .then(res => {
-        // eslint-disable-next-line no-console
-        console.log(res.data);
-        setPlantsList(res.data.getMyPlants);
-      });
+  useEffect(() => {
+    getAllUserPlants(user).then((res) => {
+      setPlantsList(res.data.getMyPlants);
+    });
   }, []);
 
   const listElement = plantsList.map((plant) => {

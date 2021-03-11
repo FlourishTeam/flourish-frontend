@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { slide as Menu } from 'react-burger-menu';
-import { useLogout, useSession } from '../../../providers/AuthContext';
+import { useLogout } from '../../../providers/AuthContext';
 import { menuStyle } from './styles/menuStyle';
 import styles from './styles/NavMenu.css';
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
 .Search {
     display: flex;
     flex-direction: row;
@@ -16,30 +18,31 @@
         border-radius: 12px;
         box-shadow: 2px 2px 4px black;
     }
-
+    
     .searchInput, .photoMode, .submitButton {
         border: none;
         outline-width: 0;
         margin: 5px;
         height: 99%;
     }
-
+    
     .photoMode, .submitButton {
         cursor: pointer;
     }
-
+    
     .photoMode :hover {
         transform: scale(1.2);
     }
-
+    
     .submitButton :hover {
         transform: scale(1.2);
     }
-
+    
     .searchInput {
         font-size: 2rem;
         margin: 0;
         text-indent: 8px;
+        font-family: 'PT Sans', sans-serif;
     }
 
     .submitButton {
@@ -54,6 +57,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         /* height: 240px;
         width: 220px; */
     }
@@ -63,6 +67,8 @@
         margin: 4px;
         border: 1px inset #ccc;
         border-radius: 3px;
+        font-family: 'PT Sans', sans-serif;
+        cursor: pointer;
     }
 
     .uploaderContainer > input {
@@ -71,6 +77,12 @@
         background-color: lightgrey;
         padding: 1px;
         border-radius: 3px;
+        font-family: 'PT Sans', sans-serif;
+        cursor: pointer;
+    }
+
+    input#file-upload-button {
+        cursor: pointer;
     }
 
     .photoForm {
@@ -83,6 +95,7 @@
     .backButton {
         margin-top: 5px;
         border-radius: 3px;
+        cursor: pointer;
     }
 
     .fileContainer > img {

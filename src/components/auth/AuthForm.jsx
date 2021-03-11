@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useAuthError } from '../../state/AuthContext';
-import styles from '../reusable/header/styles/Overlay.css';
+import styles from '../reusable/navmenu/styles/Overlay.css';
 
 const AuthForm = ({ title, signupFn, loginFn, showLogin, showSignup }) => {
   const error = useAuthError;
@@ -9,12 +9,12 @@ const AuthForm = ({ title, signupFn, loginFn, showLogin, showSignup }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSignupSubmit = e => {
+  const handleSignupSubmit = (e) => {
     e.preventDefault();
     signupFn(name, email, password);
   };
 
-  const handleLoginSubmit = e => {
+  const handleLoginSubmit = (e) => {
     e.preventDefault();
     loginFn(email, password);
   };
@@ -23,67 +23,65 @@ const AuthForm = ({ title, signupFn, loginFn, showLogin, showSignup }) => {
     <div className={styles.formContainer}>
       <div className={styles.title}>{title}</div>
       {error && <p>{error.message}</p>}
-      {
-        (showLogin)
-          ? <form 
-            className={styles.form}
-            onSubmit={handleSignupSubmit}>
-            <input 
-              className={styles.formInput}
-              type="name"
-              value={name}
-              placeholder="Name"
-              onChange={({ target }) => setName(target.value)} />
-            <input 
-              className={styles.formInput}
-              type="email"
-              value={email}
-              placeholder="Email"
-              onChange={({ target }) => setEmail(target.value)} />
-            <input 
-              className={styles.formInput}
-              type="password"
-              value={password}
-              placeholder="Password"
-              onChange={({ target }) => setPassword(target.value)} />
-            <button className={styles.submitButton}>{title}</button>
-          </form>
-          : <form 
-            className={styles.form}
-            onSubmit={handleLoginSubmit}>
-            <input 
-              className={styles.formInput}
-              type="email"
-              value={email}
-              placeholder="Email"
-              onChange={({ target }) => setEmail(target.value)} />
-            <input 
-              className={styles.formInput}
-              type="password"
-              value={password}
-              placeholder="Password"
-              onChange={({ target }) => setPassword(target.value)} />
-            <button className={styles.submitButton}>{title}</button>
-          </form>
-
-      }
-      {
-        (showLogin) 
-          ? <div>Already have an account? 
-            <button 
-              className={styles.switch}
-              onClick={showLogin}>
-                Login Here.
-            </button>
-          </div>
-          : <div>Want to create an account? 
-            <button 
-              className={styles.switch}
-              onClick={showSignup}>
-                Signup Here.
-            </button>
-          </div>
-      }
+      {showLogin ? (
+        <form className={styles.form} onSubmit={handleSignupSubmit}>
+          <input
+            className={styles.formInput}
+            type="name"
+            value={name}
+            placeholder="Name"
+            onChange={({ target }) => setName(target.value)}
+          />
+          <input
+            className={styles.formInput}
+            type="email"
+            value={email}
+            placeholder="Email"
+            onChange={({ target }) => setEmail(target.value)}
+          />
+          <input
+            className={styles.formInput}
+            type="password"
+            value={password}
+            placeholder="Password"
+            onChange={({ target }) => setPassword(target.value)}
+          />
+          <button className={styles.submitButton}>{title}</button>
+        </form>
+      ) : (
+        <form className={styles.form} onSubmit={handleLoginSubmit}>
+          <input
+            className={styles.formInput}
+            type="email"
+            value={email}
+            placeholder="Email"
+            onChange={({ target }) => setEmail(target.value)}
+          />
+          <input
+            className={styles.formInput}
+            type="password"
+            value={password}
+            placeholder="Password"
+            onChange={({ target }) => setPassword(target.value)}
+          />
+          <button className={styles.submitButton}>{title}</button>
+        </form>
+      )}
+      {showLogin ? (
+        <div>
+          Already have an account?
+          <button className={styles.switch} onClick={showLogin}>
+            Login Here.
+          </button>
+        </div>
+      ) : (
+        <div>
+          Want to create an account?
+          <button className={styles.switch} onClick={showSignup}>
+            Signup Here.
+          </button>
+        </div>
+      )}
     </div>
   );
 };

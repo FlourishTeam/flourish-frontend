@@ -24,8 +24,8 @@ const PlantList = () => {
 
   // correct loading logic later:
   // opposite of loading for now because loading will never not be true
-  if (loading) return <Loading />;
-  if (error) return <div>{error}</div>;
+  if(loading) return <Loading />;
+  if(error) return <div>{error}</div>;
 
   return <ul className={styles.PlantList}>{plantElements}</ul>;
 };

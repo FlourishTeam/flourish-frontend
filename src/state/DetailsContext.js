@@ -1,6 +1,8 @@
 import React, { createContext, useContext, useState } from 'react';
-import client from './GraphQLContext';
 import { gql } from 'apollo-boost';
+import client from './GraphQLContext';
+
+
 
 export const DetailsContext = createContext(null);
 
@@ -22,6 +24,13 @@ export const DetailsProvider = ({ children }) => {
           image,
           commonName,
           scientificName,
+          lightRange,
+          hydrationRange,
+          temperatureRange,
+          placement,
+          substrateRecommendation,
+          pottingNotes,
+          watering,
           synonyms,
           pestsDiseases,
           warnings,

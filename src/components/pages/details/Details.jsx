@@ -3,11 +3,19 @@ import PropTypes from 'prop-types';
 import styles from './styles/Details.css';
 import MaintenanceLevel from '../../reusable/maintenance/MaintenanceLevel';
 import AddToCollection from '../../reusable/collection/AddToCollection';
+import RemoveFromCollection from '../../reusable/collection/RemoveFromCollection';
 
 const Details = ({
   image,
   commonName,
   scientificName,
+  lightRange,
+  hydrationRange,
+  temperatureRange,
+  placement,
+  substrateRecommendation,
+  pottingNotes,
+  watering,
   synonyms,
   pestsDiseases,
   warnings,
@@ -16,26 +24,35 @@ const Details = ({
   type,
   floweringPeriod,
   bloomSize,
-  humidityLevel,
   propagation,
   careDifficulty
 }) => {
   return (
     <>
       <div className={styles.Details}>
-        <img src={image} alt={commonName} />
         <div>{commonName}</div>
         <div>{scientificName}</div>
+        <img src={image} alt={commonName} />
         <div>Maintenance Level: <MaintenanceLevel maintenanceLevel={careDifficulty} /></div>
-        {/* import ADD/REMOVE component */}
-        {/* import CARE DETAILS component */}
+        < AddToCollection />
+        < RemoveFromCollection />
+        {/* CARE DETAILS SECTION */}
+        <section>
+          <div> Light Range: {lightRange}</div>
+          <div> Hydration Range: {hydrationRange}</div>
+          <div> Temperature Range: {temperatureRange}</div>
+          <div> Placement: {placement}</div>
+          <div> Substrate Recommendation: {substrateRecommendation}</div>
+          <div> Potting Notes: {pottingNotes}</div>
+          <div> Watering: {watering}</div>
+        </section>
         {/* ABOUT SECTION */}
         <section>
           <div>Other Names: {synonyms}</div>
           <div>Warnings: {warnings}</div>
           <div>Common Pests and Diseases: {pestsDiseases}</div>
           <ul>
-        Physical Characteristics:
+          Physical Characteristics:
             <li>Height: {height}</li>
             <li>Spread: {spread}</li>
             <li>Type: {type}</li>
@@ -43,10 +60,8 @@ const Details = ({
             <li>Bloom Size: {bloomSize}</li>
           </ul>
           <div>Propagation: {propagation}</div>
-          <div>Humidity Level: {humidityLevel}</div>
         </section>    
       </div>
-      <AddToCollection />
     </>
   );
 };
@@ -54,6 +69,13 @@ const Details = ({
 Details.propTypes = {
   image: PropTypes.string.isRequired,
   commonName: PropTypes.string.isRequired,
+  lightRange: PropTypes.string.isRequired,
+  hydrationRange: PropTypes.string.isRequired,
+  temperatureRange: PropTypes.string.isRequired,
+  placement: PropTypes.string.isRequired,
+  substrateRecommendation: PropTypes.string.isRequired,
+  pottingNotes: PropTypes.string.isRequired,
+  watering: PropTypes.string.isRequired,
   synonyms: PropTypes.string.isRequired,
   scientificName: PropTypes.string.isRequired,
   pestsDiseases: PropTypes.string.isRequired,
@@ -64,7 +86,6 @@ Details.propTypes = {
   floweringPeriod: PropTypes.string.isRequired,
   bloomSize: PropTypes.string.isRequired,
   propagation: PropTypes.string.isRequired,
-  humidityLevel: PropTypes.string,
   careDifficulty: PropTypes.string.isRequired,
 };
 

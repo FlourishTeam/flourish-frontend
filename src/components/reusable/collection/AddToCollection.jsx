@@ -4,7 +4,7 @@
 import React from 'react';
 // import PropTypes from "prop-types";
 // import useAddToCollection from '../../../hooks/useAddToCollection';
-import { addPlantToCollection } from '../../../services/fetchGraphql';
+import { addPlantToCollection } from '../../../services/fetchAddPlant';
 import { useSession } from '../../../state/AuthContext';
 import styles from './styles/AddToCollection.css';
 

@@ -1,10 +1,6 @@
 import React, { createContext, useContext, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import {
-  useHandleSearch,
-  useSearchLoading,
-  useSetSearchLoading,
-} from './SearchContext';
+import { useHandleSearch, useSetSearchLoading } from './SearchContext';
 
 const API_URL = process.env.REACT_APP_API_URL;
 const API_KEY = process.env.REACT_APP_API_KEY;
@@ -35,7 +31,7 @@ export const PhotoUploadProvider = ({ children }) => {
       setLoading(true);
 
       const promise = files.map((file) => {
-        return new Promise((resolve, reject) => {
+        return new Promise((resolve) => {
           const reader = new FileReader();
           reader.onload = (e) => {
             const res = e.target.result;

@@ -6,7 +6,7 @@ export const CareLogContext = createContext(null);
 
 export const CareLogProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
-  const [plant, setPlant] = useState({});
+  const [plantDetails, setPlantDetails] = useState({});
   const [careLogItems, setCareLog] = useState(null);
   const [error, setError] = useState(null);
 
@@ -56,9 +56,8 @@ export const CareLogProvider = ({ children }) => {
       `, })
       .then(({ data }) => {
         setCareLog(data.getMyCareHistoryById);
-        setPlant(data.plantDetails);
+        setPlantDetails(data.plantDetails);
         setLoading(false);
-
       })
       .catch((error) => setError(error.message));
   };
@@ -69,7 +68,7 @@ export const CareLogProvider = ({ children }) => {
       loading,
       careLogItems,
       renderMyCareHistory,
-      plant,
+      plantDetails,
       error 
     }}>
       {children}
@@ -87,9 +86,9 @@ export const useCareLogItems = () => {
   return careLogItems;
 };
 
-export const usePlant = () => {
-  const { plant } = useContext(CareLogContext);
-  return plant;
+export const usePlantDetails = () => {
+  const { plantDetails } = useContext(CareLogContext);
+  return plantDetails;
 };
 
 export const useCareLogError = () => {

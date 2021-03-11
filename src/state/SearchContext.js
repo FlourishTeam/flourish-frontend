@@ -1,6 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
-import { gql } from 'apollo-boost';
-import client from './GraphQLContext';
+import { plantByName } from '../services/plantByName';
 
 export const SearchContext = createContext(null);
 
@@ -14,23 +13,7 @@ export const SearchProvider = ({ children }) => {
     setError(null);
     setLoading(true);
 
-    client
-      .query({
-        query: gql`
-        query {
-          plantByName(name: "${name}") {
-          plantId,
-          image,
-          commonName,
-          scientificName,
-          lightRange,
-          hydrationRange,
-          careDifficulty,
-          temperatureRange
-          }
-        }
-        `,
-      })
+    plantByName(name)
       .then(({ data }) => {
         setSearchResults(data.plantByName);
         setLoading(false);

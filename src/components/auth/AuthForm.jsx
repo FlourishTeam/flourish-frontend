@@ -20,7 +20,9 @@ const AuthForm = ({ email, setEmail, name, setName, title, signupFn, loginFn, sh
   return (
     <div className={styles.formContainer}>
       <div className={styles.title}>{title}</div>
-      {error && <p>{error.message}</p>}
+      {error 
+        ? <p>{error.message}</p>
+        : <></>}
       {showLogin ? (
         <form className={styles.form} onSubmit={handleSignupSubmit}>
           <input

@@ -19,8 +19,7 @@
   "scripts": {
     "test": "jest --setupFiles dotenv/config --verbose",
     "test:watch": "npm run test -- --watch",
-    "start": "webpack serve --hot --mode development --devtool eval-source-map",
-    "build": "webpack dotenv/config --devtool source-map"
+    "start": "webpack serve --hot --mode development --devtool eval-source-map"
   },
   "keywords": [],
   "author": "",

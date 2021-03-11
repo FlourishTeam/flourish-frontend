@@ -1,12 +1,15 @@
 import React from 'react';
 import styles from './styles/HomePage.css';
 import Search from '../../reusable/search/Search';
+import Slideshow from './Slideshow';
 
 const HomePage = () => {
   return (
     <section className={styles.HomePage}>
       <header className={styles.bannerContainer}>
-        <img src="images/home-page/banner-1.jpeg" />
+        <p className={styles.topText}>welcome to flourish</p>
+        <p className={styles.bottomText}>(we can help)</p>
+        <Slideshow />
         <Search className={styles.Search} />
       </header>
     </section>

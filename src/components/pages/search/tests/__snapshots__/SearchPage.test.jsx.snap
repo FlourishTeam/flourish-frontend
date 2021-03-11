@@ -2,30 +2,33 @@
 
 exports[`Search component renders Search 1`] = `
 <DocumentFragment>
-  <div>
-    Search Page
+  <div
+    class="SearchPage"
+  >
     <div
       class="Search"
     >
       <form>
         <input
           class="searchInput"
-          placeholder="search"
+          placeholder="search a plant by name..."
           type="text"
           value=""
         />
-        <button
-          class="photoMode"
-        >
-          <img
-            src="images/photo-icon.svg"
-          />
-        </button>
         <button
           class="submitButton"
         >
           <img
             src="images/search-icon.svg"
+            title="Search by text"
+          />
+        </button>
+        <button
+          class="photoMode"
+        >
+          <img
+            src="images/photo-icon.svg"
+            title="Search by photo"
           />
         </button>
       </form>

@@ -7,7 +7,6 @@ exports[`MyPlant component renders MyPlant 1`] = `
   >
     <img
       class="plantImg"
-      src="images/photo-icon.svg"
     />
     <figcaption
       class="caption"

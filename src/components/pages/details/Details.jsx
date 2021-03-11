@@ -1,13 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './styles/Details.css';
+import styles from './styles/DetailsPage.css';
 import MaintenanceLevel from '../../reusable/maintenance/MaintenanceLevel';
 import AddToCollection from '../../reusable/collection/AddToCollection';
+import RemoveFromCollection from '../../reusable/collection/RemoveFromCollection';
 
 const Details = ({
   image,
   commonName,
   scientificName,
+  lightRange,
+  hydrationRange,
+  temperatureRange,
+  placement,
+  substrateRecommendation,
+  pottingNotes,
+  watering,
   synonyms,
   pestsDiseases,
   warnings,
@@ -16,37 +24,97 @@ const Details = ({
   type,
   floweringPeriod,
   bloomSize,
-  humidityLevel,
   propagation,
   careDifficulty
 }) => {
+  
   return (
     <>
       <div className={styles.Details}>
-        <img src={image} alt={commonName} />
-        <div>{commonName}</div>
-        <div>{scientificName}</div>
-        <div>Maintenance Level: <MaintenanceLevel maintenanceLevel={careDifficulty} /></div>
-        {/* import ADD/REMOVE component */}
-        {/* import CARE DETAILS component */}
-        {/* ABOUT SECTION */}
-        <section>
-          <div>Other Names: {synonyms}</div>
-          <div>Warnings: {warnings}</div>
-          <div>Common Pests and Diseases: {pestsDiseases}</div>
-          <ul>
-        Physical Characteristics:
-            <li>Height: {height}</li>
-            <li>Spread: {spread}</li>
-            <li>Type: {type}</li>
-            <li>Flowering Period: {floweringPeriod}</li>
-            <li>Bloom Size: {bloomSize}</li>
-          </ul>
-          <div>Propagation: {propagation}</div>
-          <div>Humidity Level: {humidityLevel}</div>
-        </section>    
+
+        <section className={styles.top}>
+          <h1 className={styles.common}>{commonName}</h1>
+          <h3 className={styles.scientific}>{scientificName}</h3>
+          <MaintenanceLevel maintenanceLevel={careDifficulty} />
+        </section>
+
+        <section className={styles.mid}>
+          <section className={styles.midLeft}>
+            <img src={image} alt={commonName} className={image} width="100%" height="90%" />
+
+            <section className={styles.addRemoveContainer}>
+              < AddToCollection />
+              < RemoveFromCollection />
+            </section>
+          </section>
+
+          <div className={styles.midRight}>
+            <section className={styles.careDetails}>
+              <div>
+                <span className={styles.key}> Light Range: </span>
+                <span className={styles.value}>{lightRange}</span><br/>
+          
+                <span className={styles.key}>Hydration Range: </span>
+                <span className={styles.value}>{hydrationRange}</span><br/>
+
+                <span className={styles.key}>Temperature Range: </span>
+                <span className={styles.value}>{temperatureRange}</span><br/>
+
+                <span className={styles.key}>Placement: </span>
+                <span className={styles.value}>{placement}</span><br/>
+
+                <span className={styles.key}>Substrate Recommendation: </span>
+                <span className={styles.value}>{substrateRecommendation}</span><br/><br />
+              </div>
+              <div>
+                <span className={styles.key}> Potting Notes: </span>
+                <span className={styles.value}>{pottingNotes}</span><br/>
+              </div>
+              <div>
+                <span className={styles.key}> Watering: </span>
+                <span className={styles.value}>{watering}</span><br/>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section className={styles.bottomMid}>
+          <section className={styles.bottomMidLeft}>
+            <div className={styles.title}>Physical Characteristics:</div>
+            <span className={styles.key}>Height: </span>
+            <span className={styles.value}>{height}</span>
+
+            <span className={styles.key}>Spread: </span>
+            <span className={styles.value}>{spread}</span>
+
+            <span className={styles.key}>Type: </span>
+            <span className={styles.value}>{type}</span>
+
+            <span className={styles.key}>Flowering Period: </span>
+            <span className={styles.value}>{floweringPeriod}</span>
+            {/* 
+            <span className={styles.key}>Bloom Size: </span>
+                <span className={styles.value}>{bloomSize}</span> */}
+          </section>
+
+          <section className={styles.bottomMidRight}>
+            <span className={styles.key}>Other Names: </span>
+            <span className={styles.value}>{synonyms}</span><br/>
+
+            <span className={styles.key}>Warnings: </span>
+            <span className={styles.value}>{warnings}</span><br/>
+
+            <span className={styles.key}>Common Pests & Diseases: </span>
+            <span className={styles.value}>{pestsDiseases}</span><br/>
+          </section>
+        </section>
+
+        <div className={styles.propagation}>
+          <span className={styles.propKey}>Propagation </span><br />
+          <span className={styles.value}>{propagation}</span>
+        </div> 
+
       </div>
-      <AddToCollection />
     </>
   );
 };
@@ -54,6 +122,13 @@ const Details = ({
 Details.propTypes = {
   image: PropTypes.string.isRequired,
   commonName: PropTypes.string.isRequired,
+  lightRange: PropTypes.string.isRequired,
+  hydrationRange: PropTypes.string.isRequired,
+  temperatureRange: PropTypes.string.isRequired,
+  placement: PropTypes.string.isRequired,
+  substrateRecommendation: PropTypes.string.isRequired,
+  pottingNotes: PropTypes.string.isRequired,
+  watering: PropTypes.string.isRequired,
   synonyms: PropTypes.string.isRequired,
   scientificName: PropTypes.string.isRequired,
   pestsDiseases: PropTypes.string.isRequired,
@@ -64,7 +139,6 @@ Details.propTypes = {
   floweringPeriod: PropTypes.string.isRequired,
   bloomSize: PropTypes.string.isRequired,
   propagation: PropTypes.string.isRequired,
-  humidityLevel: PropTypes.string,
   careDifficulty: PropTypes.string.isRequired,
 };
 

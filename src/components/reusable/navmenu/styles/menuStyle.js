@@ -1,6 +1,6 @@
 export const menuStyle = {
   bmBurgerButton: {
-    position: 'fixed',
+    position: 'absolute',
     width: '36px',
     height: '30px',
     right: '20px',
@@ -49,6 +49,8 @@ export const menuStyle = {
     display: 'inline-block',
     textDecoration: 'none',
     color: '#888682',
+    margin: '10px',
+    fontSize: '1.4rem',
   },
 
   bmOverlay: {

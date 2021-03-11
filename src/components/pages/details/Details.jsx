@@ -14,7 +14,7 @@ const Details = ({
   temperatureRange,
   placement,
   substrateRecommendation,
-  pottingNote,
+  pottingNotes,
   watering,
   synonyms,
   pestsDiseases,
@@ -24,7 +24,6 @@ const Details = ({
   type,
   floweringPeriod,
   bloomSize,
-  humidityLevel,
   propagation,
   careDifficulty
 }) => {
@@ -44,7 +43,7 @@ const Details = ({
           <div> Temperature Range: {temperatureRange}</div>
           <div> Placement: {placement}</div>
           <div> Substrate Recommendation: {substrateRecommendation}</div>
-          <div> Potting Notes: {pottingNote}</div>
+          <div> Potting Notes: {pottingNotes}</div>
           <div> Watering: {watering}</div>
         </section>
         {/* ABOUT SECTION */}
@@ -61,7 +60,6 @@ const Details = ({
             <li>Bloom Size: {bloomSize}</li>
           </ul>
           <div>Propagation: {propagation}</div>
-          <div>Humidity Level: {humidityLevel}</div>
         </section>    
       </div>
     </>
@@ -76,7 +74,7 @@ Details.propTypes = {
   temperatureRange: PropTypes.string.isRequired,
   placement: PropTypes.string.isRequired,
   substrateRecommendation: PropTypes.string.isRequired,
-  pottingNote: PropTypes.string.isRequired,
+  pottingNotes: PropTypes.string.isRequired,
   watering: PropTypes.string.isRequired,
   synonyms: PropTypes.string.isRequired,
   scientificName: PropTypes.string.isRequired,
@@ -88,7 +86,6 @@ Details.propTypes = {
   floweringPeriod: PropTypes.string.isRequired,
   bloomSize: PropTypes.string.isRequired,
   propagation: PropTypes.string.isRequired,
-  humidityLevel: PropTypes.string,
   careDifficulty: PropTypes.string.isRequired,
 };
 

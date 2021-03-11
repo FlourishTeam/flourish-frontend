@@ -17,12 +17,12 @@ const Signup = () => {
   };
 
   return (
-    <div className={styles.popupContainer}>
+    <div className={styles.Signup}>
       {state === 'signup' && (
-        <AuthForm title="Signup" signupFn={signup} showLogin={showLogin} />
+        <AuthForm title="Sign Up" signupFn={signup} showLogin={showLogin} />
       )}
       {state === 'login' && (
-        <AuthForm title="Login" loginFn={login} showSignup={showSignup} />
+        <AuthForm title="Log In" loginFn={login} showSignup={showSignup} />
       )}
     </div>
   );

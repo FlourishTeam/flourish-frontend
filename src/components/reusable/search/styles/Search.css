@@ -57,9 +57,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        /* height: 240px;
-        width: 220px; */
     }
 
     .uploaderContainer > button {

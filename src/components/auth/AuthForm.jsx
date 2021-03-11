@@ -29,24 +29,24 @@ const AuthForm = ({ title, signupFn, loginFn, showLogin, showSignup }) => {
             className={styles.formInput}
             type="name"
             value={name}
-            placeholder="Name"
+            placeholder="username"
             onChange={({ target }) => setName(target.value)}
           />
           <input
             className={styles.formInput}
             type="email"
             value={email}
-            placeholder="Email"
+            placeholder="email"
             onChange={({ target }) => setEmail(target.value)}
           />
           <input
             className={styles.formInput}
             type="password"
             value={password}
-            placeholder="Password"
+            placeholder="password"
             onChange={({ target }) => setPassword(target.value)}
           />
-          <button className={styles.submitButton}>{title}</button>
+          <button className={styles.submitButton}>Submit</button>
         </form>
       ) : (
         <form className={styles.form} onSubmit={handleLoginSubmit}>
@@ -54,31 +54,31 @@ const AuthForm = ({ title, signupFn, loginFn, showLogin, showSignup }) => {
             className={styles.formInput}
             type="email"
             value={email}
-            placeholder="Email"
+            placeholder="email"
             onChange={({ target }) => setEmail(target.value)}
           />
           <input
             className={styles.formInput}
             type="password"
             value={password}
-            placeholder="Password"
+            placeholder="password"
             onChange={({ target }) => setPassword(target.value)}
           />
           <button className={styles.submitButton}>{title}</button>
         </form>
       )}
       {showLogin ? (
-        <div>
+        <div className={styles.textDisplay}>
           Already have an account?
           <button className={styles.switch} onClick={showLogin}>
-            Login Here.
+            Log in here.
           </button>
         </div>
       ) : (
-        <div>
+        <div className={styles.textDisplay}>
           Want to create an account?
           <button className={styles.switch} onClick={showSignup}>
-            Signup Here.
+            Sign up here.
           </button>
         </div>
       )}

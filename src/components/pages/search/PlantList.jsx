@@ -6,7 +6,7 @@ import {
   useSearchError,
   useSearchLoading,
   useSearchResults,
-} from '../../../state/SearchContext';
+} from '../../../providers/SearchContext';
 import Loading from '../../reusable/loading/Loading';
 
 const PlantList = () => {
@@ -22,10 +22,13 @@ const PlantList = () => {
     );
   });
 
-  // correct loading logic later:
-  // opposite of loading for now because loading will never not be true
-  if(loading) return <Loading />;
-  if(error) return <div>{error}</div>;
+  if (loading)
+    return (
+      <div className={styles.loading}>
+        <Loading />
+      </div>
+    );
+  if (error) return <div>{error}</div>;
 
   return <ul className={styles.PlantList}>{plantElements}</ul>;
 };

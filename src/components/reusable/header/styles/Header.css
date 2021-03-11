@@ -19,13 +19,7 @@
         align-items: center;
         margin-left: 5em;
     }
-
-    .menuIcon {
-        height: 3rem;
-        float: right;
-        margin: 1rem;
-        margin-bottom: 40px;
-    }
+    
     
     .loginButton {
         height: 3rem;
@@ -34,6 +28,7 @@
         margin-right: 80px;
         border-radius: 12px;
         padding: 10px;
+        cursor: pointer;
     }
 
     .greeting {

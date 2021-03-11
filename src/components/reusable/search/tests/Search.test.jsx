@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
 import Search from '../Search';
-import { SearchProvider } from '../../../../state/SearchContext';
-import { PhotoUploadProvider } from '../../../../state/PhotoUploadContext';
+import { SearchProvider } from '../../../../providers/SearchContext';
+import { PhotoUploadProvider } from '../../../../providers/PhotoUploadContext';
 
 describe('Search component', () => {
   afterEach(() => cleanup());

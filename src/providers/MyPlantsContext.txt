@@ -6,7 +6,7 @@ export const MyPlantContext = createContext(null);
 
 export const MyPlantProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
-  const [myPlants, setMyPlants] = useState(data);
+  const [myPlants, setMyPlants] = useState([]);
 
   return (
     <MyPlantContext.Provider value={{ myPlants, loading }}>

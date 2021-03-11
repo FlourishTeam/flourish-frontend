@@ -1,11 +1,10 @@
 import React, { createContext, useContext, useState } from 'react';
-import { gql } from 'apollo-boost';
-import client from './GraphQLContext';
+import { plantByName } from '../services/queries/plantByName';
 
 export const SearchContext = createContext(null);
 
 export const SearchProvider = ({ children }) => {
-  const [loading, setLoading] = useState(null);
+  const [loading, setLoading] = useState(false);
   const [searchResults, setSearchResults] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [error, setError] = useState(null);
@@ -14,22 +13,7 @@ export const SearchProvider = ({ children }) => {
     setError(null);
     setLoading(true);
 
-    client
-      .query({
-        query: gql`
-        query {
-          plantByName(name: "${name}") {
-          plantId,
-          image,
-          commonName,
-          scientificName,
-          lightRange,
-          hydrationRange,
-          careDifficulty,
-          temperatureRange
-          }
-        }
-        `, })
+    plantByName(name)
       .then(({ data }) => {
         setSearchResults(data.plantByName);
         setLoading(false);
@@ -42,13 +26,18 @@ export const SearchProvider = ({ children }) => {
   };
 
   return (
-    <SearchContext.Provider value={{ 
-      loading, 
-      searchResults, 
-      searchQuery, 
-      handleChange, 
-      handleSearch,
-      error }}>
+    <SearchContext.Provider
+      value={{
+        loading,
+        searchResults,
+        searchQuery,
+        setSearchQuery,
+        handleChange,
+        handleSearch,
+        setLoading,
+        error,
+      }}
+    >
       {children}
     </SearchContext.Provider>
   );
@@ -59,6 +48,11 @@ export const useSearchLoading = () => {
   return loading;
 };
 
+export const useSetSearchLoading = () => {
+  const { setLoading } = useContext(SearchContext);
+  return setLoading;
+};
+
 export const useSearchResults = () => {
   const { searchResults } = useContext(SearchContext);
   return searchResults;
@@ -67,6 +61,11 @@ export const useSearchResults = () => {
 export const useSearchQuery = () => {
   const { searchQuery } = useContext(SearchContext);
   return searchQuery;
+};
+
+export const useSetSearchQuery = () => {
+  const { setSearchQuery } = useContext(SearchContext);
+  return setSearchQuery;
 };
 
 export const useHandleChange = () => {

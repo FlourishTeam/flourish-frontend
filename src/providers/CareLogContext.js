@@ -6,19 +6,19 @@ export const CareLogContext = createContext(null);
 
 export const CareLogProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
-  const [plantDetails, setPlantDetails] = useState({});
-  const [careLogItems, setCareLog] = useState(null);
+  const [plantDetails, setPlantDetails] = useState([]);
+  const [careLogItems, setCareLog] = useState([]);
   const [error, setError] = useState(null);
 
   const renderMyCareHistory = (userId, plantId) => {
     setError(null);
     setLoading(true);
 
-    client
+    return client
       .query({
         query: gql`
         query {
-          getMyCareHistoryById(userId: ${userId}) {
+          getMyCareHistoryById(plantId: ${plantId} userId: ${userId}) {
             careLogs {
               userPlantLogId
               userId
@@ -27,11 +27,8 @@ export const CareLogProvider = ({ children }) => {
               careDate
               careType
               careNote
-        ` }
-        .query({
-          query: gql`
-            query {
-            plantDetails(plantId: ${plantId}) {
+            }
+            plantDetails {
               plantId
               image
               commonName
@@ -57,13 +54,13 @@ export const CareLogProvider = ({ children }) => {
           }
         }
       `, })
-        .then(({ data }) => {
-          console.log('heeellllllllllllooooooo', data);
-          setCareLog(data.getMyCareHistoryById.careLogs);
-          setPlantDetails(data.plantDetails);
-          setLoading(false);
-        })
-        .catch((error) => setError(error.message)));
+      .then(({ data }) => {
+        console.log(data);
+        setCareLog(data.getMyCareHistoryById.careLogs);
+        setPlantDetails(data.plantDetails);
+        setLoading(false);
+      })
+      .catch((error) => setError(error.message));
   };
 
   return (

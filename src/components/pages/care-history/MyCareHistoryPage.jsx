@@ -1,33 +1,40 @@
 import React, { useEffect } from 'react';
 import { 
   usePlantDetails, 
-  // useCareLogError, 
-  // useCareLogLoading,
+  useCareLogError, 
+  useCareLogLoading,
   useRenderMyCareHistory,
-} from '../../../state/CareLogContext';
+} from '../../../providers/CareLogContext';
 import MaintenanceLevel from '../../reusable/maintenance/MaintenanceLevel';
 import CareForm from '../care-history/care-notes/care-form/CareForm';
 import CareLogList from '../../pages/care-history/CareLogList';
-// import Loading from '../../reusable/loading/Loading';
-import { useSession } from '../../../state/AuthContext';
+import { useSession } from '../../../providers/AuthContext';
+import Loading from '../../reusable/loading/Loading';
 import styles from './styles/MyCareHistory.css';
-// import MyPlant from '../my-plants/MyPlant';
+import { useParams } from 'react-router';
 
 export default function MyCareHistoryPage() {
   const user = useSession();
-  // const loading = useCareLogLoading();
-  // const error = useCareLogError();
+  const loading = useCareLogLoading();
+  const { id } = useParams();
+  console.log(user, id);
+  const error = useCareLogError();
   const plantDetails = usePlantDetails();
   const renderMyCareHistory = useRenderMyCareHistory();
-
   useEffect(() => {
-    renderMyCareHistory(plantDetails.id, user.id);
+    renderMyCareHistory(id, 3);
   }, []);
 
-  // if(loading) return <Loading />;
-  // if(error) return <div>{error}</div>;
   return (
     <>
+      {error &&  
+      <div>
+        <CareForm />
+        {error}
+      </div>
+      }
+      {loading && <Loading />}
+      <p>Hello!</p>
       <div className={styles.MyCareHistoryPlantName}>
         <div>{plantDetails.commonName}</div>
         <div>{plantDetails.scientificName}</div>
@@ -38,8 +45,8 @@ export default function MyCareHistoryPage() {
         <div>Maintenance Level: 
           <MaintenanceLevel maintenanceLevel={plantDetails.careDifficulty}/>
         </div>
-        {/* <RemoveFromCollection /> */}
-        {/* CARE DETAILS SECTION */}
+        {/* <RemoveFromCollection />  */}
+          CARE DETAILS SECTION */
         <section>
           <div> Light Range: {plantDetails.lightRange}</div>
           <div> Hydration Range: {plantDetails.hydrationRange}</div>
@@ -51,7 +58,7 @@ export default function MyCareHistoryPage() {
         </section>  
       </div>
       <CareForm />
-      <CareLogList /> 
+      <CareLogList />  
     </>
   );
 }

@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import MyPlant from './MyPlant';
 import { Link } from 'react-router-dom';
 import uuid from 'react-uuid';
 import styles from './styles/MyPlantsList.css';
-import { useMyPlants } from '../../../state/MyPlantsContext';
+import { getAllUserPlants } from '../../../services/fetchUserPlant';
+import { useSession } from '../../../state/AuthContext';
 
 const MyPlantList = () => {
-  const { myPlants } = useMyPlants();
-  const listElement = myPlants.map((plant) => {
+  const user = useSession();
+  const [plantsList, setPlantsList] = useState([]);
+
+  useEffect(() => { 
+
+    getAllUserPlants(user)
+      .then(res => setPlantsList(res));
+
+  }, []);
+
+
+
+  const listElement = plantsList.map((plant) => {
     return (
       <li key={uuid()} className={styles.plantListItem}>
         <Link

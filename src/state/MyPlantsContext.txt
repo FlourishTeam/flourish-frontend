@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
-import { data } from '../hooks/fake-data';
+import { data } from '../hooks/fake-data.txt';
 
 
 export const MyPlantContext = createContext(null);

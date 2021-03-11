@@ -17,7 +17,6 @@ export const AuthProvider = ({ children }) => {
       .catch(() => console.log('user not logged in'))
       .finally(() => setLoading(false));
   }, []);
-
   const signup = (name, email, password) => {
     return postSignup(name,  email, password)
       .then(user => {
@@ -27,12 +26,11 @@ export const AuthProvider = ({ children }) => {
       .then(() => history.push('/'))
       .catch(err => setError(err));
   };
-
   const login = (email, password) => {
     return postLogin(email, password)
       .then(user => {
         setSession(user);
-        console.log('CONTEXT LOGIN', email);
+        console.log('CONTEXT LOGIN', session);
       })
       .then(() => history.push('/'))
       .catch(err => setError(err));

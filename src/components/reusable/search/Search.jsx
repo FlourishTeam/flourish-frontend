@@ -34,10 +34,10 @@ const Search = () => {
       <div className={styles.uploaderContainer}>
         <input type="file" name="uploader" onChange={handlePreview} />
         <button>Submit</button>
+        {pictureUpload && (
+          <img className={styles.uploadThumbnail} src={pictureUpload} />
+        )}
       </div>
-      {pictureUpload && (
-        <img className={styles.uploadThumbnail} src={pictureUpload} />
-      )}
     </form>
   );
 

@@ -11,7 +11,7 @@ const MyPlantList = () => {
     return (
       <li key={uuid()} className={styles.plantListItem}>
         <Link
-          to={`/my-plants/${plant.common_name}`}
+          to={`/my-plants/${plant.id}`}
           style={{ textDecoration: 'none', color: 'black' }}
         >
           <MyPlant {...plant} />

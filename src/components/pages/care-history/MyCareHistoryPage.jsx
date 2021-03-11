@@ -8,7 +8,7 @@ import {
   useCareLogError, 
   useCareLogLoading
 } from '../../../state/CareLogContext';
-import styles from './styles/MyCareHistoryPage.css';
+import styles from './styles/MyCareHistory.css';
 // import MyPlant from '../my-plants/MyPlant';
 
 export default function MyCareHistoryPage() {

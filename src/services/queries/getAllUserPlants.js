@@ -10,8 +10,10 @@ export const getAllUserPlants = (user) => {
       query: gql`
     query {
         getMyPlants(userId: ${id}) {
-            common_name
+            commonName
+            plantId
             image
+
         } 
     }
 `, });

@@ -34,7 +34,7 @@ export default function App() {
                     <Route exact path="/search" component={SearchPage} />
                     <Route
                       exact
-                      path="/my-plants/:common-name"
+                      path="/my-plants/:id"
                       component={MyCareHistoryPage}
                     />
                   </Switch>

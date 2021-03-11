@@ -17,22 +17,25 @@ export const AuthProvider = ({ children }) => {
       .catch(() => console.log('user not logged in'))
       .finally(() => setLoading(false));
   }, []);
-
   const signup = (name, email, password) => {
     return postSignup(name,  email, password)
-      .then(user => setSession(user))
+      .then(user => {
+        setSession(user);
+        console.log('CONTEXT SIGNUP', name, email);
+      })
       .then(() => history.push('/'))
-      .then(console.log('CONTEXT', name, email, password))
       .catch(err => setError(err));
   };
-
   const login = (email, password) => {
     return postLogin(email, password)
-      .then(user => setSession(user))
+      .then(user => {
+        setSession(user);
+        console.log('CONTEXT LOGIN', session);
+      })
       .then(() => history.push('/'))
       .catch(err => setError(err));
   };
-
+  
   return (
     <AuthContext.Provider value={{
       session,

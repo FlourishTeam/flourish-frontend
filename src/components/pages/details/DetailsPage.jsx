@@ -5,7 +5,6 @@ import Loading from '../../reusable/loading/Loading';
 import Details from './Details';
 import styles from './styles/DetailsPage.css';
 import { useParams } from 'react-router';
-import AddToCollection from '../../reusable/collection/AddToCollection';
 
 const DetailsPage = () => {
   const { id } = useParams();

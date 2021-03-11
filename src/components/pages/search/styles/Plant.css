@@ -4,11 +4,17 @@
     align-items: center;
     flex-direction: row;
     margin: 2em;
+    background-color: white;
+    border-radius: 12px;
     
     div {
         margin: 20px;
         text-align: center;
         font-size: .9em;
+    }
+
+    img {
+        border-radius: 12px;
     }
 
     .scientific {

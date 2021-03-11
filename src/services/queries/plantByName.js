@@ -1,5 +1,5 @@
 import { gql } from 'apollo-boost';
-import client from '../providers/GraphQLContext';
+import client from '../../providers/GraphQLContext';
 
 export const plantByName = (name) => {
   return client.query({

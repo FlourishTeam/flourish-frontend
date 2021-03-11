@@ -1,7 +1,7 @@
 import React from 'react';
 // import PropTypes from "prop-types";
 // import useAddToCollection from '../../../hooks/useAddToCollection';
-import { addPlantToCollection } from '../../../services/addToCollection';
+import { addPlantToCollection } from '../../../services/queries/addToCollection';
 import { useSession } from '../../../providers/AuthContext';
 import styles from './styles/AddToCollection.css';
 

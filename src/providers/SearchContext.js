@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
-import { plantByName } from '../services/plantByName';
+import { plantByName } from '../services/queries/plantByName';
 
 export const SearchContext = createContext(null);
 

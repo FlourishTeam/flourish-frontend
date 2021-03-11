@@ -13,10 +13,14 @@ const MyPlantList = () => {
 
   const [plantsList, setPlantsList] = useState([]);
 
-  useEffect(() => {
-    getAllUserPlants(user).then((res) => {
-      setPlantsList(res.data.getMyPlants);
-    });
+  useEffect(() => { 
+
+    getAllUserPlants(user)
+      .then(res => {
+        // eslint-disable-next-line no-console
+        console.log(res.data);
+        setPlantsList(res.data.getMyPlants);
+      });
   }, []);
 
   const listElement = plantsList.map((plant) => {

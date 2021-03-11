@@ -28,6 +28,7 @@ const MyPlantList = () => {
   console.log(plantsList);
 
   const listElement = plantsList.map((plant) => {
+    console.log('this one', plant);
     return (
       <li key={uuid()} className={styles.plantListItem}>
        

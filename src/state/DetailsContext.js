@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from 'react';
 import { gql } from 'apollo-boost';
-import client from './GraphQLContext';
+import client from '../state/GraphQLContext';
 
 export const DetailsContext = createContext(null);
 

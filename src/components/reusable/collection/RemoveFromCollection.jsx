@@ -1,5 +1,4 @@
 import React from 'react';
-// import PropTypes from "prop-types";
 import { removePlantFromCollection } from '../../../services/fetchRemovePlant';
 import { useSession } from '../../../state/AuthContext';
 import styles from './styles/AddToCollection.css';

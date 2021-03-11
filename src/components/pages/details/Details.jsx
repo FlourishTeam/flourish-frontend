@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './styles/Details.css';
+import styles from './styles/DetailsPage.css';
 import MaintenanceLevel from '../../reusable/maintenance/MaintenanceLevel';
 import AddToCollection from '../../reusable/collection/AddToCollection';
 import RemoveFromCollection from '../../reusable/collection/RemoveFromCollection';
@@ -27,40 +27,93 @@ const Details = ({
   propagation,
   careDifficulty
 }) => {
+  
   return (
     <>
       <div className={styles.Details}>
-        <div>{commonName}</div>
-        <div>{scientificName}</div>
-        <img src={image} alt={commonName} />
-        <div>Maintenance Level: <MaintenanceLevel maintenanceLevel={careDifficulty} /></div>
-        < AddToCollection />
-        < RemoveFromCollection />
-        {/* CARE DETAILS SECTION */}
-        <section>
-          <div> Light Range: {lightRange}</div>
-          <div> Hydration Range: {hydrationRange}</div>
-          <div> Temperature Range: {temperatureRange}</div>
-          <div> Placement: {placement}</div>
-          <div> Substrate Recommendation: {substrateRecommendation}</div>
-          <div> Potting Notes: {pottingNotes}</div>
-          <div> Watering: {watering}</div>
+
+        <section className={styles.top}>
+          <h1 className={styles.common}>{commonName}</h1>
+          <h3 className={styles.scientific}>{scientificName}</h3>
+          <MaintenanceLevel maintenanceLevel={careDifficulty} />
         </section>
-        {/* ABOUT SECTION */}
-        <section>
-          <div>Other Names: {synonyms}</div>
-          <div>Warnings: {warnings}</div>
-          <div>Common Pests and Diseases: {pestsDiseases}</div>
-          <ul>
-          Physical Characteristics:
-            <li>Height: {height}</li>
-            <li>Spread: {spread}</li>
-            <li>Type: {type}</li>
-            <li>Flowering Period: {floweringPeriod}</li>
-            <li>Bloom Size: {bloomSize}</li>
-          </ul>
-          <div>Propagation: {propagation}</div>
-        </section>    
+
+        <section className={styles.mid}>
+          <section className={styles.midLeft}>
+            <img src={image} alt={commonName} className={image} width="100%" height="90%" />
+
+            <section className={styles.addRemoveContainer}>
+              < AddToCollection />
+              < RemoveFromCollection />
+            </section>
+          </section>
+
+          <div className={styles.midRight}>
+            <section className={styles.careDetails}>
+              <div>
+                <span className={styles.key}> Light Range: </span>
+                <span className={styles.value}>{lightRange}</span><br/>
+          
+                <span className={styles.key}>Hydration Range: </span>
+                <span className={styles.value}>{hydrationRange}</span><br/>
+
+                <span className={styles.key}>Temperature Range: </span>
+                <span className={styles.value}>{temperatureRange}</span><br/>
+
+                <span className={styles.key}>Placement: </span>
+                <span className={styles.value}>{placement}</span><br/>
+
+                <span className={styles.key}>Substrate Recommendation: </span>
+                <span className={styles.value}>{substrateRecommendation}</span><br/><br />
+              </div>
+              <div>
+                <span className={styles.key}> Potting Notes: </span>
+                <span className={styles.value}>{pottingNotes}</span><br/>
+              </div>
+              <div>
+                <span className={styles.key}> Watering: </span>
+                <span className={styles.value}>{watering}</span><br/>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section className={styles.bottomMid}>
+          <section className={styles.bottomMidLeft}>
+            <div className={styles.title}>Physical Characteristics:</div>
+            <span className={styles.key}>Height: </span>
+            <span className={styles.value}>{height}</span>
+
+            <span className={styles.key}>Spread: </span>
+            <span className={styles.value}>{spread}</span>
+
+            <span className={styles.key}>Type: </span>
+            <span className={styles.value}>{type}</span>
+
+            <span className={styles.key}>Flowering Period: </span>
+            <span className={styles.value}>{floweringPeriod}</span>
+            {/* 
+            <span className={styles.key}>Bloom Size: </span>
+                <span className={styles.value}>{bloomSize}</span> */}
+          </section>
+
+          <section className={styles.bottomMidRight}>
+            <span className={styles.key}>Other Names: </span>
+            <span className={styles.value}>{synonyms}</span><br/>
+
+            <span className={styles.key}>Warnings: </span>
+            <span className={styles.value}>{warnings}</span><br/>
+
+            <span className={styles.key}>Common Pests & Diseases: </span>
+            <span className={styles.value}>{pestsDiseases}</span><br/>
+          </section>
+        </section>
+
+        <div className={styles.propagation}>
+          <span className={styles.propKey}>Propagation </span><br />
+          <span className={styles.value}>{propagation}</span>
+        </div> 
+
       </div>
     </>
   );

@@ -1,9 +1,13 @@
 import React from 'react';
 import MyPlantList from './MyPlantsList';
+import styles from './styles/MyPlantPage.css';
+
 const MyPlantsPage = () => {
   return (
     <>
-    Hello I am myPlants
+      <div className={styles.helloDiv}>
+    My Plant List
+      </div>
       <MyPlantList />
     </>
   );

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import MyPlant from './MyPlant';
 import { Link } from 'react-router-dom';
 import uuid from 'react-uuid';
-import styles from './styles/MyPlantsList.css';
+import styles from './styles/MyPlantPage.css';
 // import { useParams } from 'react-router';
 import { useSession } from '../../../providers/AuthContext';
 import { getAllUserPlants } from '../../../services/queries/getAllUserPlants';
@@ -15,7 +15,7 @@ const MyPlantList = () => {
   const [plantsList, setPlantsList] = useState([]);
 
   useEffect(() => {
-    if (!user) return;
+    if(!user) return;
     getAllUserPlants(user.id).then((res) => {
       setPlantsList(res.data.getMyPlants);
     });
@@ -30,7 +30,7 @@ const MyPlantList = () => {
         >
           <MyPlant {...plant} />
         </Link>
-        <RemoveFromCollection plantId={plant.plantId} />
+        <RemoveFromCollection className={styles.myPlantButton} plantId={plant.plantId}/>
       </li>
     );
   });
@@ -43,3 +43,18 @@ const MyPlantList = () => {
 };
 
 export default MyPlantList;
+
+
+// .plantImg {
+//         height: 90px;
+//     }
+
+//     .caption {
+//         text-decoration: none;
+//         margin-left: 20px;
+//     }
+
+//     .scientificName {
+//         font-style: italic;
+//     }
+

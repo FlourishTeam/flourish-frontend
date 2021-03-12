@@ -3,13 +3,13 @@
 exports[`MyPlant component renders MyPlant 1`] = `
 <DocumentFragment>
   <figure
-    class="MyPlant"
+    class="myPlantFigures"
   >
     <img
-      class="plantImg"
+      class="myPlantFigures"
     />
     <figcaption
-      class="caption"
+      class="myPlantFigures"
     >
       <p
         class="commonName"

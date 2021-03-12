@@ -1,19 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './styles/MyPlant.css';
+import styles from './styles/MyPlantPage.css';
 // import RemoveFromCollection from '../../reusable/collection/RemoveFromCollection';
 
 const MyPlant = ({  commonName, scientificName, image }) => (
-
-  <figure className={styles.MyPlant}>
+  <figure className={styles.myPlantFigures}>
     <img
       src={image}
       alt={commonName}
-      className={styles.plantImg}
+      className={styles.myPlantFigures}
       
     />
 
-    <figcaption className={styles.caption}>
+    <figcaption className={styles.myPlantFigures}>
       <p className={styles.commonName}>{commonName}</p>
       <p className={styles.scientificName}>{scientificName}</p>
     </figcaption>

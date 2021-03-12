@@ -13,6 +13,7 @@ import { SearchProvider } from '../../providers/SearchContext';
 import { CareLogProvider } from '../../providers/CareLogContext';
 import { PhotoUploadProvider } from '../../providers/PhotoUploadContext';
 import { DetailsPageContainer } from '../pages/details/DetailsPageContainer';
+import PrivateRoute from '../auth/PrivateRoute';
 
 export default function App() {
   return (
@@ -35,7 +36,7 @@ export default function App() {
                       path="/details/:id" 
                       component={DetailsPageContainer} 
                     />
-                    <Route 
+                    <PrivateRoute 
                       exact 
                       path="/my-plants" 
                       component={MyPlantsPage} 
@@ -45,7 +46,7 @@ export default function App() {
                       path="/search" 
                       component={SearchPage} 
                     />
-                    <Route
+                    <PrivateRoute
                       exact
                       path="/my-plants/:id"
                       component={MyCareHistoryPage}

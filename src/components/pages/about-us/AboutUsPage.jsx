@@ -96,11 +96,7 @@ export default function AboutUs() {
             </div>
             <div className={styles.data}>
               <span className={styles.key}># of Plants:</span>
-<<<<<<< HEAD
               <span className={styles.value}>I have many plant friends.</span>
-=======
-              <span className={styles.value}>I have many plant friends, but they own themselves.</span>
->>>>>>> d440b17f98d925a807cd9f7d3b8f6acb8ae6ba54
             </div>
             <div className={styles.data}>
               <span className={styles.key}>Quote:</span>

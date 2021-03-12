@@ -12,6 +12,7 @@ import { DetailsProvider } from '../../providers/DetailsContext';
 import { SearchProvider } from '../../providers/SearchContext';
 import { CareLogProvider } from '../../providers/CareLogContext';
 import { PhotoUploadProvider } from '../../providers/PhotoUploadContext';
+import { DetailsPageContainer } from '../pages/details/DetailsPageContainer';
 
 export default function App() {
   return (
@@ -32,7 +33,7 @@ export default function App() {
                     <Route 
                       exact 
                       path="/details/:id" 
-                      component={DetailsPage} 
+                      component={DetailsPageContainer} 
                     />
                     <Route 
                       exact 

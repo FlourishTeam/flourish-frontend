@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSession } from '../../../../../providers/AuthContext';
-import { useUserPlantId } from '../../../../../providers/CareLogContext';
+import {
+  useCareLogItems,
+  useUserPlantId,
+} from '../../../../../providers/CareLogContext';
 import { addCareLog } from '../../../../../services/queries/addCareLog';
 
 function CareForm() {
@@ -13,13 +16,15 @@ function CareForm() {
   const [type, setType] = useState('water');
   const [note, setNote] = useState('');
 
+  const { setCareItems } = useCareLogItems();
+
   const handleCare = (e) => {
     e.preventDefault();
     setDate(e.target.elements.careDate.value);
     setNote(e.target.elements.careNote.value);
 
-    return addCareLog(user.id, id, userPlantId, date, type, note).then(
-      console.log
+    return addCareLog(user.id, id, userPlantId, date, type, note).then((res) =>
+      setCareItems(res.data.addLogById)
     );
   };
 

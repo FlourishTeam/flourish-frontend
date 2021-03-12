@@ -4,6 +4,7 @@ import {
   useCareLogError,
   useCareLogLoading,
   useRenderMyCareHistory,
+  useCareLogItems,
 } from '../../../providers/CareLogContext';
 import MaintenanceLevel from '../../reusable/maintenance/MaintenanceLevel';
 import CareForm from '../care-history/care-notes/care-form/CareForm';
@@ -20,10 +21,11 @@ export default function MyCareHistoryPage() {
   const { id } = useParams();
   const user = useSession();
   const renderMyCareHistory = useRenderMyCareHistory();
+  const { careLogItems } = useCareLogItems();
 
   useEffect(() => {
     renderMyCareHistory(user.id, id);
-  }, []);
+  }, [careLogItems]);
 
   return (
     <>

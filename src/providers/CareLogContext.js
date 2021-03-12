@@ -29,6 +29,7 @@ export const CareLogProvider = ({ children }) => {
       value={{
         loading,
         careLogItems,
+        setCareLog,
         renderMyCareHistory,
         plantDetails,
         userPlantId,
@@ -51,8 +52,8 @@ export const useCareLogLoading = () => {
 };
 
 export const useCareLogItems = () => {
-  const { careLogItems } = useContext(CareLogContext);
-  return careLogItems;
+  const { careLogItems, setCareLog } = useContext(CareLogContext);
+  return { careLogItems, setCareLog };
 };
 
 export const usePlantDetails = () => {

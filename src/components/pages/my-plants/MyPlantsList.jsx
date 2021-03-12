@@ -15,7 +15,7 @@ const MyPlantList = () => {
   const [plantsList, setPlantsList] = useState([]);
 
   useEffect(() => {
-    if (!user) return;
+    if(!user) return;
     getAllUserPlants(user.id).then((res) => {
       setPlantsList(res.data.getMyPlants);
     });

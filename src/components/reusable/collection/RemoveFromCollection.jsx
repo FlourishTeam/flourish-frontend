@@ -7,7 +7,7 @@ import styles from './styles/AddRemoveButton.css';
 function RemoveFromCollection({ plantId }) {
   const user = useSession();
 
-  const handleClick = async (e) => {
+  const handleClick = async(e) => {
     e.stopPropagation();
     await removePlantFromCollection(user, plantId);
     window.location.reload();

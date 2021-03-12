@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './styles/Header.css';
-import flourishIcon from '../../../images/flourish-icon-2.png';
+import flourishIcon from '../../../images/flourish-icon-white.png';
 import Popup from 'reactjs-popup';
 import Signup from '../../auth/Signup';
 import SideBar from '../navmenu/NavMenu';

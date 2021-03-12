@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './styles/MyPlant.css';
 // import RemoveFromCollection from '../../reusable/collection/RemoveFromCollection';
 
-
-const MyPlant = ({ plantId, commonName, scientificName, image }) => (
+const MyPlant = ({  commonName, scientificName, image }) => (
 
   <figure className={styles.MyPlant}>
     <img

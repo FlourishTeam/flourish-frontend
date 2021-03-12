@@ -6,9 +6,21 @@ const httpLink = createHttpLink({
   fetch,
 });
 
+const defaultOptions = {
+  watchQuery: {
+    fetchPolicy: 'no-cache',
+    errorPolicy: 'ignore',
+  },
+  query: {
+    fetchPolicy: 'no-cache',
+    errorPolicy: 'all',
+  },
+};
+
 const client = new ApolloClient({
   link: httpLink,
   cache: new InMemoryCache(),
+  defaultOptions,
 });
-  
+
 export default client;

@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
-import { 
-  usePlantDetails, 
-  useCareLogError, 
+import {
+  usePlantDetails,
+  useCareLogError,
   useCareLogLoading,
   useRenderMyCareHistory,
+  useTempLog,
+  useNewContext,
 } from '../../../providers/CareLogContext';
 import MaintenanceLevel from '../../reusable/maintenance/MaintenanceLevel';
 import CareForm from '../care-history/care-notes/care-form/CareForm';
@@ -20,44 +22,53 @@ export default function MyCareHistoryPage() {
   const { id } = useParams();
   const user = useSession();
   const renderMyCareHistory = useRenderMyCareHistory();
+  const { tempLog } = useTempLog();
+
   useEffect(() => {
-    renderMyCareHistory(user.id, id);
-  }, []);
+    if (user) {
+      renderMyCareHistory(user.id, id);
+    }
+  }, [user, tempLog]);
 
   return (
     <>
-      {error &&  
-      <div>
-        <CareForm />
-        {error}
-      </div>
-      }
+      {error && (
+        <div>
+          <CareForm />
+          {error}
+        </div>
+      )}
       {loading && <Loading />}
       <p>Hello!</p>
       <div className={styles.MyCareHistoryPlantName}>
         <div>{plantDetails.commonName}</div>
         <div>{plantDetails.scientificName}</div>
-        <img className={styles.MyCareHistoryImage}
-          src={plantDetails.image} 
-          alt={plantDetails.commonName} 
+        <img
+          className={styles.MyCareHistoryImage}
+          src={plantDetails.image}
+          alt={plantDetails.commonName}
         />
-        <div>Maintenance Level: 
-          <MaintenanceLevel maintenanceLevel={plantDetails.careDifficulty}/>
+        <div>
+          Maintenance Level:
+          <MaintenanceLevel maintenanceLevel={plantDetails.careDifficulty} />
         </div>
         {/* <RemoveFromCollection />  */}
-          CARE DETAILS SECTION */
+        CARE DETAILS SECTION */
         <section>
           <div> Light Range: {plantDetails.lightRange}</div>
           <div> Hydration Range: {plantDetails.hydrationRange}</div>
           <div> Temperature Range: {plantDetails.temperatureRange}</div>
           <div> Placement: {plantDetails.placement}</div>
-          <div> Substrate Recommendation: {plantDetails.substrateRecommendation}</div>
+          <div>
+            {' '}
+            Substrate Recommendation: {plantDetails.substrateRecommendation}
+          </div>
           <div> Potting Notes: {plantDetails.pottingNotes}</div>
           <div> Watering: {plantDetails.watering}</div>
-        </section>  
+        </section>
       </div>
       <CareForm />
-      <CareLogList />  
+      <CareLogList />
     </>
   );
 }

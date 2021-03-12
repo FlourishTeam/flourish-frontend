@@ -7,8 +7,10 @@ import styles from './styles/AddToCollection.css';
 function RemoveFromCollection({ plantId }) {
   const user = useSession();
   
-  const handleClick = () => {
-    removePlantFromCollection(user, plantId);   
+  const handleClick = async(e) => {
+    e.stopPropagation();
+    await removePlantFromCollection(user, plantId);
+    window.location.reload();
   };
 
   return (

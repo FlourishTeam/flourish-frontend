@@ -52,7 +52,7 @@ export default function App() {
                     />
                     <Route 
                       exact 
-                      path="/about" 
+                      path="/about-us" 
                       component={AboutUs} 
                     />
                   </Switch>

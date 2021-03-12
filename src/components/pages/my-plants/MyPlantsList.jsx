@@ -11,7 +11,6 @@ import RemoveFromCollection from '../../reusable/collection/RemoveFromCollection
 const MyPlantList = () => {
   const user = useSession();
   // const { id } = useParams();
-  console.log(user);
 
   const [plantsList, setPlantsList] = useState([]);
 
@@ -19,16 +18,11 @@ const MyPlantList = () => {
     if(!user) return; 
     getAllUserPlants(user.id)
       .then((res) => {
-      // eslint-disable-next-line no-console
-        console.log(user.data);
         setPlantsList(res.data.getMyPlants);
       });
   }, [user]);
 
-  console.log(plantsList);
-
   const listElement = plantsList.map((plant) => {
-    console.log('this one', plant);
     return (
       <li key={uuid()} className={styles.plantListItem}>
        

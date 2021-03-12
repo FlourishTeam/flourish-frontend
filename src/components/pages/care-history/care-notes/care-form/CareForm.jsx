@@ -1,18 +1,27 @@
 import React, { useState } from 'react';
 
+
 function CareForm() {
+  const user = useSession();
   const [date, setDate] = useState('');
   const [type, setType] = useState('');
   const [note, setNote] = useState('');
+  const [formState, setFormState] = useState({
+    date: '',
+    careType: '',
+    notes: ''
+  });
+
 
   const handleCare = e => {
     e.preventDefault();
+    console.log(e.target.elements);
   };
+
 
   return (
     <div>
-      <form
-        onSubmit={handleCare}>
+      <form onSubmit={handleCare}>
         <input  
           type="date"
           value={date}

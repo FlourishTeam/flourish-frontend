@@ -16,7 +16,6 @@ export const DetailsProvider = ({ children }) => {
       .then(({ data }) => {
         setPlant(data.plantById);
         setLoading(false);
-        console.log('DETAILS CONTEXT PLANT', plant);
       })
       .catch((error) => setError(error.message));
   };

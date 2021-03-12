@@ -7,6 +7,7 @@ import MyPlantsPage from '../pages/my-plants/MyPlantsPage';
 import SearchPage from '../pages/search/SearchPage';
 import MyCareHistoryPage from '../pages/care-history/MyCareHistoryPage';
 import Header from '../reusable/header/Header';
+import AboutUs from '../pages/about-us/AboutUsPage';
 import { AuthProvider } from '../../providers/AuthContext';
 import { DetailsProvider } from '../../providers/DetailsContext';
 import { SearchProvider } from '../../providers/SearchContext';
@@ -48,6 +49,11 @@ export default function App() {
                       exact
                       path="/my-plants/:id"
                       component={MyCareHistoryPage}
+                    />
+                    <Route 
+                      exact 
+                      path="/about" 
+                      component={AboutUs} 
                     />
                   </Switch>
                 </CareLogProvider>

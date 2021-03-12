@@ -25,23 +25,23 @@ export default function App() {
                   <Header />
                   <Switch>
                     <Route 
-                      exact
-                      path="/"
-                      component={HomePage}
-                    />
-                    <Route
-                      exact
-                      path="/details/:id"
-                      component={DetailsPage}
+                      exact 
+                      path="/" 
+                      component={HomePage} 
                     />
                     <Route 
-                      exact
-                      path="/my-plants"
-                      component={MyPlantsPage}
+                      exact 
+                      path="/details/:id" 
+                      component={DetailsPage} 
                     />
                     <Route 
-                      exact
-                      path="/search"
+                      exact 
+                      path="/my-plants" 
+                      component={MyPlantsPage} 
+                    />
+                    <Route 
+                      exact 
+                      path="/search" 
                       component={SearchPage} 
                     />
                     <Route

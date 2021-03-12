@@ -1,10 +1,13 @@
 export const menuStyle = {
   bmBurgerButton: {
-    position: 'absolute',
+    position: 'fixed',
     width: '36px',
     height: '30px',
     right: '20px',
     top: '25px',
+    boxShadow: '0px 0px 10px 10px white',
+    borderRadius: '50%',
+    backgroundColor: 'white',
   },
 
   bmBurgerBars: {

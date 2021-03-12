@@ -6,6 +6,7 @@ import PlantList from './PlantList';
 const SearchPage = () => {
   return (
     <div className={styles.SearchPage}>
+      <br />
       <Search />
       <PlantList />
     </div>

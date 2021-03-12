@@ -44,17 +44,3 @@ const MyPlantList = () => {
 
 export default MyPlantList;
 
-
-// .plantImg {
-//         height: 90px;
-//     }
-
-//     .caption {
-//         text-decoration: none;
-//         margin-left: 20px;
-//     }
-
-//     .scientificName {
-//         font-style: italic;
-//     }
-

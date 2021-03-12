@@ -28,7 +28,7 @@
     flex-direction: row;
     justify-content: center;
     width: 80%;
-    margin: 1em;
+    margin: em;
     padding-bottom: 2em;
   }
 
@@ -46,6 +46,7 @@
     font-family: 'PT Sans', sans-serif;
     box-shadow: 0px 1px 3px 2px rgb(130, 130, 134);
   }
+  
   .image{
     border-radius: 10px;
   }

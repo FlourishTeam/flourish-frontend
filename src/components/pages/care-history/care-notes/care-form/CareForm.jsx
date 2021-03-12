@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
 
+
 function CareForm() {
   const [date, setDate] = useState('');
   const [type, setType] = useState('');
   const [note, setNote] = useState('');
+  const [formState, setFormState] = useState({
+    date: '',
+    careType: '',
+    notes: ''
+  });
 
   const handleCare = e => {
     e.preventDefault();

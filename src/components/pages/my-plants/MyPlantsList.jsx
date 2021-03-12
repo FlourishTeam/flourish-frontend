@@ -24,7 +24,6 @@ const MyPlantList = () => {
   }, []);
 
   const listElement = plantsList.map((plant) => {
-    console.log('this one', plant);
     return (
       <li key={uuid()} className={styles.plantListItem}>
         <Link

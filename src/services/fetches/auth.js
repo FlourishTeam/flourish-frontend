@@ -9,3 +9,5 @@ export const postLogin = (email, password) =>
 export const getVerify = () => get('api/v1/auth/verify');
 
 export const getLogout = () => get('api/v1/auth/logout');
+
+export const getByEmail = (email) => get('api/v1/auth/findByEmail', { email });

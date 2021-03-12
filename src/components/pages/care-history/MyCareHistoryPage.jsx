@@ -21,14 +21,14 @@ export default function MyCareHistoryPage() {
   const { id } = useParams();
   const user = useSession();
   const renderMyCareHistory = useRenderMyCareHistory();
-  const { tempLogs } = useTempLog();
+  const { tempLog } = useTempLog();
 
   // I REALLY WANT THE PAGE TO RE-RENDER BUT IT ISN'T WHEN YOU ADD A NEW CARE LOG
   useEffect(() => {
     if (user) {
       return renderMyCareHistory(user.id, id);
     }
-  }, [user, tempLogs]);
+  }, [tempLog]);
 
   return (
     <>

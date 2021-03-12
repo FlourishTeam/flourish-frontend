@@ -142,7 +142,6 @@ Details.propTypes = {
   propagation: PropTypes.string.isRequired,
   careDifficulty: PropTypes.string.isRequired,
   plantId: PropTypes.number.isRequired
-
 };
 
 export default Details;

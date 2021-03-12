@@ -1,0 +1,57 @@
+.AboutUs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.header{
+font-size: 3em;
+}
+
+.team_bios{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  margin: 3em;
+}
+
+.bio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em;
+  width: 250px;
+}
+
+.name{
+  margin-top: 0.5em;
+  text-align: center;
+  font-style: bold;
+}
+
+.title{
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+}
+
+.data{
+  margin-right: 10px;
+  font-size: smaller;
+}
+
+.key{
+  padding: 10px;
+}
+
+.value{
+  display: flex;
+  flex-wrap: wrap;
+}

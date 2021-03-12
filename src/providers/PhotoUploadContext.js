@@ -34,6 +34,7 @@ export const PhotoUploadProvider = ({ children }) => {
 
     if (files.length > 0) {
       setLoading(true);
+      setSearchQuery('');
 
       const promise = files.map((file) => {
         return new Promise((resolve) => {

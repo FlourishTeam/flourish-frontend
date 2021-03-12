@@ -16,6 +16,8 @@
         div {
             display: flex;
             align-items: center;
+            margin: .5em;
+            margin-bottom: 2rem;
         }
 
         a {
@@ -92,7 +94,8 @@
         background-color: white;
         border-radius: 12px;
         max-width: 80%;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     
         a {
             display: flex;
@@ -103,18 +106,21 @@
             font-size: 1em;
         }
     
+        div {
+            display: flex;
+            align-items: center;
+            margin: .7em;
+        }
+
         button  {
-            margin-right: 5px;
             background-color: lightgrey;
             border: 1px solid black;
             font-family: 'Noto Sans KR', sans-serif;
-            padding: 2px;
         }
     
         img {
             background-color: white;
             border-radius: 12px;
-            margin-left: -5px;
             margin-right: 5px;
         }
     

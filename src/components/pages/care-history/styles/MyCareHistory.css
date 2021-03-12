@@ -211,7 +211,6 @@ ul {
 .plantListItem {
   margin: .5em;
   padding: .5em;
-  display: flex;
   width: 469px;
   color: #022704;
   text-align: center;

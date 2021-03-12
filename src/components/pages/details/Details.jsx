@@ -25,13 +25,11 @@ const Details = ({
   floweringPeriod,
   bloomSize,
   propagation,
-  careDifficulty
+  careDifficulty,
 }) => {
-  
   return (
     <>
       <div className={styles.Details}>
-
         <section className={styles.top}>
           <h1 className={styles.common}>{commonName}</h1>
           <h3 className={styles.scientific}>{scientificName}</h3>
@@ -40,10 +38,20 @@ const Details = ({
 
         <section className={styles.mid}>
           <section className={styles.midLeft}>
+<<<<<<< HEAD
             <img src={image} alt={commonName} className={image} width="auto" height="280rem" />
+=======
+            <img
+              src={image}
+              alt={commonName}
+              className={image}
+              width="auto"
+              height="280rem"
+            />
+>>>>>>> 57a7d7571ff79990003631005a0c1534c9a0a1ac
 
             <section className={styles.addRemoveContainer}>
-              < AddToCollection plantId={plantId} />
+              <AddToCollection plantId={plantId} />
             </section>
           </section>
 
@@ -51,27 +59,35 @@ const Details = ({
             <section className={styles.careDetails}>
               <div>
                 <span className={styles.key}> Light Range: </span>
-                <span className={styles.value}>{lightRange}</span><br/>
-          
+                <span className={styles.value}>{lightRange}</span>
+                <br />
+
                 <span className={styles.key}>Hydration Range: </span>
-                <span className={styles.value}>{hydrationRange}</span><br/>
+                <span className={styles.value}>{hydrationRange}</span>
+                <br />
 
                 <span className={styles.key}>Temperature Range: </span>
-                <span className={styles.value}>{temperatureRange}</span><br/>
+                <span className={styles.value}>{temperatureRange}</span>
+                <br />
 
                 <span className={styles.key}>Placement: </span>
-                <span className={styles.value}>{placement}</span><br/><br />
+                <span className={styles.value}>{placement}</span>
+                <br />
+                <br />
               </div>
               <div>
                 <span className={styles.key}>Substrate Recommendation: </span>
-                <span className={styles.value}>{substrateRecommendation}</span><br/>
-                
+                <span className={styles.value}>{substrateRecommendation}</span>
+                <br />
+
                 <span className={styles.key}> Potting Notes: </span>
-                <span className={styles.value}>{pottingNotes}</span><br/>
+                <span className={styles.value}>{pottingNotes}</span>
+                <br />
               </div>
               <div>
                 <span className={styles.key}> Watering: </span>
-                <span className={styles.value}>{watering}</span><br/>
+                <span className={styles.value}>{watering}</span>
+                <br />
               </div>
             </section>
           </div>
@@ -100,21 +116,24 @@ const Details = ({
 
           <section className={styles.bottomMidRight}>
             <span className={styles.key}>Other Names: </span>
-            <span className={styles.value}>{synonyms}</span><br/>
+            <span className={styles.value}>{synonyms}</span>
+            <br />
 
             <span className={styles.key}>Warnings: </span>
-            <span className={styles.value}>{warnings}</span><br/>
+            <span className={styles.value}>{warnings}</span>
+            <br />
 
             <span className={styles.key}>Common Pests & Diseases: </span>
-            <span className={styles.value}>{pestsDiseases}</span><br/>
+            <span className={styles.value}>{pestsDiseases}</span>
+            <br />
           </section>
         </section>
 
         <div className={styles.propagation}>
-          <span className={styles.propKey}>Propagation </span><br />
+          <span className={styles.propKey}>Propagation </span>
+          <br />
           <span className={styles.value}>{propagation}</span>
-        </div> 
-
+        </div>
       </div>
     </>
   );
@@ -141,8 +160,11 @@ Details.propTypes = {
   bloomSize: PropTypes.string.isRequired,
   propagation: PropTypes.string.isRequired,
   careDifficulty: PropTypes.string.isRequired,
+<<<<<<< HEAD
   plantId: PropTypes.number.isRequired
+=======
+  plantId: PropTypes.number.isRequired,
+>>>>>>> 57a7d7571ff79990003631005a0c1534c9a0a1ac
 };
 
 export default Details;
-

@@ -9,7 +9,6 @@ const MyPlant = ({  commonName, scientificName, image }) => (
       src={image}
       alt={commonName}
       className={styles.myPlantImg}
-      
     />
 
     <figcaption className={styles.myPlantFigcaption}>

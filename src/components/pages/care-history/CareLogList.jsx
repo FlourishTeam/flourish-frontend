@@ -14,7 +14,7 @@ const CareLogList = () => {
       </li>
     );
   });
-  if (!logListElement?.length) return <h2>No list found!!</h2>;
+  if(!logListElement?.length) return <h2>No list found!!</h2>;
   return (
     <ul data-testid="careLog" className={styles.CareLogList}>
       {logListElement}

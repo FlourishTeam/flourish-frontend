@@ -11,10 +11,19 @@ body {
 .helloDiv {
     text-align: center;
     margin-top: 3rem;
-    margin-bottom: 1rem;
-    font-size: 3em;
+    margin-bottom: 3rem;
+    font-size: 3.5em;
     color: white;
     font-family: 'Salsa', cursive;
+}
+
+.clickHere {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    font-size: .9rem;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .plantListItem {
@@ -32,11 +41,12 @@ body {
         align-self: center;
     }
     .myPlantImg {
-       
         align-self: center;
         align-content: center;
-        height: 10rem;
+        height: 9rem;
         width: auto;
+        border-radius: 5%;
+        margin: 1rem;
      }
      .myPlantFigcaption {
          align-content: center;
@@ -60,7 +70,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 15rem;
-    height: auto;
+    height: 22rem;
     border: 1px solid #022704;
     border-radius: 9px;
     margin: 2rem;

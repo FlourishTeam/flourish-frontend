@@ -1,8 +1,8 @@
 @import "react-slideshow-image/dist/styles.css";
 
 .Slideshow {
-    height: 120vh;
-    width: 120vw;
+    height: 140vh;
+    width: 100vw;
 
     .eachSlide > div {
         display: flex;

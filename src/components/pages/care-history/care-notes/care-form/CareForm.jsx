@@ -26,7 +26,6 @@ function CareForm() {
     return addCareLog(user.id, id, userPlantId, date, type, note).then(
       (res) => {
         setTempLog(res.data.addLogById);
-        window.location.reload();
       }
     );
   };

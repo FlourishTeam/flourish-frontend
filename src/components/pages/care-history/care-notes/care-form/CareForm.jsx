@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from '../../../care-history/styles/MyCareHistory.css';
 import { useParams } from 'react-router-dom';
 import { useSession } from '../../../../../providers/AuthContext';
 import {
@@ -31,9 +32,10 @@ function CareForm() {
   };
 
   return (
-    <div>
+    <div className={styles.CareForm}>
       <form onSubmit={handleCare}>
         <input
+          className={styles.FormInput}
           type="date"
           value={date}
           min="2021-01-01"
@@ -43,6 +45,7 @@ function CareForm() {
         <select
           name={type}
           defaultValue={type}
+          className={styles.FormInput}
           onChange={({ target }) => setType(target.value)}
         >
           <option value="water">Water</option>
@@ -51,6 +54,7 @@ function CareForm() {
           <option value="repot">Repot</option>
         </select>
         <input
+          className={styles.FormInput}
           type="text"
           value={note}
           placeholder="Notes"

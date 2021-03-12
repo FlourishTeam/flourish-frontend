@@ -10,6 +10,7 @@ const MyPlant = ({  commonName, scientificName, image }) => (
       alt={commonName}
       className={styles.myPlantImg}
     />
+    
     <figcaption className={styles.myPlantFigcaption}>
       <p className={styles.commonName}>{commonName}</p>
       <p className={styles.scientificName}>{scientificName}</p>

@@ -11,9 +11,9 @@ body {
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 3em;
     color: white;
-    font-family: 'Kavivanar', cursive;
+    font-family: 'Salsa', cursive;
 }
 
 .plantListItem {

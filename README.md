@@ -34,6 +34,10 @@ Questions or comments can be directed to
 * _JSX_
 * _GraphQL_
 
+## External APIs
+* [Flourish Plant Care API](https://github.com/FlourishTeam/Flourish-plant-API)
+* [Plant Photo Recognition API](https://github.com/Plant-id/Plant-id-API)
+
 ### License
 
 Copyright (c) 2021 **_Dee Watson, Jeff Irvine, Jena Boehm, Jillian Gibson, Rhone Lachner_**

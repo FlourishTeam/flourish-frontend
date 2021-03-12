@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
 @media screen and (min-width: 1001px) {
     .careDetails {
         font-size: 1em;
@@ -18,12 +22,21 @@
     }
 }
 
+.detailsPage {
+    background-image: linear-gradient(to top, #25282a 60%, #111411 100%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+}
 
 .Details {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-image: linear-gradient(to top, #25282a 60%, #111411 100%);
+    color: white;
 }
 
 .top {
@@ -32,17 +45,19 @@
     width: 40%;
     margin-top: 3em;
     text-align: center;
+    font-family: 'Salsa', cursive;
+    letter-spacing: .2em;
 }
 
 .common {
-    font-size: 2.5em;
-    color: #022704;
+    font-size: 3em;
+    color: white;
 }
 
 .scientific {
     font-style: italic;
     font-weight: normal;
-    color: ##022704;
+    color: white;
 }
 
 .maintenanceValue {
@@ -51,13 +66,14 @@
 }
 
 .mid {
-    border: 4px solid #022704;
+    border: 4px solid black;
     border-radius: 10px;
     margin: 2em;
     height: 35em;
     width: 90%;
-    background-color: #EBFEF4;
+    background-color: white;
     color: #022704;
+    box-shadow: 0px 2px 10px 2px black;
 }
 
 .midLeft {
@@ -66,9 +82,15 @@
     justify-content: center;
     align-items: center;
     float: left;
-    width: 40%;
+    width: 35%;
     height: 100%;
     padding: 1em;
+    margin-left: 2.5em;
+}
+
+.image {
+    width: auto;
+    height: auto;
 }
 
 .addRemoveContainer {
@@ -94,8 +116,9 @@
     justify-content: space-evenly;
     width: 90%;
     height: 100%;
-    border-left: 3px solid #022704;
+    border-left: 3px solid black;
     line-height: 135%;
+     font-family: 'PT Sans', sans-serif;
 }
 
 .key {
@@ -110,21 +133,31 @@
 }
 
 .bottomMid {
-    display: flex;
+    display: inline-block;
     justify-content: space-evenly;
     align-items: center;
     width: 90%;
     height: 15em;
     border-radius: 10px;
     line-height: 135%;
-    padding-right: 2em;
-    background-color: #022704;
+    padding: 0 2em 0 2em;
+    background-color: black;
     color: #EBFEF4;
+    border: 1px solid white;
+    font-family: 'PT Sans', sans-serif;
+    box-shadow: 0px 2px 10px 2px black;
+}
+
+.bottomMidTop {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 .bottomMidLeft {
     float: left;
     text-align: center;
+    width: 30%;
 }
 
 ul {
@@ -148,17 +181,29 @@ ul {
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 60%;
+    width: 90%;
     line-height: 135%;
     margin: 2em 0 2em 0;
     padding: 2em 0 2em 0;
-    border: 4px solid #022704;
+    border: 4px solid black;
     border-radius: 10px;
-    background-color: #EBFEF4;
+    background-color: white;
     color: #022704;
+    font-family: 'PT Sans', sans-serif;
+    box-shadow: 0px 2px 10px 2px black;
 }
 
 .propKey {
     font-weight: bold;
     font-size: 1.5em;
+}
+
+.loadingContainer {
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(to top, #25282a 60%, #111411 100%);
+    height: 100vh;
+    width: 100vw; */
 }

@@ -93,4 +93,24 @@
     width: 64%;
     text-indent: 0.1em;
   }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+  }
+
+  .socialIcon {
+    margin-left: .7em;
+    padding: .1em;
+  }
+
+  .socialIcon:hover {
+    transform: scale(1.1);
+  }
+
+  .socialIcon:active {
+    transform: scale(0.9);
+  }
 }

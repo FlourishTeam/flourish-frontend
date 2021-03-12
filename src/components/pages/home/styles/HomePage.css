@@ -27,10 +27,15 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        .Search, .topText {
+            align-self: center;
+            justify-self: center;
+            align-content: center;
+        }
     }
     
     .bannerContainer > img {
-        height: 100vh; 
+        height: 50%; 
         opacity: 0.8;
         background-size: cover;
         background-repeat: repeat;
@@ -44,26 +49,22 @@
         background-color: white;
         border-radius: 12px;
     }
-    
-    .topText, .bottomText {
+
+    .homeSearch {
+        margin: .5rem;
+    }
+
+    .topText {
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        font-size: 2rem;
-    }
-
-    .topText {
-        /* font-family: 'Kavivanar', cursive; */
+        font-size: 2%;
+        align-items: center;
+        align-self: center;
         font-family: 'Salsa', cursive;
-        top: 25%;
+        top: 20%;
         font-size: 4em;
-    }
-
-    .bottomText {
-        /* font-family: 'PT Sans', sans-serif; */
-        font-family: 'Salsa', cursive;
-        top: 30%;
-        font-size: 1.5em;
+        text-align: center;
     }
 }

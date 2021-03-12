@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 * {
@@ -12,14 +12,13 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  flex-wrap: wrap;
   background-image: linear-gradient(to top, #25282a 60%, #111411 100%);
-  height: 80em;
+  height: 100em;
 
   .header{
-    margin-top: 0.5em;
+    margin: 0.5em;
     font-size: 3em;
-    font-family: 'Kavivanar', cursive;
+    font-family: 'Salsa', cursive;
     color: white;
   }
 
@@ -30,20 +29,22 @@
     justify-content: center;
     width: 80%;
     margin: 1em;
+    padding-bottom: 2em;
   }
 
   .bio {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     margin: 0.5em 0.5em;
-    width: 15em;
-    border: 4px solid #022704;
+    width: 17em;
+    border: 2px solid #022704;
     border-radius: 10px;
     padding: 1em;
-    background-color: #EBFEF4;
+    background-color: white;
     font-family: 'PT Sans', sans-serif;
+    box-shadow: 0px 1px 3px 2px rgb(130, 130, 134);
   }
   .image{
     border-radius: 10px;
@@ -53,6 +54,7 @@
     margin-top: 0.5em;
     text-align: center;
     font-style: bold;
+    font-size: 1.5em;
   }
 
   .title{
@@ -64,24 +66,30 @@
 
   .heading{
     font-size: smaller;
+    text-align: center;
+    font-weight: bolder;
+    margin: 1em;
+    font-size: 1em;
   }
 
   .data{
     padding: 0.5em;
     font-size: 0.7em;
     text-indent: 0.7em;
+    line-height: 1em;
   }
 
   .key{
     float: left;
-    width: 37%;
+    width: 30%;
     text-align: left;
+    text-indent: 0.1em;
+    margin-right: 1em;
   }
 
   .value{
     float: right;
-    width: 63%;
+    width: 64%;
     text-indent: 0.1em;
   }
-
 }

@@ -4,7 +4,8 @@ svg {
     height: 1rem;
     width: auto;
 }
-button {
+
+.addToCollection {
     border: none;
     background-color: rgb(212, 212, 212);
     vertical-align: middle;
@@ -16,10 +17,40 @@ button {
     border-radius: 10px;
     padding: .2rem;
     font-family: 'PT Sans', sans-serif;
-
 }
+
+.removeFromCollectionButton {
+    border: none;
+    background-color: rgb(212, 212, 212);
+    vertical-align: middle;
+    vertical-align: text-top;
+    cursor: pointer;
+    align-self: center;
+    border-style: solid;
+    border-width: .1px;
+    border-radius: 10px;
+    padding: .2rem;
+    font-family: 'PT Sans', sans-serif;
+}
+
 span {
     text-align: left;
     vertical-align: text-top;
    
+}
+
+.removeFromCollectionButton:hover {
+    box-shadow: 0 1px 5px 0px black;
+}
+
+.removeFromCollectionButton:active {
+    transform: scale(.9);
+}
+
+.addToCollection:hover {
+    box-shadow: 0 1px 5px 0px black;
+}
+
+.addToCollection:active {
+    transform: scale(.9);
 }

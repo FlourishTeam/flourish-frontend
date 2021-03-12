@@ -19,13 +19,15 @@ const Plant = ({
     <>
       <div className={styles.Plant}>
         <Link to={`/details/${plantId}`}>
-          <img src={image} height="100px" />
-          <div>{commonName}</div>
-          <div className={styles.scientific}>{scientificName}</div>
-          <div>{temperatureRange}</div>
-          <div>{lightRange}</div>
-          <div>{hydrationRange}</div>
-          <MaintenanceLevel maintenanceLevel={careDifficulty} />
+          <div className={styles.bold}>
+            <img src={image} height="100px" />
+            <div>{commonName}</div>
+            <div className={styles.scientific}>{scientificName}</div>
+            <div>{temperatureRange}</div>
+            <div>{lightRange}</div>
+            <div>{hydrationRange}</div>
+            <MaintenanceLevel maintenanceLevel={careDifficulty} />
+          </div>
         </Link>
         <AddToCollection plantId={plantId} />
       </div>

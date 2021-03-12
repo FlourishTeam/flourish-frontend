@@ -5,7 +5,8 @@
 * {
 body {
     font-family: 'PT Sans', sans-serif;
-    background-color: #25282a;
+    background-image: linear-gradient(to top, #25282a 60%, #111411 100%);
+    height: 100em;
 
 .helloDiv {
     text-align: center;
@@ -21,8 +22,8 @@ body {
     grid-template-columns: repeat();
     grid-template-rows: repeat();
     text-align: center;
-    padding: 1.5rem;
-    width: auto;
+    padding: 1rem;
+    width: 10rem;
     align-content: center;
     background-color: white;
   
@@ -34,18 +35,19 @@ body {
        
         align-self: center;
         align-content: center;
-        height: auto;
-        width: 6rem;
+        height: 10rem;
+        width: auto;
      }
      .myPlantFigcaption {
          align-content: center;
          align-self: center;
          margin: 1rem;
+         font-size: 1.3em;
      }
 }
 
 .myPlantFigures > li {
-    width: 5rem;
+    width: 10rem;
     height: auto;
     text-align: center;
     align-self: center;
@@ -53,18 +55,29 @@ body {
 }
 
 .plantListItem {
-    display: grid;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    width: 10rem;
+    width: 15rem;
     height: auto;
     border: 1px solid #022704;
     border-radius: 9px;
     margin: 2rem;
 }
 
+.plantListItem:hover {
+    box-shadow: 0 2px 8px 1px rgba(243, 243, 244, 0.776);
+}
+
+.plantListItem:active {
+    transform: scale(.9);
+}
+
 .MyPlantsList {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-flow: row wrap;
         } 
     }

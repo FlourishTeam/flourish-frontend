@@ -1,7 +1,7 @@
 import React from 'react';
 import uuid from 'react-uuid';
 import CareLogItem from './CareLogItem';
-import styles from './styles/CareLogItem.css';
+import styles from '../care-history/styles/MyCareHistory.css';
 import { useCareLogItems } from '../../../providers/CareLogContext';
 
 const CareLogList = () => {

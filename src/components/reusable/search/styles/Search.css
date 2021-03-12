@@ -104,6 +104,24 @@
         cursor: pointer;
     }
 
+    .backButton:hover {
+        box-shadow: 0 1px 5px 0px black;
+    }
+    
+    .backButton:active {
+        transform: scale(.9);
+    }
+
+    .submit:hover {
+        box-shadow: 0 1px 5px 0px black;
+    }
+    
+    .submit:active {
+        transform: scale(.9);
+    }
+    
+    
+
     .fileContainer > img {
         display: none;
         height: auto;

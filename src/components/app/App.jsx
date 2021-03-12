@@ -2,7 +2,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import HomePage from '../../components/pages/home/HomePage';
-import DetailsPage from '../../components/pages/details/DetailsPage';
 import MyPlantsPage from '../pages/my-plants/MyPlantsPage';
 import SearchPage from '../pages/search/SearchPage';
 import MyCareHistoryPage from '../pages/care-history/MyCareHistoryPage';

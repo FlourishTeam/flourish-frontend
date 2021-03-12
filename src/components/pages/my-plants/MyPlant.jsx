@@ -1,29 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './styles/MyPlant.css';
-import RemoveFromCollection from '../../reusable/collection/RemoveFromCollection';
+// import RemoveFromCollection from '../../reusable/collection/RemoveFromCollection';
 
 
-const MyPlant = ({ common_name, scientific_name, image }) => (
+const MyPlant = ({ plantId, commonName, scientificName, image }) => (
 
   <figure className={styles.MyPlant}>
     <img
       src={image}
-      alt={common_name}
+      alt={commonName}
       className={styles.plantImg}
+      
     />
 
     <figcaption className={styles.caption}>
-      <p className={styles.commonName}>{common_name}</p>
-      <p className={styles.scientificName}>{scientific_name}</p>
+      <p className={styles.commonName}>{commonName}</p>
+      <p className={styles.scientificName}>{scientificName}</p>
     </figcaption>
-    <RemoveFromCollection name={common_name}/>
+   
   </figure>
 );
 
 MyPlant.propTypes = {
-  common_name: PropTypes.string.isRequired,
-  scientific_name: PropTypes.string.isRequired,
+  commonName: PropTypes.string.isRequired,
+  scientificName: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
 };
 

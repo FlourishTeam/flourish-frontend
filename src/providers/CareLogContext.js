@@ -43,6 +43,10 @@ export const CareLogProvider = ({ children }) => {
   );
 };
 
+export const useNewContext = () => {
+  return useContext(CareLogContext);
+};
+
 export const useTempLog = () => {
   const { tempLog, setTempLog } = useContext(CareLogContext);
   return { tempLog, setTempLog };

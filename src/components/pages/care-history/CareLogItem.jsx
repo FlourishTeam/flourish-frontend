@@ -2,13 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './styles/CareLogItem.css';
 import { removeCareLog } from '../../../services/queries/removeCareLog';
-import { useHistory } from 'react-router-dom';
 
 const CareLogItem = ({ userPlantLogId, careDate, careNote }) => {
-  // const history = useHistory();
   const handleLogDelete = () => {
     removeCareLog(userPlantLogId);
-    // location.reload();
+    window.location.reload();
   };
 
   return (

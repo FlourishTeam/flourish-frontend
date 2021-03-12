@@ -23,8 +23,11 @@ function CareForm() {
     setDate(e.target.elements.careDate.value);
     setNote(e.target.elements.careNote.value);
 
-    return addCareLog(user.id, id, userPlantId, date, type, note).then((res) =>
-      setTempLog(res.data.addLogById)
+    return addCareLog(user.id, id, userPlantId, date, type, note).then(
+      (res) => {
+        setTempLog(res.data.addLogById);
+        window.location.reload();
+      }
     );
   };
 

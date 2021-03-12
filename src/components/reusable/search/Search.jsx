@@ -35,7 +35,7 @@ const Search = () => {
       <div className={styles.uploaderContainer}>
         <input type="file" name="uploader" onChange={handlePreview} />
         <img className={styles.uploadThumbnail} src={pictureUpload} />
-        {!empty && <button>Submit</button>}
+        {!empty && <button className={styles.submit}>Submit</button>}
 
         <button
           className={styles.backButton}

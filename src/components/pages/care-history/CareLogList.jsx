@@ -9,7 +9,6 @@ const CareLogList = () => {
   //make a hook to pass in CareLogItems
   const { careLogItems } = useCareLogItems();
   const logListElement = careLogItems?.map((careLogItem) => {
-    console.log(careLogItem);
     return (
       <li key={uuid()} className={styles.plantListItem}>
         <Link to={`/my-plants/${careLogItem}`}>

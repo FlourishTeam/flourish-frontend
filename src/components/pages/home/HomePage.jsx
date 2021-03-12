@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <section className={styles.HomePage}>
       <header className={styles.bannerContainer}>
-        <p className={styles.topText}>welcome to flourish</p>
+        <p className={styles.topText}>Welcome to Flourish</p>
         <p className={styles.bottomText}>(we can help)</p>
         <Slideshow />
         <Search className={styles.Search} />

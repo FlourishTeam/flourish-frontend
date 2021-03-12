@@ -34,6 +34,11 @@ exports[`Search component renders Search 1`] = `
         </button>
       </form>
     </div>
+    <h3
+      class="SearchTitle"
+    >
+      Click below for more plant details!
+    </h3>
     <ul
       class="PlantList"
     />

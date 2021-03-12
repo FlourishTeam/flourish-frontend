@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import styles from './styles/DetailsPage.css';
 import MaintenanceLevel from '../../reusable/maintenance/MaintenanceLevel';
 import AddToCollection from '../../reusable/collection/AddToCollection';
-import RemoveFromCollection from '../../reusable/collection/RemoveFromCollection';
 
 const Details = ({
+  plantId,
   image,
   commonName,
   scientificName,
@@ -43,8 +43,7 @@ const Details = ({
             <img src={image} alt={commonName} className={image} width="100%" height="90%" />
 
             <section className={styles.addRemoveContainer}>
-              < AddToCollection />
-              < RemoveFromCollection />
+              < AddToCollection plantId={plantId} />
             </section>
           </section>
 
@@ -140,6 +139,8 @@ Details.propTypes = {
   bloomSize: PropTypes.string.isRequired,
   propagation: PropTypes.string.isRequired,
   careDifficulty: PropTypes.string.isRequired,
+  plantId: PropTypes.number.isRequired
+
 };
 
 export default Details;

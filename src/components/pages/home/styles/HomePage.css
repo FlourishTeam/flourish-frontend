@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 
 * {
     margin: 0;
@@ -14,6 +15,10 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    background-image: url(../../../../images/home-page.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #111411;
 
     .bannerContainer {
@@ -49,13 +54,15 @@
     }
 
     .topText {
-        font-family: 'Kavivanar', cursive;
+        /* font-family: 'Kavivanar', cursive; */
+        font-family: 'Salsa', cursive;
         top: 25%;
-        font-size: 2.5em;
+        font-size: 4em;
     }
 
     .bottomText {
-        font-family: 'PT Sans', sans-serif;
+        /* font-family: 'PT Sans', sans-serif; */
+        font-family: 'Salsa', cursive;
         top: 30%;
         font-size: 1.5em;
     }

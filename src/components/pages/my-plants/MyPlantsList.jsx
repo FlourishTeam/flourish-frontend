@@ -15,17 +15,15 @@ const MyPlantList = () => {
   const [plantsList, setPlantsList] = useState([]);
 
   useEffect(() => {
-    if(!user) return; 
-    getAllUserPlants(user.id)
-      .then((res) => {
-        setPlantsList(res.data.getMyPlants);
-      });
+    if (!user) return;
+    getAllUserPlants(user.id).then((res) => {
+      setPlantsList(res.data.getMyPlants);
+    });
   }, [user]);
 
   const listElement = plantsList.map((plant) => {
     return (
       <li key={uuid()} className={styles.plantListItem}>
-       
         <Link
           to={`/my-plants/${plant.plantId}`}
           style={{ textDecoration: 'none', color: 'black' }}

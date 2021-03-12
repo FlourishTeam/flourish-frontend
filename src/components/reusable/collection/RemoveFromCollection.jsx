@@ -6,8 +6,8 @@ import styles from './styles/AddRemoveButton.css';
 // eslint-disable-next-line react/prop-types
 function RemoveFromCollection({ plantId }) {
   const user = useSession();
-  
-  const handleClick = async(e) => {
+
+  const handleClick = async (e) => {
     e.stopPropagation();
     await removePlantFromCollection(user, plantId);
     window.location.reload();
@@ -25,4 +25,3 @@ function RemoveFromCollection({ plantId }) {
 }
 
 export default RemoveFromCollection;
-

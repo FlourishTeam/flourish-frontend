@@ -4,7 +4,7 @@ export const menuStyle = {
     width: '36px',
     height: '30px',
     right: '20px',
-    top: '25px',
+    top: '30px',
     boxShadow: '0px 0px 10px 10px white',
     borderRadius: '50%',
     backgroundColor: 'white',
@@ -35,7 +35,9 @@ export const menuStyle = {
   bmMenu: {
     background: 'rgb(34, 64, 39)',
     padding: '2.5em 1.5em 0',
-    fontSize: '1.15em',
+    fontSize: '1em',
+    boxShadow: '5px 8px 10px 10px black',
+    textAlign: 'left'
   },
 
   bmMorphShape: {
@@ -46,6 +48,7 @@ export const menuStyle = {
     display: 'flex',
     flexDirection: 'column',
     padding: '0.8em',
+    textAlign: 'left'
   },
 
   bmItem: {
@@ -53,7 +56,8 @@ export const menuStyle = {
     textDecoration: 'none',
     color: '#888682',
     margin: '10px',
-    fontSize: '1.4rem',
+    fontSize: '1.2rem',
+    textAlign: 'left'
   },
 
   bmOverlay: {

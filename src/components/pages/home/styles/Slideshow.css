@@ -1,7 +1,7 @@
 @import "react-slideshow-image/dist/styles.css";
 
 .Slideshow {
-    height: 100vh;
+    height: 140vh;
     width: 100vw;
 
     .eachSlide > div {
@@ -17,7 +17,7 @@
         background: #efefef;
         text-align: center;
     }
-
+    
     svg {
         display: none;
     }

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
+
+* {
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-image: linear-gradient(to top, #25282a 60%, #111411 100%);
+    height: 100em;
+
+.helloDiv {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 3.5em;
+    color: white;
+    font-family: 'Salsa', cursive;
+}
+
+.clickHere {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    font-size: .9rem;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.plantListItem {
+    display: grid;
+    grid-template-columns: repeat();
+    grid-template-rows: repeat();
+    text-align: center;
+    padding: 1rem;
+    width: 10rem;
+    align-content: center;
+    background-color: white;
+  
+    .myPlantFigures {
+        align-content: center;
+        align-self: center;
+    }
+    .myPlantImg {
+        align-self: center;
+        align-content: center;
+        height: 9rem;
+        width: auto;
+        border-radius: 5%;
+        margin: 1rem;
+     }
+     .myPlantFigcaption {
+         align-content: center;
+         align-self: center;
+         margin: 1rem;
+         font-size: 1.3em;
+     }
+}
+
+.myPlantFigures > li {
+    width: 10rem;
+    height: auto;
+    text-align: center;
+    align-self: center;
+    margin: .5rem;
+}
+
+.plantListItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 15rem;
+    height: 22rem;
+    border: 1px solid #022704;
+    border-radius: 9px;
+    margin: 2rem;
+}
+
+.plantListItem:hover {
+    box-shadow: 0 2px 8px 1px rgba(243, 243, 244, 0.776);
+}
+
+.plantListItem:active {
+    transform: scale(.9);
+}
+
+.MyPlantsList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+        } 
+    }
+}

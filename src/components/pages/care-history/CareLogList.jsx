@@ -1,26 +1,23 @@
 import React from 'react';
-import CareLogItem from './CareLogItem';
 import uuid from 'react-uuid';
-import styles from './styles/CareLogItem.css';
+import CareLogItem from './CareLogItem';
+import styles from '../care-history/styles/MyCareHistory.css';
 import { useCareLogItems } from '../../../providers/CareLogContext';
-import { Link } from 'react-router-dom';
 
 const CareLogList = () => {
-  //make a hook to pass in CareLogItems
   const { careLogItems } = useCareLogItems();
+
   const logListElement = careLogItems?.map((careLogItem) => {
     return (
       <li key={uuid()} className={styles.plantListItem}>
-        <Link to={`/my-plants/${careLogItem}`}>
-          <CareLogItem {...careLogItem} />
-        </Link>
+        <CareLogItem {...careLogItem} />
       </li>
     );
   });
-  if(!logListElement?.length) return <h2>No list found!!</h2>;
+  if (!logListElement?.length) return <h2>No list found!!</h2>;
   return (
     <ul data-testid="careLog" className={styles.CareLogList}>
-      {logListElement }
+      {logListElement}
     </ul>
   );
 };

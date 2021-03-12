@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 
 * {
     margin: 0;
@@ -13,7 +14,11 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 75%;
+    background-image: url(../../../../images/home-page.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #111411;
 
     .bannerContainer {
@@ -22,10 +27,15 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        .Search, .topText {
+            align-self: center;
+            justify-self: center;
+            align-content: center;
+        }
     }
     
     .bannerContainer > img {
-        height: 100vh; 
+        height: 50%; 
         opacity: 0.8;
         background-size: cover;
         background-repeat: repeat;
@@ -33,30 +43,28 @@
 
     .bannerContainer > :last-child {
         position: absolute;
-        top: 40%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: white;
         border-radius: 12px;
     }
-    
-    .topText, .bottomText {
+
+    .homeSearch {
+        margin: .5rem;
+    }
+
+    .topText {
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        font-size: 2rem;
-    }
-
-    .topText {
-        font-family: 'Kavivanar', cursive;
-        top: 25%;
-        font-size: 2.5em;
-    }
-
-    .bottomText {
-        font-family: 'PT Sans', sans-serif;
-        top: 30%;
-        font-size: 1.5em;
+        font-size: 2%;
+        align-items: center;
+        align-self: center;
+        font-family: 'Salsa', cursive;
+        top: 15%;
+        font-size: 4em;
+        text-align: center;
     }
 }

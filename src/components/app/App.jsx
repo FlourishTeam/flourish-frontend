@@ -2,16 +2,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import HomePage from '../../components/pages/home/HomePage';
-import DetailsPage from '../../components/pages/details/DetailsPage';
 import MyPlantsPage from '../pages/my-plants/MyPlantsPage';
 import SearchPage from '../pages/search/SearchPage';
 import MyCareHistoryPage from '../pages/care-history/MyCareHistoryPage';
 import Header from '../reusable/header/Header';
+import AboutUs from '../pages/about-us/AboutUsPage';
 import { AuthProvider } from '../../providers/AuthContext';
 import { DetailsProvider } from '../../providers/DetailsContext';
 import { SearchProvider } from '../../providers/SearchContext';
 import { CareLogProvider } from '../../providers/CareLogContext';
 import { PhotoUploadProvider } from '../../providers/PhotoUploadContext';
+import { DetailsPageContainer } from '../pages/details/DetailsPageContainer';
+import PrivateRoute from '../auth/PrivateRoute';
 
 export default function App() {
   return (
@@ -32,9 +34,9 @@ export default function App() {
                     <Route 
                       exact 
                       path="/details/:id" 
-                      component={DetailsPage} 
+                      component={DetailsPageContainer} 
                     />
-                    <Route 
+                    <PrivateRoute 
                       exact 
                       path="/my-plants" 
                       component={MyPlantsPage} 
@@ -44,10 +46,15 @@ export default function App() {
                       path="/search" 
                       component={SearchPage} 
                     />
-                    <Route
+                    <PrivateRoute
                       exact
                       path="/my-plants/:id"
                       component={MyCareHistoryPage}
+                    />
+                    <Route 
+                      exact 
+                      path="/about-us" 
+                      component={AboutUs} 
                     />
                   </Switch>
                 </CareLogProvider>

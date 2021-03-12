@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
 .Header{
     width: 100vw;
-    background-color: rgb(205, 205, 205);
-    height: 5rem;
-    box-shadow: 0px 0px 20px 0px black;
+    background-color: #111411;
+    height: 6rem;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
     
     .icon {
-        height: 4rem;
+        height: 3rem;
         float: left;
-        margin-top: .5rem;
-        margin-left: .5rem;
+        margin-top: 1.3rem;
+        margin-left: 1.5rem;
     }
     
     .headerRight {
@@ -23,21 +26,38 @@
     
     .loginButton {
         float: left;
-        height: 3rem;
+        height: 2.5rem;
         border: none;
         border-radius: 12px;
         padding: 10px;
         margin: 1rem;
         margin-right: 80px;
         cursor: pointer;
+        text-transform: uppercase;
+        transition: 0.5s;
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        background-image: linear-gradient(to right, #111411 0%, #11504e 51%, #111411 100%);
+        color: rgb(195, 208, 220);
+        border: 1px solid gray;
     }
+
+.loginButton:hover{
+    box-shadow: 0 1px 5px rgba(236, 235, 241, 0.776);
+    transform: scale(1);
+    background-position: 0 -100px;
+}
+
+.loginButton:active {
+    transform: scale(0.9);
+}
 
     .greeting {
         float: left;
-        margin: 1rem;
-        margin-right: 80px;
-        border-radius: 12px;
-        padding: 10px;
-        font-size: 1.3em;
+        position: relative;
+        margin-bottom: .2rem;
+        margin-right: 5rem;
+        border-radius: 1rem;
+        padding: 1rem;
+        font-size: 1rem;
     }
 }

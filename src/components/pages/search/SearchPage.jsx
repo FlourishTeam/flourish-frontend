@@ -8,6 +8,9 @@ const SearchPage = () => {
     <div className={styles.SearchPage}>
       <br />
       <Search />
+      <h3 className={styles.SearchTitle}>
+        Click below for more plant details!
+      </h3>
       <PlantList />
     </div>
   );

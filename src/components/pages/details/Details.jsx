@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './styles/DetailsPage.css';
-import MaintenanceLevel from '../../reusable/maintenance/MaintenanceLevel';
+import MaintenanceLevel from '../../reusable/maintenance/MaintenanceLevelWhite';
 import AddToCollection from '../../reusable/collection/AddToCollection';
-import RemoveFromCollection from '../../reusable/collection/RemoveFromCollection';
 
 const Details = ({
+  plantId,
   image,
   commonName,
   scientificName,
@@ -43,8 +43,7 @@ const Details = ({
             <img src={image} alt={commonName} className={image} width="100%" height="90%" />
 
             <section className={styles.addRemoveContainer}>
-              < AddToCollection />
-              < RemoveFromCollection />
+              < AddToCollection plantId={plantId} />
             </section>
           </section>
 
@@ -61,12 +60,12 @@ const Details = ({
                 <span className={styles.value}>{temperatureRange}</span><br/>
 
                 <span className={styles.key}>Placement: </span>
-                <span className={styles.value}>{placement}</span><br/>
-
-                <span className={styles.key}>Substrate Recommendation: </span>
-                <span className={styles.value}>{substrateRecommendation}</span><br/><br />
+                <span className={styles.value}>{placement}</span><br/><br />
               </div>
               <div>
+                <span className={styles.key}>Substrate Recommendation: </span>
+                <span className={styles.value}>{substrateRecommendation}</span><br/>
+                
                 <span className={styles.key}> Potting Notes: </span>
                 <span className={styles.value}>{pottingNotes}</span><br/>
               </div>
@@ -79,8 +78,10 @@ const Details = ({
         </section>
 
         <section className={styles.bottomMid}>
+          <div className={styles.bottomMidTop}>
+            <div className={styles.title}>About</div>
+          </div>
           <section className={styles.bottomMidLeft}>
-            <div className={styles.title}>Physical Characteristics:</div>
             <span className={styles.key}>Height: </span>
             <span className={styles.value}>{height}</span>
 
@@ -140,6 +141,8 @@ Details.propTypes = {
   bloomSize: PropTypes.string.isRequired,
   propagation: PropTypes.string.isRequired,
   careDifficulty: PropTypes.string.isRequired,
+  plantId: PropTypes.number.isRequired
+
 };
 
 export default Details;

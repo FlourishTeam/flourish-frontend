@@ -1,57 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
 .AboutUs {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 20px;
-}
+  background-image: linear-gradient(to top, #25282a 60%, #111411 100%);
+  height: 80em;
 
-.header{
-font-size: 3em;
-}
+  .header{
+    margin-top: 1em;
+    font-size: 3em;
+    font-family: 'Kavivanar', cursive;
+    color: white;
+  }
 
-.team_bios{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  width: 80%;
-  margin: 3em;
-}
+  .team_bios{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin: 1em;
+  }
 
-.bio {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  margin: 2em;
-  width: 250px;
-}
+  .bio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0.5em 0.5em;
+    width: 15em;
+    border: 4px solid #022704;
+    border-radius: 10px;
+    padding: 1em;
+    background-color: #EBFEF4;
+    font-family: 'PT Sans', sans-serif;
+  }
+  .image{
+    border-radius: 10px;
+  }
 
-.name{
-  margin-top: 0.5em;
-  text-align: center;
-  font-style: bold;
-}
+  .name{
+    margin-top: 0.5em;
+    text-align: center;
+    font-style: bold;
+  }
 
-.title{
-  margin-bottom: 0.5em;
-  text-align: center;
-  font-style: italic;
-  font-size: smaller;
-}
+  .title{
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+  }
 
-.data{
-  margin-right: 10px;
-  font-size: smaller;
-}
+  .heading{
+    font-size: smaller;
+  }
 
-.key{
-  padding: 10px;
-}
+  .data{
+    padding: 0.5em;
+    font-size: 0.7em;
+    text-indent: 0.7em;
+  }
 
-.value{
-  display: flex;
-  flex-wrap: wrap;
+  .key{
+    float: left;
+    width: 37%;
+    text-align: left;
+  }
+
+  .value{
+    float: right;
+    width: 63%;
+    text-indent: 0.1em;
+  }
+
 }

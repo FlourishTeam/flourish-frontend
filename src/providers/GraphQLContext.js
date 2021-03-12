@@ -2,7 +2,7 @@ import fetch from 'cross-fetch';
 import { ApolloClient, createHttpLink, InMemoryCache } from '@apollo/client';
 
 const httpLink = createHttpLink({
-  uri: 'https://flourish-dev-staging.herokuapp.com/graphql',
+  uri: 'https://flourish-main-production.herokuapp.com/graphql',
   fetch,
 });
 

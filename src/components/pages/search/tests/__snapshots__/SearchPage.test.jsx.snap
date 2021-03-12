@@ -5,6 +5,7 @@ exports[`Search component renders Search 1`] = `
   <div
     class="SearchPage"
   >
+    <br />
     <div
       class="Search"
     >

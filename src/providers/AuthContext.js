@@ -26,19 +26,13 @@ export const AuthProvider = ({ children }) => {
   
   const signup = (name, email, password) => {
     return postSignup(name, email, password)
-      .then((user) => {
-        setSession(user);
-        console.log('CONTEXT SIGNUP', name, email);
-      })
+      .then((user) => setSession(user))
       .catch((err) => setSignupError(err));
   };
 
   const login = (email, password) => {
     return postLogin(email, password)
-      .then((user) => {
-        setSession(user);
-        console.log('CONTEXT LOGIN', email);
-      })
+      .then((user) => setSession(user))
       .catch((err) => setError(err));
   };
 

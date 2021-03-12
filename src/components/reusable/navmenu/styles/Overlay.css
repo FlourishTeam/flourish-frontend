@@ -15,11 +15,12 @@
 
 
 .Signup {
-    background-color: #94a592;
+    background-color: #accca9;
     text-align: center;
     border-radius: 5px;
     border: 1px solid #022704;
-    box-shadow: #858585 0 1px 20px 10px;
+    width: 22em;
+    box-shadow: white 0 1px 20px 3px;
     -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
 
     .popup-content :first-child {
@@ -31,16 +32,20 @@
     }
 
     .formContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 3em;
         opacity: 1;
         border-radius: 5px;
-        box-shadow: #858585 0 0 2px 2px;
+        box-shadow: black 0 0 5px 3px;
     }
 
     .title {
-        font-size: 1.5em;
+        font-size: 1.7em;
         font-family: 'Nanum Gothic', sans-serif;
-        margin-bottom: 10px;
+        margin-bottom: 1em;
     }
 
     .form {
@@ -52,7 +57,7 @@
     }
 
     .formInput {
-        width: 100%;
+        width: 15em;
         margin: .1em;
         height: 35px;
         border-radius: 2px;
@@ -108,4 +113,11 @@
         color: black;
     }
 
+    .error {
+        margin-bottom: 1em;
+        font-size: 0.9em;
+        color: rgb(174, 57, 57);
+        text-align: center;
+        width: 80%;
+    }
 }

@@ -6,10 +6,10 @@ exports[`MyPlant component renders MyPlant 1`] = `
     class="myPlantFigures"
   >
     <img
-      class="myPlantFigures"
+      class="myPlantImg"
     />
     <figcaption
-      class="myPlantFigures"
+      class="myPlantFigcaption"
     >
       <p
         class="commonName"

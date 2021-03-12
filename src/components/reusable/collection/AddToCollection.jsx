@@ -11,8 +11,6 @@ function AddToCollection({ plantId }) {
     addPlantToCollection(user.id, plantId);
   };
 
-  console.log(user);
-
   return (
     <div className={styles.AddToCollection}>
       <button onClick={handleClick}>

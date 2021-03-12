@@ -9,9 +9,9 @@ const PrivateRoute = (props) => {
   const isAuthenticated = useIsAuthenticated();
   const loading = useAuthLoading();
 
-  if (loading) return <div>Loading...</div>;
+  if(loading) return <div>Loading...</div>;
 
-  if (!loading && !isAuthenticated) {
+  if(!loading && !isAuthenticated) {
     return <Redirect to="/login" />;
   }
 

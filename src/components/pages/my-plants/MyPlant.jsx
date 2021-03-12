@@ -8,11 +8,11 @@ const MyPlant = ({  commonName, scientificName, image }) => (
     <img
       src={image}
       alt={commonName}
-      className={styles.myPlantFigures}
+      className={styles.myPlantImg}
       
     />
 
-    <figcaption className={styles.myPlantFigures}>
+    <figcaption className={styles.myPlantFigcaption}>
       <p className={styles.commonName}>{commonName}</p>
       <p className={styles.scientificName}>{scientificName}</p>
     </figcaption>

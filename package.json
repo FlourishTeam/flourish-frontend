@@ -67,6 +67,7 @@
     "apollo-boost": "^0.4.9",
     "cross-fetch": "^3.0.6",
     "graphql": "^15.5.0",
+    "mime": "^2.5.2",
     "msw": "^0.27.0",
     "ndb": "^1.1.5",
     "react": "^17.0.1",
@@ -78,6 +79,8 @@
     "react-router-dom": "^5.2.0",
     "react-slideshow-image": "^3.4.3",
     "react-uuid": "^1.0.2",
-    "reactjs-popup": "^2.0.4"
+    "reactjs-popup": "^2.0.4",
+    "run": "^1.4.0",
+    "start": "^5.1.0"
   }
 }

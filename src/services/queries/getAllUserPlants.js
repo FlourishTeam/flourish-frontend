@@ -1,19 +1,18 @@
 import { gql } from 'apollo-boost';
 import client from '../../providers/GraphQLContext';
 
-export const getAllUserPlants = (user) => {
-  const id = 2;
-  console.log(user);
+export const getAllUserPlants = (userId) => {
+  
+  console.log(userId, 'hello USER IDDDDD');
 
   return client
     .query({
       query: gql`
     query {
-        getMyPlants(userId: ${id}) {
+        getMyPlants(userId: ${userId}) {
             commonName
-            plantId
             image
-
+            plantId
         } 
     }
 `, });

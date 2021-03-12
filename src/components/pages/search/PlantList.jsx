@@ -22,13 +22,13 @@ const PlantList = () => {
     );
   });
 
-  if (loading)
+  if(loading)
     return (
       <div className={styles.loading}>
         <Loading />
       </div>
     );
-  if (error) return <div>{error}</div>;
+  if(error) return <div>{error}</div>;
 
   return <ul className={styles.PlantList}>{plantElements}</ul>;
 };

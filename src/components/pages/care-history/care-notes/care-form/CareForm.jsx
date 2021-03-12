@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSession } from '../../../../../providers/AuthContext';
 import {
-  useCareLogItems,
+  useTempLog,
   useUserPlantId,
 } from '../../../../../providers/CareLogContext';
 import { addCareLog } from '../../../../../services/queries/addCareLog';
@@ -16,7 +16,7 @@ function CareForm() {
   const [type, setType] = useState('water');
   const [note, setNote] = useState('');
 
-  const { setCareItems } = useCareLogItems();
+  const { setTempLog } = useTempLog();
 
   const handleCare = (e) => {
     e.preventDefault();
@@ -24,7 +24,7 @@ function CareForm() {
     setNote(e.target.elements.careNote.value);
 
     return addCareLog(user.id, id, userPlantId, date, type, note).then((res) =>
-      setCareItems(res.data.addLogById)
+      setTempLog(res.data.addLogById)
     );
   };
 

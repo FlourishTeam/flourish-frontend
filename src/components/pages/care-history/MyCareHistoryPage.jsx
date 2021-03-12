@@ -4,7 +4,7 @@ import {
   useCareLogError,
   useCareLogLoading,
   useRenderMyCareHistory,
-  useCareLogItems,
+  useTempLog,
 } from '../../../providers/CareLogContext';
 import MaintenanceLevel from '../../reusable/maintenance/MaintenanceLevel';
 import CareForm from '../care-history/care-notes/care-form/CareForm';
@@ -21,11 +21,14 @@ export default function MyCareHistoryPage() {
   const { id } = useParams();
   const user = useSession();
   const renderMyCareHistory = useRenderMyCareHistory();
-  const { careLogItems } = useCareLogItems();
+  const { tempLogs } = useTempLog();
 
+  // I REALLY WANT THE PAGE TO RE-RENDER BUT IT ISN'T WHEN YOU ADD A NEW CARE LOG
   useEffect(() => {
-    renderMyCareHistory(user.id, id);
-  }, [careLogItems]);
+    if (user) {
+      return renderMyCareHistory(user.id, id);
+    }
+  }, [user, tempLogs]);
 
   return (
     <>

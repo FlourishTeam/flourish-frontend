@@ -8,13 +8,14 @@ export const CareLogProvider = ({ children }) => {
   const [plantDetails, setPlantDetails] = useState([]);
   const [userPlantId, setUserPlantId] = useState();
   const [careLogItems, setCareLog] = useState([]);
+  const [tempLog, setTempLog] = useState({});
   const [error, setError] = useState(null);
 
   const renderMyCareHistory = (userId, plantId) => {
     setError(null);
     setLoading(true);
 
-    getMyCareHistoryById(plantId, userId)
+    return getMyCareHistoryById(plantId, userId)
       .then(({ data }) => {
         setCareLog(data.getMyCareHistoryById.careLogs);
         setPlantDetails(data.getMyCareHistoryById.plantDetails[0]);
@@ -29,7 +30,8 @@ export const CareLogProvider = ({ children }) => {
       value={{
         loading,
         careLogItems,
-        setCareLog,
+        tempLog,
+        setTempLog,
         renderMyCareHistory,
         plantDetails,
         userPlantId,
@@ -39,6 +41,11 @@ export const CareLogProvider = ({ children }) => {
       {children}
     </CareLogContext.Provider>
   );
+};
+
+export const useTempLog = () => {
+  const { tempLog, setTempLog } = useContext(CareLogContext);
+  return { tempLog, setTempLog };
 };
 
 export const useUserPlantId = () => {

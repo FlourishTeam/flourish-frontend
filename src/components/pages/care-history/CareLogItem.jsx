@@ -2,7 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './styles/CareLogItem.css';
 
-const CareLogItem = ({ careDate, careNote }) => (
+const CareLogItem = ({ userPlantLogId, careDate, careNote }) => (
+  // const handleLogDelete = () => {
+  //   // return delete log(userPlantLogId)
+  //   // should trigger rerender
+  // };
 
   <div className={styles.CareLogItem}>
     <p>{careDate}</p>
@@ -12,6 +16,7 @@ const CareLogItem = ({ careDate, careNote }) => (
 );
 
 CareLogItem.propTypes = {
+  usePlantLogId: PropTypes.string.isRequired,
   careDate: PropTypes.string.isRequired,
   careNote: PropTypes.string.isRequired,
 };

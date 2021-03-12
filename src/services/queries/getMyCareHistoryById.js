@@ -5,7 +5,7 @@ export const getMyCareHistoryById = (plantId, userId) => {
   return client.query({
     query: gql`
         query {
-          getMyCareHistoryById(plantId: ${plantId} userId: ${userId}) {
+          getMyCareHistoryById(plantId: ${plantId}, userId: ${userId}) {
             careLogs {
               userPlantLogId
               userId

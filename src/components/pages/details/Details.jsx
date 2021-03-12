@@ -40,7 +40,7 @@ const Details = ({
 
         <section className={styles.mid}>
           <section className={styles.midLeft}>
-            <img src={image} alt={commonName} className={image} width="100%" height="90%" />
+            <img src={image} alt={commonName} className={image} width="auto" height="280rem" />
 
             <section className={styles.addRemoveContainer}>
               < AddToCollection plantId={plantId} />

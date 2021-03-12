@@ -129,4 +129,10 @@
         }
     }
 }
+
+.bold:hover {
+    font-weight: bolder;
+    color: rgb(24, 130, 114);
+}
+
     

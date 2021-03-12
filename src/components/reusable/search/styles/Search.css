@@ -34,9 +34,17 @@
     .photoMode :hover {
         transform: scale(1.2);
     }
+
+    .photoMode:active {
+        transform: scale(0.9);
+    }
     
     .submitButton :hover {
         transform: scale(1.2);
+    }
+
+    .submitButton:active {
+        transform: scale(0.9);
     }
     
     .searchInput {

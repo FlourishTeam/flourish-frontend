@@ -1,14 +1,18 @@
 import client from '../../providers/GraphQLContext';
 import { gql } from 'apollo-boost';
 
-
-
-export const addCareLog = (user, plantId, userPlantId, careType, careNote) => {
-  return  client
-    .query({
-      query: gql`
+export const addCareLog = (
+  userId,
+  plantId,
+  userPlantId,
+  careDate,
+  careType,
+  careNote
+) => {
+  return client.query({
+    query: gql`
       query {
-          addLogById(userId: ${user.id}, plantId: ${plantId}, userPlantId: ${userPlantId}, careDate: ${Date.now()}, careType: "${careType}", careNote: "${careNote}") {
+          addLogById(userId: ${userId}, plantId: ${plantId}, userPlantId: ${userPlantId}, careDate: "${careDate}", careType: "${careType}", careNote: "${careNote}") {
             userId
             plantId
             userPlantId, 
@@ -18,5 +22,5 @@ export const addCareLog = (user, plantId, userPlantId, careType, careNote) => {
           }
        }
     `,
-    });
+  });
 };

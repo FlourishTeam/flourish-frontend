@@ -7,6 +7,7 @@ export const getMyCareHistoryById = (plantId, userId) => {
         query {
           getMyCareHistoryById(plantId: ${plantId} userId: ${userId}) {
             careLogs {
+              userPlantLogId
               userId
               plantId
               userPlantId

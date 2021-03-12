@@ -1,36 +1,63 @@
-import React from 'react';
-import uuid from 'react-uuid';
+import React, { useEffect } from 'react';
+import { 
+  usePlantDetails, 
+  useCareLogError, 
+  useCareLogLoading,
+  useRenderMyCareHistory,
+} from '../../../providers/CareLogContext';
 import MaintenanceLevel from '../../reusable/maintenance/MaintenanceLevel';
-import CareDetails from '../../reusable/care/CareDetails';
-import CareLogList from '../../reusable/care/CareLog';
 import CareForm from '../care-history/care-notes/care-form/CareForm';
-import MyPlantNotes from '../care-history/care-notes/MyPlantNotes';
-import MyPlant from '../my-plants/MyPlant';
-
-import { useMyPlants } from '../../../state/MyPlantsContext';
+import CareLogList from '../../pages/care-history/CareLogList';
+import { useSession } from '../../../providers/AuthContext';
+import Loading from '../../reusable/loading/Loading';
+import styles from './styles/MyCareHistory.css';
+import { useParams } from 'react-router';
 
 export default function MyCareHistoryPage() {
+  const plantDetails = usePlantDetails();
+  const loading = useCareLogLoading();
+  const error = useCareLogError();
+  const { id } = useParams();
+  const user = useSession();
+  const renderMyCareHistory = useRenderMyCareHistory();
+  useEffect(() => {
+    renderMyCareHistory(user.id, id);
+  }, []);
 
-  const { myPlants } = useMyPlants();
-  const listElement = myPlants.map((plant) => {
-
-    return (
-      <>
-        <li key={uuid()}>
-          <MyPlant 
-            name={plant.common_name}
-            image={plant.image}
-          />
-        </li>
-        <ul data-testid="plants">{listElement}</ul>
-        <div>
-          <MaintenanceLevel />
-          <CareDetails />
-          <MyPlantNotes />
-          <CareForm />
-          <CareLogList />
+  return (
+    <>
+      {error &&  
+      <div>
+        <CareForm />
+        {error}
+      </div>
+      }
+      {loading && <Loading />}
+      <p>Hello!</p>
+      <div className={styles.MyCareHistoryPlantName}>
+        <div>{plantDetails.commonName}</div>
+        <div>{plantDetails.scientificName}</div>
+        <img className={styles.MyCareHistoryImage}
+          src={plantDetails.image} 
+          alt={plantDetails.commonName} 
+        />
+        <div>Maintenance Level: 
+          <MaintenanceLevel maintenanceLevel={plantDetails.careDifficulty}/>
         </div>
-      </>
-    );
-  });
+        {/* <RemoveFromCollection />  */}
+          CARE DETAILS SECTION */
+        <section>
+          <div> Light Range: {plantDetails.lightRange}</div>
+          <div> Hydration Range: {plantDetails.hydrationRange}</div>
+          <div> Temperature Range: {plantDetails.temperatureRange}</div>
+          <div> Placement: {plantDetails.placement}</div>
+          <div> Substrate Recommendation: {plantDetails.substrateRecommendation}</div>
+          <div> Potting Notes: {plantDetails.pottingNotes}</div>
+          <div> Watering: {plantDetails.watering}</div>
+        </section>  
+      </div>
+      <CareForm />
+      <CareLogList />  
+    </>
+  );
 }

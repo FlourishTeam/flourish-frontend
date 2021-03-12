@@ -1,13 +1,19 @@
 import React from 'react';
-function HomePage() {
+import styles from './styles/HomePage.css';
+import Search from '../../reusable/search/Search';
+import Slideshow from './Slideshow';
+
+const HomePage = () => {
   return (
-    <>
-      <div>
-          Hello I am the Home Page  
-      </div>
-    </>
+    <section className={styles.HomePage}>
+      <header className={styles.bannerContainer}>
+        <p className={styles.topText}>welcome to flourish</p>
+        <p className={styles.bottomText}>(we can help)</p>
+        <Slideshow />
+        <Search className={styles.Search} />
+      </header>
+    </section>
   );
-}
+};
 
 export default HomePage;
-

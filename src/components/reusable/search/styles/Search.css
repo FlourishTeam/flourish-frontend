@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+.Search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    
+    form {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        padding: 2px;
+        border: 2px inset #ccc;
+        border-radius: 12px;
+        box-shadow: 2px 2px 4px black;
+        background-color: white;
+    }
+    
+    .searchInput, .photoMode, .submitButton {
+        border: none;
+        outline-width: 0;
+        margin: 5px;
+        height: 99%;
+    }
+    
+    .photoMode, .submitButton {
+        cursor: pointer;
+    }
+    
+    .photoMode :hover {
+        transform: scale(1.2);
+    }
+    
+    .submitButton :hover {
+        transform: scale(1.2);
+    }
+    
+    .searchInput {
+        font-size: 2rem;
+        margin: 0;
+        text-indent: 8px;
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    .submitButton {
+        width: 35px;
+        opacity: 0.8;
+        background: none;
+    }
+
+    .uploaderContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .uploaderContainer > button {
+        padding: 5px;
+        margin: 4px;
+        border: 1px inset #ccc;
+        border-radius: 3px;
+        font-family: 'PT Sans', sans-serif;
+        cursor: pointer;
+    }
+
+    .uploaderContainer > input {
+        margin: 5px;
+        width: 180px;        
+        background-color: lightgrey;
+        padding: 1px;
+        border-radius: 3px;
+        font-family: 'PT Sans', sans-serif;
+        cursor: pointer;
+    }
+
+    input#file-upload-button {
+        cursor: pointer;
+    }
+
+    .photoForm {
+        display: flex;
+        flex-direction: column;
+        height: inherit;
+        border-radius: 12px;
+    }
+
+    .backButton {
+        margin-top: 5px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .fileContainer > img {
+        display: none;
+        height: auto;
+    }
+
+    .uploadThumbnail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25vh;
+        border-radius: 12px;
+    }
+}

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailsPage component renders DetailsPage 1`] = `
+<DocumentFragment>
+  <img
+    alt="Loading"
+    src="http://www.jainstechnology.com/wp-content/uploads/2018/02/loader.gif"
+    styles="[object Object]"
+  />
+</DocumentFragment>
+`;

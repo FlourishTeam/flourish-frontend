@@ -1,3 +1,9 @@
+.loading {
+    display: flex;
+    justify-content: center;
+}
+
 .PlantList {
+    background-color: #25282a;
     list-style-type: none;
 }

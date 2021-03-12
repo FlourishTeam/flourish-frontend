@@ -1,0 +1,16 @@
+svg {
+    height: 1rem;
+    width: auto;
+}
+button {
+    border: none;
+    background-color: white;
+    vertical-align: middle;
+    vertical-align: text-top;
+    margin-left: 2rem;
+}
+span {
+    text-align: left;
+    vertical-align: text-top;
+    margin-right: .2rem;
+}

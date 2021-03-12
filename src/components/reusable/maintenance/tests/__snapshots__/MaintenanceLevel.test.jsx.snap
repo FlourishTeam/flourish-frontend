@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MaintenanceLevel component renders MaintenanceLevel 1`] = `
+<DocumentFragment>
+  <div>
+    N/A
+  </div>
+</DocumentFragment>
+`;

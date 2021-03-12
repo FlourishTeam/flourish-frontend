@@ -2,13 +2,22 @@
 
 exports[`MyPlant component renders MyPlant 1`] = `
 <DocumentFragment>
-  <div>
-    <figure>
-      <img />
-      <figcaption>
-        <p />
-      </figcaption>
-    </figure>
-  </div>
+  <figure
+    class="MyPlant"
+  >
+    <img
+      class="plantImg"
+    />
+    <figcaption
+      class="caption"
+    >
+      <p
+        class="commonName"
+      />
+      <p
+        class="scientificName"
+      />
+    </figcaption>
+  </figure>
 </DocumentFragment>
 `;

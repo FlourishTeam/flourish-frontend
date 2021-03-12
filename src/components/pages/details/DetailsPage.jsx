@@ -22,8 +22,12 @@ const DetailsPage = () => {
     renderDetails(id);
   }, []);
 
-  if (loading) return <Loading />;
-  if (error) return <div>{error}</div>;
+  if(loading) return (
+    <div className={styles.loadingContainer}>
+      <Loading />
+    </div>
+  );
+  if(error) return <div>{error}</div>;
 
   return (
     <>

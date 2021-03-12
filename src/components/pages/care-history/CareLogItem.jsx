@@ -1,12 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import uuid from 'react-uuid';
 import styles from './styles/CareLogItem.css';
 import { removeCareLog } from '../../../services/queries/removeCareLog';
+import { useTempLog } from '../../../providers/CareLogContext';
 
 const CareLogItem = ({ userPlantLogId, careDate, careNote }) => {
+  const { setTempLog } = useTempLog();
+
   const handleLogDelete = () => {
     removeCareLog(userPlantLogId);
-    window.location.reload();
+    setTempLog({ dummy: uuid() });
   };
 
   return (

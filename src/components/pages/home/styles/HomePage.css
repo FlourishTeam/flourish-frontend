@@ -14,32 +14,34 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 75%;
+    height: 50em;
     background-image: url(../../../../images/home-page.jpg);
-    background-size: cover;
+    background-size: 100vw, 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #111411;
 
     .bannerContainer {
-        position: relative;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        .Search, .topText {
-            align-self: center;
-            justify-self: center;
-            align-content: center;
-        }
+    }
+
+    .Search, .topText {
+        align-self: center;
+        justify-self: center;
+        align-content: center;
+        width: 10em;
+        margin-top: 2.3em;
     }
     
-    .bannerContainer > img {
+    /* .bannerContainer > img {
         height: 50%; 
         opacity: 0.8;
         background-size: cover;
         background-repeat: repeat;
-    }
+    } */
 
     .bannerContainer > :last-child {
         position: absolute;
@@ -51,7 +53,7 @@
     }
 
     .homeSearch {
-        margin: .5rem;
+        margin-top: 10em;
     }
 
     .topText {
@@ -64,7 +66,8 @@
         align-self: center;
         font-family: 'Salsa', cursive;
         top: 15%;
-        font-size: 4em;
+        font-size: 4.3em;
         text-align: center;
+        text-shadow: 4px 4px 6px black;
     }
 }

@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 .Header{
-    width: 100vw;
+    width: 97vw;
     background-color: #111411;
     height: 6rem;
     color: white;
     font-family: 'PT Sans', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
     
     .icon {
         height: 3rem;

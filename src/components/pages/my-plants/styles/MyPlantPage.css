@@ -6,7 +6,7 @@
 body {
     font-family: 'PT Sans', sans-serif;
     background-image: linear-gradient(to top, #25282a 60%, #111411 100%);
-    height: 100em;
+    height: 100vh;
 
 .helloDiv {
     text-align: center;

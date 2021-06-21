@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 .Search {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -8,7 +9,6 @@
     width: auto;
     
     form {
-        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -20,11 +20,17 @@
         background-color: white;
     }
     
-    .searchInput, .photoMode, .submitButton {
+    .photoMode, .submitButton {
         border: none;
         outline-width: 0;
         margin: 5px;
         height: 99%;
+    }
+
+    .searchInput {
+        border: none;
+        outline-width: 0;
+        margin-top: 10em;
     }
     
     .photoMode, .submitButton {
@@ -119,8 +125,6 @@
     .submit:active {
         transform: scale(.9);
     }
-    
-    
 
     .fileContainer > img {
         display: none;
